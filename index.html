@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuanJin AI 全謹智能 — AI-native professional services</title>
+  <meta name="description" content="AI-agent intake & operations for licensed professional firms. Proven live at 全謹代書 — compliance-guarded, human-in-the-loop, 24/7." />
+
+  <!-- relative-only assets; sub-path safe for GitHub Pages project pages -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233B82F6'/%3E%3Cstop offset='.5' stop-color='%238B5CF6'/%3E%3Cstop offset='1' stop-color='%232DD4BF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M24 3l18 10.5v21L24 45 6 34.5v-21z' fill='none' stroke='url(%23g)' stroke-width='2.5'/%3E%3Cpath d='M24 14l9 16H15z' fill='url(%23g)'/%3E%3Ccircle cx='24' cy='31' r='3' fill='%23070A14' stroke='url(%23g)' stroke-width='2'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="QuanJin AI 全謹智能 — AI-native professional services" />
+  <meta property="og:description" content="Proven live at 全謹代書. Compliance-guarded agentic intake for licensed professional firms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/img/og.svg" />
+
+  <!-- fonts (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== inline SVG symbol library ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandgrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6" /><stop offset=".52" stop-color="#8B5CF6" /><stop offset="1" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="flowgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6" /><stop offset=".5" stop-color="#8B5CF6" /><stop offset="1" stop-color="#2DD4BF" />
+    </linearGradient>
+
+    <!-- logo: seal/hexagon resolving into a pen-nib + circuit node -->
+    <symbol id="logo" viewBox="0 0 48 48">
+      <path d="M24 3l18 10.5v21L24 45 6 34.5v-21z" fill="none" stroke="url(#brandgrad)" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M24 13.5l9.5 17H14.5z" fill="url(#brandgrad)" opacity=".92"/>
+      <line x1="24" y1="30.5" x2="24" y2="38" stroke="url(#brandgrad)" stroke-width="2"/>
+      <circle cx="24" cy="31" r="3.1" fill="#070A14" stroke="url(#brandgrad)" stroke-width="2"/>
+      <circle cx="33.5" cy="14" r="1.6" fill="#2DD4BF"/>
+      <circle cx="14.5" cy="14" r="1.6" fill="#3B82F6"/>
+    </symbol>
+
+    <!-- workflow / moat icons (stroke, currentColor via CSS) -->
+    <symbol id="ic-chat" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.1 7.5L3 21l2-5.9A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+    <symbol id="ic-doc" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="ic-database" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="ic-expert" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M18 6l1.5-1.5"/></symbol>
+    <symbol id="ic-list-checks" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l2 2 3-3"/><path d="M3 14l2 2 3-3"/><line x1="12" y1="6" x2="21" y2="6"/><line x1="12" y1="14" x2="21" y2="14"/><line x1="12" y1="20" x2="21" y2="20"/></symbol>
+    <symbol id="ic-book" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+    <symbol id="ic-user-cog" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="M3 21a7 7 0 0 1 11-5.7"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M18.5 14v1M18.5 20v1M22 17.5h-1M16 17.5h-1"/></symbol>
+    <symbol id="ic-refresh" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+    <symbol id="ic-map-pin" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="ic-shield-check" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+
+    <!-- partner marks (tasteful brand-coloured glyphs; "integrates with", not endorsement) -->
+    <symbol id="pm-anthropic" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#1A1815"/><path d="M19 14l-7 20h4.2l1.5-4.4h7.6L26.8 34H31L24 14h-5zm-.1 12.1l2.5-7.3 2.5 7.3h-5z" fill="#D6A380"/><path d="M30 14h4.2l7 20H37l-7-20z" fill="#D6A380"/></symbol>
+    <symbol id="pm-azure" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#0A1A2F"/><path d="M22 12L10 34h7l9-16-4-6zm3 7l-5 9h14L25 19z" fill="#3FA9F5"/></symbol>
+    <symbol id="pm-line" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#06C755"/><path d="M24 11c-7.7 0-14 5-14 11.2 0 5.6 5 10.3 11.7 11.1.5.1 1.1.3 1.2.7.1.4.1 1 .05 1.4l-.2 1.2c-.06.4-.3 1.4 1.25.8 1.55-.65 8.3-4.9 11.3-8.4 2.1-2.3 3-4.6 3-7.8C39.3 16 33 11 24 11z" fill="#fff"/><path d="M20.5 19.6v5.8M20.5 19.6h-2.8v5.8M24 19.6v5.8l3.5-5.8v5.8M30 19.6h2.6M30 25.4h2.6M30 19.6v5.8" stroke="#06C755" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="pm-airtable" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#11151F"/><path d="M24 12l13 5-13 5-13-5 13-5z" fill="#FFBF00"/><path d="M11 21l11 4.3V36l-11-4.3V21z" fill="#26B5F8"/><path d="M37 21l-11 4.3V36l11-4.3V21z" fill="#ED3049"/></symbol>
+    <symbol id="pm-generic" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#11151F"/><circle cx="24" cy="24" r="4" fill="none" stroke="#2DD4BF" stroke-width="2"/><circle cx="14" cy="16" r="2" fill="#8B5CF6"/><circle cx="34" cy="16" r="2" fill="#3B82F6"/><circle cx="24" cy="36" r="2" fill="#2DD4BF"/><path d="M24 24l-10-8M24 24l10-8M24 24v12" stroke="#39415E" stroke-width="1.4"/></symbol>
+  </defs>
+</svg>
+
+<div class="scrollbar" id="scrollbar"></div>
+
+<!-- ===================== nav ===================== -->
+<nav class="nav" id="nav">
+  <a class="nav-brand" href="#hero" aria-label="QuanJin AI home">
+    <svg class="logo"><use href="#logo"/></svg>
+    <span>QuanJin AI</span><span class="nb-zh">全謹智能</span>
+  </a>
+  <ul class="nav-links" id="nav-links"></ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+    <a class="btn btn-primary" href="#ask" data-i18n="ui.cta_deck">索取簡報</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ===================== hero ===================== -->
+<header class="hero" id="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-card glass glass-lum reveal in">
+      <span class="eyebrow" data-i18n="hero.eyebrow">AI 原生・專業服務</span>
+      <h1><span data-i18n="hero.h1">讓每一位客戶，在對的時間被接住</span></h1>
+      <p class="sub" data-i18n="hero.sub"></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#ask" data-i18n="ui.cta_deck">索取簡報</a>
+        <a class="btn btn-ghost" href="#case" data-i18n="ui.cta_case">看實例 ↓</a>
+      </div>
+      <div class="ticker" id="hero-ticker"></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span data-i18n="ui.scroll">向下探索</span><span class="dot"></span></div>
+</header>
+
+<main>
+<!-- ===================== the shift ===================== -->
+<section id="shift">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="shift.eyebrow">現況</span>
+    <h2 class="h-sec reveal" data-i18n="shift.h"></h2>
+    <p class="sub reveal" data-i18n="shift.sub"></p>
+    <div class="cards" id="shift-cards"></div>
+  </div>
+</section>
+
+<!-- ===================== the system ===================== -->
+<section id="system">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="system.eyebrow">系統架構</span>
+    <h2 class="h-sec reveal" data-i18n="system.h"></h2>
+    <div class="flow reveal">
+      <div class="flow-track" id="flow-track">
+        <div class="flow-line"><svg viewBox="0 0 1000 2" preserveAspectRatio="none"><path d="M0 1 H1000"/></svg></div>
+      </div>
+    </div>
+    <p class="loop-note glass reveal" data-i18n="system.loop"></p>
+  </div>
+</section>
+
+<!-- ===================== case study ===================== -->
+<section id="case">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="case.eyebrow">旗艦實例</span>
+    <h2 class="h-sec reveal" data-i18n="case.h"></h2>
+    <div class="case-grid">
+      <div class="case-narr glass glass-lum reveal">
+        <p data-i18n="case.narr"></p>
+        <p class="oversight" data-i18n="case.oversight"></p>
+      </div>
+      <div class="kpi-grid reveal" id="kpi-grid" data-delay="1"></div>
+    </div>
+    <p class="case-disclaimer reveal" data-i18n="case.disclaimer"></p>
+  </div>
+</section>
+
+<!-- ===================== traction ===================== -->
+<section id="traction">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="traction.eyebrow">進展</span>
+    <h2 class="h-sec reveal" data-i18n="traction.h"></h2>
+    <p class="sub reveal" data-i18n="traction.sub"></p>
+    <div class="charts">
+      <div class="chart-card span2 glass reveal">
+        <div class="chart-head">
+          <h3 data-i18n="traction.c1"></h3>
+          <div class="chart-legend">
+            <span class="chip chip-measured" data-i18n="ui.measured">實測</span>
+            <span class="chip chip-forecast" data-i18n="ui.forecast">預測</span>
+          </div>
+        </div>
+        <div class="chart-box"><canvas id="chart-messages"></canvas></div>
+      </div>
+      <div class="chart-card glass reveal">
+        <div class="chart-head"><h3 data-i18n="traction.c2"></h3></div>
+        <div class="chart-box"><canvas id="chart-leads"></canvas></div>
+      </div>
+      <div class="chart-card glass reveal" data-delay="1">
+        <div class="chart-head"><h3 data-i18n="traction.c3"></h3></div>
+        <div class="chart-box"><canvas id="chart-escal"></canvas></div>
+      </div>
+    </div>
+    <p class="traction-foot reveal" data-i18n="traction.footnote"></p>
+  </div>
+</section>
+
+<!-- ===================== moats ===================== -->
+<section id="moats">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="moats.eyebrow">競爭壁壘</span>
+    <h2 class="h-sec reveal" data-i18n="moats.h"></h2>
+    <p class="sub reveal" data-i18n="moats.intro"></p>
+    <div class="moat-grid" id="moat-grid"></div>
+  </div>
+</section>
+
+<!-- ===================== security ===================== -->
+<section id="security">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="security.eyebrow">安全與合規</span>
+    <h2 class="h-sec reveal" data-i18n="security.h"></h2>
+    <p class="sub reveal" data-i18n="security.framing"></p>
+    <div class="sec-wrap glass glass-lum reveal">
+      <svg class="sec-diagram" id="sec-diagram" viewBox="0 0 1000 320" role="img" aria-label="Security data flow">
+        <!-- edges -->
+        <path class="edge" id="sec-path" d="M90 80 H250 M340 80 H470 M560 80 H690 M780 80 V160 H560 M470 160 H300 V120" />
+        <circle class="packet" id="sec-packet" r="5" cx="90" cy="80" />
+        <!-- nodes (labels via data-i18n on text) -->
+        <g><rect class="node-box real" x="20" y="58" width="130" height="44" rx="10"/><text x="85" y="84" text-anchor="middle" data-i18n="sec.n.client.t"></text></g>
+        <g><rect class="node-box real" x="250" y="58" width="130" height="44" rx="10"/><text x="315" y="84" text-anchor="middle" data-i18n="sec.n.line.t"></text></g>
+        <g><rect class="node-box real" x="470" y="58" width="130" height="44" rx="10"/><text x="535" y="84" text-anchor="middle" data-i18n="sec.n.ngrok.t"></text></g>
+        <g><rect class="node-box real" x="690" y="58" width="150" height="44" rx="10"/><text x="765" y="84" text-anchor="middle" data-i18n="sec.n.vm.t"></text></g>
+        <g><rect class="node-box real" x="470" y="140" width="130" height="44" rx="10"/><text x="535" y="166" text-anchor="middle" data-i18n="sec.n.claude.t"></text></g>
+        <g><rect class="node-box real" x="240" y="220" width="150" height="44" rx="10"/><text x="315" y="246" text-anchor="middle" data-i18n="sec.n.crm.t"></text></g>
+        <g><rect class="node-box real" x="610" y="220" width="170" height="44" rx="10"/><text x="695" y="246" text-anchor="middle" data-i18n="sec.n.audit.t"></text></g>
+        <path class="edge" d="M765 102 V242 H780 M695 242 H600 M315 102 V220" stroke-dasharray="4 4" opacity=".6"/>
+      </svg>
+      <div class="sec-residency"><span>◆</span><span data-i18n="security.residency"></span></div>
+      <div class="badges" id="sec-badges"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ecosystem ===================== -->
+<section id="ecosystem">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="ecosystem.eyebrow">生態系與夥伴</span>
+    <h2 class="h-sec reveal" data-i18n="ecosystem.h"></h2>
+    <div class="constellation reveal" id="constellation">
+      <svg id="constellation-links" aria-hidden="true"></svg>
+    </div>
+    <p class="ecosystem-note reveal" data-i18n="ecosystem.note"></p>
+  </div>
+</section>
+
+<!-- ===================== roadmap ===================== -->
+<section id="roadmap">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="roadmap.eyebrow">發展藍圖</span>
+    <h2 class="h-sec reveal" data-i18n="roadmap.h"></h2>
+    <div class="timeline reveal" id="timeline"><div class="progress-line" id="rm-progress"></div></div>
+  </div>
+</section>
+
+<!-- ===================== the ask ===================== -->
+<section id="ask">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="ask.eyebrow">我們的願景</span>
+    <h2 class="h-sec reveal" data-i18n="ask.h"></h2>
+    <p class="ask-vision grad-text reveal" data-i18n="ask.vision"></p>
+    <div class="ask-grid">
+      <div class="ask-panel glass glass-lum reveal">
+        <h3 data-i18n="ask.markethdr"></h3>
+        <div class="market-tiers" id="market-tiers"></div>
+      </div>
+      <div class="ask-panel glass glass-lum reveal" data-delay="1">
+        <h3><span data-i18n="ask.usehdr"></span> <span class="chip" data-i18n="ui.illustrative">示意數字</span></h3>
+        <div class="fund-box"><canvas id="chart-funds"></canvas></div>
+        <div class="fund-legend" id="fund-legend"></div>
+        <div class="ask-cta">
+          <a class="btn btn-primary" id="cta-deck" data-i18n="ui.cta_deck" href="#">索取簡報</a>
+          <a class="btn btn-ghost" id="cta-pilot" data-i18n="ui.cta_pilot" href="#">預約試點洽談</a>
+        </div>
+      </div>
+    </div>
+    <p class="sub reveal" style="margin-top:1.6rem" data-i18n="ask.vc"></p>
+    <p class="sub reveal" data-i18n="ask.owner"></p>
+  </div>
+</section>
+</main>
+
+<!-- ===================== footer ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><svg class="logo"><use href="#logo"/></svg><span>QuanJin AI 全謹智能</span></div>
+      <span class="footer-tag" data-i18n="footer.tagline"></span>
+    </div>
+    <p class="footer-disclaimer" id="footer-disclaimer" data-i18n="footer.disclaimer"></p>
+    <div class="footer-bottom">
+      <span data-i18n="footer.brand">© 2026 全謹智能 QuanJin AI</span>
+      <span id="footer-asof"></span>
+    </div>
+  </div>
+</footer>
+
+<!-- scripts: globals (content, i18n) → Chart.js → app -->
+<script src="./assets/js/content.js"></script>
+<script src="./assets/js/i18n.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
