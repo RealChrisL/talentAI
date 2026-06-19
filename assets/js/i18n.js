@@ -61,7 +61,7 @@ const I18N = {
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
     "case.h": "全謹代書：從靜默的下班頻道，到 24 小時接案",
-    "case.narr": "全謹地政士事務所於 2026 年 5 月導入執業智能代理系統。上線以來，系統累計接住並完成初步問診的進線達 1,080 件、自動建立逾千筆 CRM 紀錄，無需額外行政人力。近三成新客戶在辦公時間外首次聯繫——這條過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並即時通知負責地政士。",
+    "case.narr": "全謹地政士事務所於 2026 年 5 月導入 Talent AI 智能代理系統。上線以來，系統累計接住並完成初步問診的進線達 1,080 件、自動建立逾千筆 CRM 紀錄，無需額外行政人力。近三成新客戶在辦公時間外首次聯繫——這條過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並即時通知負責地政士。",
     "case.oversight": "每一則對外回覆皆通過反幻覺安全驗證；系統已於送出前攔截 7 則潛在不實陳述，確保事務所執照從未承擔未經核實的費用或法律主張。所有案件最終由持牌地政士審核並親自辦理。",
     "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。本系統目前為前營收階段，ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
 
@@ -124,12 +124,15 @@ const I18N = {
     /* ---- ecosystem ---- */
     "ecosystem.eyebrow": "生態系與夥伴",
     "ecosystem.h": "建立在成熟可靠的基礎設施上",
-    "ecosystem.note": "整合夥伴涵蓋 Anthropic Claude、Microsoft Azure、LINE 官方帳號、Airtable 與 Plaud 音檔轉錄。商標屬各品牌所有；此處表示「建構於／整合於」，非背書。",
+    "ecosystem.note": "旗艦客戶 全謹地政士事務所 為系統實證現場；平台建構於 Anthropic Claude、Microsoft Azure、LINE 官方帳號、ngrok 與 Airtable。各商標屬其所有，此處表示「整合於／建構於」，非背書。",
+    "ptr.quanjin.t": "全謹地政士事務所",
     "ptr.anthropic.t": "Claude AI",
     "ptr.azure.t": "Azure 雲端",
     "ptr.line.t": "LINE 官方帳號",
+    "ptr.ngrok.t": "ngrok",
     "ptr.airtable.t": "Airtable",
-    "ptr.plaud.t": "Plaud 音檔",
+    "ecosystem.flagship": "旗艦客戶",
+    "ecosystem.tech": "技術夥伴",
 
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "發展藍圖",
@@ -162,8 +165,8 @@ const I18N = {
 
     /* ---- footer ---- */
     "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-06-19）。標示「示意數字」者為估算或假設，待經稽核資料替換。系統目前為前營收階段，收益尚未成交；ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
-    "footer.tagline": "執業智能 — 讓專業，不再因時間而流失",
-    "footer.brand": "© 2026 執業智能 Praxis AI",
+    "footer.tagline": "智能人才 — 讓專業，不再因時間而流失",
+    "footer.brand": "© 2026 智能人才 Talent AI",
   },
 
   en: {
@@ -216,7 +219,7 @@ const I18N = {
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
     "case.h": "全謹代書: from a silent after-hours channel to 24/7 qualified intake",
-    "case.narr": "全謹地政士事務所 deployed the Praxis AI agent in May 2026. Since launch it has captured and qualified 1,080 leads and built over a thousand CRM records automatically — with zero added administrative staff. Nearly a third of new clients first make contact outside business hours; that previously-silent channel is now received, classified and escalated to the responsible licensee within seconds.",
+    "case.narr": "全謹地政士事務所 deployed the Talent AI agent in May 2026. Since launch it has captured and qualified 1,080 leads and built over a thousand CRM records automatically — with zero added administrative staff. Nearly a third of new clients first make contact outside business hours; that previously-silent channel is now received, classified and escalated to the responsible licensee within seconds.",
     "case.oversight": "Every outbound reply passes a multi-layer anti-hallucination validator; 7 replies were blocked before delivery to protect the firm's licence from unverified fee or legal claims. Every case is ultimately reviewed and closed by a licensed 地政士.",
     "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. The system is pre-revenue — ROI is shown as break-even + reach + safety, never as booked revenue.",
 
@@ -279,12 +282,15 @@ const I18N = {
     /* ---- ecosystem ---- */
     "ecosystem.eyebrow": "Ecosystem & Partners",
     "ecosystem.h": "Built on mature, reliable infrastructure",
-    "ecosystem.note": "Integration partners include Anthropic Claude, Microsoft Azure, LINE Official Account, Airtable and Plaud audio transcription. Marks belong to their owners; shown as 'built on / integrates with', not endorsement.",
+    "ecosystem.note": "全謹代書 is the live deployment; the platform is built on Anthropic Claude, Microsoft Azure, LINE Official Account, ngrok and Airtable. Marks belong to their owners; shown as 'built on / integrates with', not endorsement.",
+    "ptr.quanjin.t": "全謹 Land-Admin Office",
     "ptr.anthropic.t": "Claude AI",
     "ptr.azure.t": "Azure Cloud",
     "ptr.line.t": "LINE OA",
+    "ptr.ngrok.t": "ngrok",
     "ptr.airtable.t": "Airtable",
-    "ptr.plaud.t": "Plaud Audio",
+    "ecosystem.flagship": "Flagship deployment",
+    "ecosystem.tech": "Built on",
 
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "Roadmap",
@@ -317,8 +323,8 @@ const I18N = {
 
     /* ---- footer ---- */
     "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-06-19) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. The system is pre-revenue; no deals are booked. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
-    "footer.tagline": "Praxis AI — professional practice, any hour, no lead lost",
-    "footer.brand": "© 2026 Praxis AI 執業智能",
+    "footer.tagline": "Talent AI — professional practice, any hour, no lead lost",
+    "footer.brand": "© 2026 Talent AI 智能人才",
   },
 };
 

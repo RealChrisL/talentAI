@@ -1,4 +1,4 @@
-# Praxis AI 執業智能 — Investor & Buyer Pitch Site
+# Talent AI 智能人才 — Investor & Buyer Pitch Site
 
 A single-page, statically-hosted bilingual (繁中 / EN) pitch site positioning an
 AI-agent integration company for licensed professional-service firms. Its flagship
@@ -20,29 +20,29 @@ python3 -m http.server 8080
 To reproduce the GitHub-Pages **sub-path** exactly (recommended before deploy):
 
 ```bash
-mkdir -p /tmp/ghtest/quanjin-ai-pitch
-cp -r ./* /tmp/ghtest/quanjin-ai-pitch/
+mkdir -p /tmp/ghtest/talentAI
+cp -r ./* /tmp/ghtest/talentAI/
 cd /tmp/ghtest && python3 -m http.server 8099
-# open http://localhost:8099/quanjin-ai-pitch/  ← every asset must load (no 404s)
+# open http://localhost:8099/talentAI/  ← every asset must load (no 404s)
 ```
 
 All asset references are **relative** (`./assets/...`, `#anchors`), so the page works
-identically at `/` and at `/<repo>/`. Keep it that way — a leading-slash path is a defect.
+identically at `/` and at `/talentAI/`. Keep it that way — a leading-slash path is a defect.
 
 ---
 
 ## Deploy (GitHub Pages project page)
 
-The site lives at `https://<username>.github.io/<repo>/` (a project page, because the
+The site lives at `https://RealChrisL.github.io/talentAI/` (a project page, because the
 root user-page is taken).
 
-1. Create a repo, e.g. **`quanjin-ai-pitch`**, and push these files to `main` at the root.
+1. Create a repo, e.g. **`talentAI`**, and push these files to `main` at the root.
    `.nojekyll` is included so Pages serves `assets/` untouched.
 2. **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/ (root)`.**
-3. Live at `https://<username>.github.io/<repo>/`. Verify every relative link resolves
+3. Live at `https://RealChrisL.github.io/talentAI/`. Verify every relative link resolves
    at that sub-path (run the `/tmp/ghtest` check above first).
 4. **Optional custom domain:** add a `CNAME` file containing the domain, point a DNS
-   `CNAME` → `<username>.github.io`, enable “Enforce HTTPS”. Good TLDs: `.ai`, `.dev`, `.app`.
+   `CNAME` → `RealChrisL.github.io`, enable “Enforce HTTPS”. Good TLDs: `.ai`, `.dev`, `.app`.
 
 No backend, no analytics, no PII collection. The contact CTAs open the visitor's mail
 client (`mailto:`) — nothing is POSTed anywhere.
@@ -91,7 +91,8 @@ verified metric's `verified` flag.
 ├─ .nojekyll               Pages serves assets/ as-is
 ├─ README.md
 ├─ assets/
-│  ├─ css/styles.css       design tokens (CSS vars) + glass components + reduced-motion
+│  ├─ css/styles.css       register theme (cadastral) — tokens + components + reduced-motion
+│  ├─ css/styles-aurora.css alternate dark theme (swap the <link> in index.html)
 │  ├─ js/content.js        SITE_CONFIG (all data + demoData flag)
 │  ├─ js/i18n.js           zh-TW (default) / en strings
 │  ├─ js/main.js           hydrate, IntersectionObserver, count-up, Chart.js, language toggle
@@ -108,7 +109,7 @@ verified metric's `verified` flag.
 ## Accessibility & motion
 
 - Semantic HTML, keyboard-navigable, visible focus rings.
-- All animation (count-ups, chart draw, SVG path draw, hero particle field, packet flow)
+- All animation (count-ups, chart draw, cadastral hero draw + seal stamp, packet flow)
   **no-ops under `prefers-reduced-motion: reduce`** — final states render instantly.
 - Mobile-first responsive (360 → 1440+).
 
@@ -117,7 +118,13 @@ verified metric's `verified` flag.
 ## Credits
 
 Built with Claude Code. Flagship data room: the live 全謹代書 LINE agent.
-Brand name **Praxis AI / 執業智能** is a placeholder for the holding company and is
-intentionally distinct from the client firm 全謹地政士事務所. (Swap it in one place:
-`SITE_CONFIG.brand` in `assets/js/content.js` + the `footer.*` / `hero.*` strings in
-`assets/js/i18n.js`. The repo/dir slug `quanjin-ai-pitch` is independent of the brand.)
+Brand name **Talent AI / 智能人才** is the holding company, intentionally distinct from the
+client firm 全謹地政士事務所. (Swap it in one place: `SITE_CONFIG.brand` in
+`assets/js/content.js` + the `footer.*` / `hero.*` strings in `assets/js/i18n.js`.)
+
+**Themes:** the live look is the "Register" theme (`assets/css/styles.css`) — a
+cadastral / land-administration aesthetic (drafting vellum, registry ink, 朱 seal). The
+original dark theme is preserved at `assets/css/styles-aurora.css`.
+
+**Partner logos** (`SITE_CONFIG.partners`) each carry a real `href`; marks are the owners'
+trademarks, shown as "built on / integrates with", not endorsement.

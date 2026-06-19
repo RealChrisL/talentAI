@@ -1,24 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3B82F6"/><stop offset=".52" stop-color="#8B5CF6"/><stop offset="1" stop-color="#2DD4BF"/>
-    </linearGradient>
-    <radialGradient id="bg" cx="78%" cy="0%" r="90%">
-      <stop offset="0" stop-color="#141A2E"/><stop offset="1" stop-color="#070A14"/>
-    </radialGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <g transform="translate(96,150)">
-    <g transform="scale(2.1)">
-      <path d="M24 3l18 10.5v21L24 45 6 34.5v-21z" fill="none" stroke="url(#g)" stroke-width="2.4" stroke-linejoin="round"/>
-      <path d="M24 13.5l9.5 17H14.5z" fill="url(#g)" opacity=".92"/>
-      <line x1="24" y1="30.5" x2="24" y2="38" stroke="url(#g)" stroke-width="2"/>
-      <circle cx="24" cy="31" r="3.1" fill="#070A14" stroke="url(#g)" stroke-width="2"/>
-    </g>
+  <rect width="1200" height="630" fill="#E8EAE3"/>
+  <g stroke="rgba(23,36,46,0.06)" stroke-width="1">
+    <path d="M0 46H1200M0 92H1200M0 138H1200M0 184H1200M0 230H1200M0 276H1200M0 322H1200M0 368H1200M0 414H1200M0 460H1200M0 506H1200M0 552H1200M0 598H1200"/>
+    <path d="M46 0V630M92 0V630M138 0V630M184 0V630M230 0V630M276 0V630M322 0V630M368 0V630M414 0V630M460 0V630M506 0V630M552 0V630M598 0V630M644 0V630M690 0V630M736 0V630M782 0V630M828 0V630M874 0V630M920 0V630M966 0V630M1012 0V630M1058 0V630M1104 0V630M1150 0V630"/>
   </g>
-  <text x="232" y="218" font-family="'Space Grotesk',sans-serif" font-size="64" font-weight="700" fill="#EEF2FF">Praxis AI</text>
-  <text x="232" y="276" font-family="'Noto Sans TC',sans-serif" font-size="40" fill="#A9B2CC">執業智能</text>
-  <text x="96" y="410" font-family="'Space Grotesk',sans-serif" font-size="52" font-weight="700" fill="#EEF2FF">Professional services,</text>
-  <text x="96" y="476" font-family="'Space Grotesk',sans-serif" font-size="52" font-weight="700" fill="url(#g)">re-engineered for the AI era.</text>
-  <text x="96" y="548" font-family="'Manrope',sans-serif" font-size="28" fill="#6B7392">Proven live at 全謹代書 · compliance-guarded · human-in-the-loop · 24/7</text>
+  <g transform="translate(96,120)">
+    <rect x="0" y="0" width="64" height="64" rx="8" fill="none" stroke="#17242E" stroke-width="3.2"/>
+    <path d="M16 22H48M32 22V46" stroke="#17242E" stroke-width="4.2" stroke-linecap="square"/>
+    <circle cx="46" cy="46" r="3.6" fill="#C0392B"/>
+  </g>
+  <text x="180" y="150" font-family="'Archivo',sans-serif" font-size="58" font-weight="700" fill="#17242E">Talent AI</text>
+  <text x="180" y="196" font-family="'Noto Sans TC',sans-serif" font-size="34" fill="#586168">智能人才</text>
+  <text x="96" y="330" font-family="'Archivo',sans-serif" font-size="50" font-weight="700" fill="#17242E">Professional services,</text>
+  <text x="96" y="392" font-family="'Archivo',sans-serif" font-size="50" font-weight="700" fill="#C0392B">re-engineered for the AI era.</text>
+  <text x="96" y="470" font-family="'IBM Plex Mono',monospace" font-size="24" fill="#586168">Proven live at 全謹代書 · compliance-guarded · human-in-the-loop · 24/7</text>
+  <g transform="translate(96,520)">
+    <rect x="0" y="0" width="150" height="56" rx="4" fill="none" stroke="#C0392B" stroke-width="2"/>
+    <text x="75" y="30" text-anchor="middle" font-family="'Noto Serif TC',serif" font-size="22" font-weight="700" fill="#C0392B">已驗證</text>
+    <text x="75" y="48" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#C0392B">LIVE DEPLOYMENT</text>
+  </g>
 </svg>

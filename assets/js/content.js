@@ -22,10 +22,11 @@ const SITE_CONFIG = {
   asOf: "2026-06-19",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
-    name: "Praxis AI",
-    nameZh: "執業智能",
-    contactEmail: "hello@praxis.ai",    // mailto only — no backend, no PII capture
-    repoName: "quanjin-ai-pitch",       // repo/dir slug unchanged; brand is decoupled from it
+    name: "Talent AI",
+    nameZh: "智能人才",                  // confirm exact 中文 lockup; swap here
+    contactEmail: "hello@talent-ai.tw", // mailto only — no backend, no PII capture
+    repoName: "talentAI",               // GitHub Pages project-page slug
+    ghUser: "RealChrisL",
   },
 
   flagship: {
@@ -138,11 +139,12 @@ const SITE_CONFIG = {
 
   // -- Ecosystem / partners (real marks where applicable) -------------------
   partners: [
-    { id: "anthropic", mark: "anthropic", real: true,  key: "ptr.anthropic" },
-    { id: "azure",     mark: "azure",     real: true,  key: "ptr.azure" },
-    { id: "line",      mark: "line",      real: true,  key: "ptr.line" },
-    { id: "airtable",  mark: "airtable",  real: true,  key: "ptr.airtable" },
-    { id: "plaud",     mark: "generic",   real: false, key: "ptr.plaud" },
+    { id: "quanjin",   mark: "quanjin",  kind: "flagship", key: "ptr.quanjin",   href: "https://www.lystudio.com.tw/service/7.htm" },
+    { id: "anthropic", mark: "claude",   kind: "tech",     key: "ptr.anthropic", href: "https://claude.ai" },
+    { id: "azure",     mark: "azure",    kind: "tech",     key: "ptr.azure",     href: "https://azure.microsoft.com" },
+    { id: "line",      mark: "line",     kind: "tech",     key: "ptr.line",      href: "https://line.me" },
+    { id: "ngrok",     mark: "ngrok",    kind: "tech",     key: "ptr.ngrok",     href: "https://ngrok.com" },
+    { id: "airtable",  mark: "airtable", kind: "tech",     key: "ptr.airtable",  href: "https://airtable.com" },
   ],
 
   // -- Roadmap (5 phases) ---------------------------------------------------
