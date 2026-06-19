@@ -22,10 +22,10 @@ const SITE_CONFIG = {
   asOf: "2026-06-19",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
-    name: "QuanJin AI",
-    nameZh: "全謹智能",
-    contactEmail: "hello@quanjin.ai",   // mailto only — no backend, no PII capture
-    repoName: "quanjin-ai-pitch",       // GitHub Pages project-page slug
+    name: "Praxis AI",
+    nameZh: "執業智能",
+    contactEmail: "hello@praxis.ai",    // mailto only — no backend, no PII capture
+    repoName: "quanjin-ai-pitch",       // repo/dir slug unchanged; brand is decoupled from it
   },
 
   flagship: {

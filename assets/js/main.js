@@ -147,7 +147,7 @@
     const center = el("div", "ptr-node ptr-center");
     center.style.left = "50%"; center.style.top = "50%";
     center.innerHTML = `<div class="ptr-mark"><svg class="logo"><use href="#logo"/></svg></div>`;
-    const cc = el("div", "ptr-cap"); cc.textContent = "QuanJin AI"; center.appendChild(cc);
+    const cc = el("div", "ptr-cap"); cc.textContent = CFG.brand.name; center.appendChild(cc);
     wrap.appendChild(center);
 
     const nodes = CFG.partners.map((p) => {
@@ -224,8 +224,8 @@
     });
     // mailto CTAs (no backend / no PII)
     const mail = "mailto:" + CFG.brand.contactEmail;
-    $("#cta-deck").href = mail + "?subject=" + encodeURIComponent("Request the deck — QuanJin AI");
-    $("#cta-pilot").href = mail + "?subject=" + encodeURIComponent("Book a pilot — QuanJin AI");
+    $("#cta-deck").href = mail + "?subject=" + encodeURIComponent("Request the deck — " + CFG.brand.name);
+    $("#cta-pilot").href = mail + "?subject=" + encodeURIComponent("Book a pilot — " + CFG.brand.name);
   }
   function refreshFundLegend() {
     $$("#fund-legend .fl span[data-pct]").forEach((s) => {

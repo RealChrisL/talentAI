@@ -1,4 +1,4 @@
-# QuanJin AI 全謹智能 — Investor & Buyer Pitch Site
+# Praxis AI 執業智能 — Investor & Buyer Pitch Site
 
 A single-page, statically-hosted bilingual (繁中 / EN) pitch site positioning an
 AI-agent integration company for licensed professional-service firms. Its flagship
@@ -117,5 +117,7 @@ verified metric's `verified` flag.
 ## Credits
 
 Built with Claude Code. Flagship data room: the live 全謹代書 LINE agent.
-Brand name **QuanJin AI / 全謹智能** is a placeholder for the holding company and is
-intentionally distinct from the client firm 全謹地政士事務所.
+Brand name **Praxis AI / 執業智能** is a placeholder for the holding company and is
+intentionally distinct from the client firm 全謹地政士事務所. (Swap it in one place:
+`SITE_CONFIG.brand` in `assets/js/content.js` + the `footer.*` / `hero.*` strings in
+`assets/js/i18n.js`. The repo/dir slug `quanjin-ai-pitch` is independent of the brand.)
