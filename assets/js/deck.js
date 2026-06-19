@@ -17,6 +17,17 @@
   const prev = $("#prev"), next = $("#next");
   let current = 0;
 
+  /* ---- bilingual (zh default, EN toggle) ---- */
+  const DI = window.DECK_I18N || { zh: {}, en: {} };
+  let lang = "zh";
+  const langBtn = $("#deck-lang");
+  function applyI18n() {
+    document.documentElement.lang = lang === "zh" ? "zh-TW" : "en";
+    $$("[data-i18n]").forEach((n) => { const v = DI[lang] && DI[lang][n.getAttribute("data-i18n")]; if (v != null) n.textContent = v; });
+    if (langBtn) langBtn.textContent = lang === "zh" ? "EN" : "中";
+  }
+  if (langBtn) langBtn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; applyI18n(); });
+
   function go(i) {
     current = Math.max(0, Math.min(total - 1, i));
     slides[current].scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
@@ -94,5 +105,5 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => { onScroll(); buildChart(); });
+  document.addEventListener("DOMContentLoaded", () => { applyI18n(); onScroll(); buildChart(); });
 })();

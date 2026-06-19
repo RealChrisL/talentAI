@@ -162,6 +162,7 @@ const SITE_CONFIG = {
     { href: "#security",  key: "nav.security" },
     { href: "#roadmap",   key: "nav.roadmap" },
     { href: "#ask",       key: "nav.ask" },
+    { href: "./deck.html", key: "nav.deck" },
   ],
 };
 

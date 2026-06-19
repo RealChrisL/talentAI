@@ -25,7 +25,7 @@ const I18N = {
 
     "nav.shift": "現況", "nav.system": "系統", "nav.case": "實例",
     "nav.traction": "進展", "nav.moats": "護城河", "nav.security": "安全",
-    "nav.roadmap": "藍圖", "nav.ask": "願景",
+    "nav.roadmap": "藍圖", "nav.ask": "願景", "nav.deck": "簡報",
 
     "brand.tagline": "讓專業，不再因時間而流失",
 
@@ -187,7 +187,7 @@ const I18N = {
 
     "nav.shift": "The Shift", "nav.system": "System", "nav.case": "Case Study",
     "nav.traction": "Traction", "nav.moats": "Moats", "nav.security": "Security",
-    "nav.roadmap": "Roadmap", "nav.ask": "Vision",
+    "nav.roadmap": "Roadmap", "nav.ask": "Vision", "nav.deck": "Deck",
 
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
