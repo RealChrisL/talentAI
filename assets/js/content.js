@@ -49,9 +49,9 @@ const SITE_CONFIG = {
   // NPS, "-80% drafting", revenue. Latency is illustrative (no provenance).
   // All 6 tiles are measured (實測) — keeps the proof grid chip-free for diligence.
   kpiTiles: [
-    { value: 30,   decimals: 0, suffix: "%",    key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
-    { value: 31,   decimals: 0, suffix: "s",    key: "kpi.response",   verified: true, noteKey: "kpi.response.note" },
-    { value: 911,  decimals: 0, suffix: " / 7", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 30,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
+    { value: 14,   decimals: 0, suffix: " / 14", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
+    { value: 911,  decimals: 0, suffix: " / 7",  key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
     { value: 1085, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
     { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
     { value: 115,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },

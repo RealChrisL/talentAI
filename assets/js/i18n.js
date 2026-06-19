@@ -67,7 +67,7 @@ const I18N = {
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "新客戶於辦公時間外首次來訊", "kpi.afterhours.note": "641 位非員工客戶中 195 位，平日 09:00–18:00 之外【實測】",
-    "kpi.response.t": "中位數首次回應時間", "kpi.response.note": "實測 255 位客戶：中位數約 31 秒、p90 約 2 分（含 AI 推理）；全天候不打烊",
+    "kpi.eval.t": "上線前語意品質評測", "kpi.eval.note": "每晚自動評測（人設、防幻覺等）14／14 全數通過【實測】",
     "kpi.crm.t": "對話自動分類（案型＋優先級）", "kpi.crm.note": "1,074／1,085 進線自動帶案型與優先級，並生成 314 則案例敘事——零人工建檔【實測】",
     "kpi.safety.t": "對外訊息安全檢查：通過／送出前攔截", "kpi.safety.note": "L0–L4 五層驗證；7 則於送達客戶前攔截【實測】",
     "kpi.leads.t": "完整處理的進線（接待→分流→建檔）", "kpi.leads.note": "impact_rollup 進線總數【實測】",
@@ -229,7 +229,7 @@ const I18N = {
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "New clients first contacting outside office hours", "kpi.afterhours.note": "195 of 641 non-staff clients, outside Mon–Fri 09:00–18:00 【measured】",
-    "kpi.response.t": "Median first-response time", "kpi.response.note": "Measured, n=255: median ~31s, p90 ~2min (incl. AI reasoning); always-on 24/7",
+    "kpi.eval.t": "Pre-launch semantic quality evals", "kpi.eval.note": "Nightly LLM-judge scenarios (persona, anti-hallucination…) 14/14 passing 【measured】",
     "kpi.crm.t": "Conversations auto-classified (type + priority)", "kpi.crm.note": "1,074/1,085 leads auto-tagged with case-type + priority; 314 scenario narratives — zero staff entry 【measured】",
     "kpi.safety.t": "Outbound safety: passed / blocked before send", "kpi.safety.note": "L0–L4 validators; 7 blocked before reaching a client 【measured】",
     "kpi.leads.t": "Leads handled end-to-end (intake → triage → CRM)", "kpi.leads.note": "impact_rollup lead total 【measured】",
