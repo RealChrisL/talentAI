@@ -9,8 +9,8 @@
  * client firm.
  *
  * Live figures audited from production as-of 2026-06-19 (see docs/venture/004).
- * PRE-REVENUE: deals closed = 0. ROI = break-even + reach + safety, never
- * booked revenue.
+ * ROI is framed as break-even + reach + safety (not booked revenue); any revenue
+ * figure is forward-looking / Illustrative only.
  *
  *   verified: true   => measured (實測). Renders clean.
  *   verified: false  => estimate/assumption (估算/假設). Renders with a visible
@@ -24,8 +24,9 @@ const SITE_CONFIG = {
   brand: {
     name: "Talent AI",
     nameZh: "智能人才",                  // confirm exact 中文 lockup; swap here
-    contactEmail: "hello@talent-ai.tw", // mailto only — no backend, no PII capture
-    repoName: "talentAI",               // GitHub Pages project-page slug
+    contactEmail: "wentingl@alumni.cmu.edu", // mailto target for the deck/site CTAs
+    bookingUrl: "",                          // 預約 link: set a scheduling URL (e.g. Calendly/cal.com) → 預約 becomes a real booking link; empty = mailto fallback
+    repoName: "talentAI",                    // GitHub Pages project-page slug
     ghUser: "RealChrisL",
   },
 

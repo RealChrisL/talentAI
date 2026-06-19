@@ -72,11 +72,12 @@
 
   // mailto CTAs (no backend / no PII)
   const CFG = window.SITE_CONFIG || {};
-  const email = (CFG.brand && CFG.brand.contactEmail) || "hello@talent-ai.tw";
+  const email = (CFG.brand && CFG.brand.contactEmail) || "wentingl@alumni.cmu.edu";
   const brand = (CFG.brand && CFG.brand.name) || "Talent AI";
+  const booking = CFG.brand && CFG.brand.bookingUrl;
   const d = $("#cta-deck"), p = $("#cta-pilot");
   if (d) d.href = "mailto:" + email + "?subject=" + encodeURIComponent("Request the deck — " + brand);
-  if (p) p.href = "mailto:" + email + "?subject=" + encodeURIComponent("Book a pilot — " + brand);
+  if (p) { if (booking) { p.href = booking; p.target = "_blank"; p.rel = "noopener noreferrer"; } else p.href = "mailto:" + email + "?subject=" + encodeURIComponent("Book a pilot / 預約試點 — " + brand); }
 
   // traction chart (cumulative leads: measured solid + forecast dashed)
   function buildChart() {

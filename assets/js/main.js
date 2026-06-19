@@ -178,7 +178,9 @@
     });
     const mail = "mailto:" + CFG.brand.contactEmail;
     $("#cta-deck").href = mail + "?subject=" + encodeURIComponent("Request the deck — " + CFG.brand.name);
-    $("#cta-pilot").href = mail + "?subject=" + encodeURIComponent("Book a pilot — " + CFG.brand.name);
+    const pilot = $("#cta-pilot");
+    if (CFG.brand.bookingUrl) { pilot.href = CFG.brand.bookingUrl; pilot.target = "_blank"; pilot.rel = "noopener noreferrer"; }
+    else pilot.href = mail + "?subject=" + encodeURIComponent("Book a pilot / 預約試點 — " + CFG.brand.name);
   }
   function refreshFundLegend() { $$("#fund-legend .fl span[data-pct]").forEach((s) => { s.textContent = s.dataset.pct + "% · " + t(s.getAttribute("data-i18n")); }); }
 

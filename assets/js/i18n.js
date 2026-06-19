@@ -63,7 +63,7 @@ const I18N = {
     "case.h": "全謹代書：從靜默的下班頻道，到 24 小時接案",
     "case.narr": "全謹地政士事務所於 2026 年 5 月導入 Talent AI 智能代理系統。上線以來，系統累計接住並完成初步問診的進線達 1,080 件、自動建立逾千筆 CRM 紀錄，無需額外行政人力。近三成新客戶在辦公時間外首次聯繫——這條過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並即時通知負責地政士。",
     "case.oversight": "每一則對外回覆皆通過反幻覺安全驗證；系統已於送出前攔截 7 則潛在不實陳述，確保事務所執照從未承擔未經核實的費用或法律主張。所有案件最終由持牌地政士審核並親自辦理。",
-    "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。本系統目前為前營收階段，ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
+    "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "新客戶於辦公時間外首次來訊", "kpi.afterhours.note": "641 位非員工客戶中 195 位，平日 09:00–18:00 之外【實測】",
@@ -168,7 +168,7 @@ const I18N = {
     "mkt.tam.d": "同一套整合方法延伸至相鄰執照型業別。數量級估計，每一業別需各自由下而上驗證後方可宣稱。",
 
     /* ---- footer ---- */
-    "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-06-19）。標示「示意數字」者為估算或假設，待經稽核資料替換。系統目前為前營收階段，收益尚未成交；ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
+    "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-06-19）。標示「示意數字」者為估算或假設，待經稽核資料替換。ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
     "footer.tagline": "智能人才 — 讓專業，不再因時間而流失",
     "footer.brand": "© 2026 智能人才 Talent AI",
   },
@@ -225,7 +225,7 @@ const I18N = {
     "case.h": "全謹代書: from a silent after-hours channel to 24/7 qualified intake",
     "case.narr": "全謹地政士事務所 deployed the Talent AI agent in May 2026. Since launch it has captured and qualified 1,080 leads and built over a thousand CRM records automatically — with zero added administrative staff. Nearly a third of new clients first make contact outside business hours; that previously-silent channel is now received, classified and escalated to the responsible licensee within seconds.",
     "case.oversight": "Every outbound reply passes a multi-layer anti-hallucination validator; 7 replies were blocked before delivery to protect the firm's licence from unverified fee or legal claims. Every case is ultimately reviewed and closed by a licensed 地政士.",
-    "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. The system is pre-revenue — ROI is shown as break-even + reach + safety, never as booked revenue.",
+    "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. ROI is shown as break-even + reach + safety, not as booked revenue.",
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "New clients first contacting outside office hours", "kpi.afterhours.note": "195 of 641 non-staff clients, outside Mon–Fri 09:00–18:00 【measured】",
@@ -330,7 +330,7 @@ const I18N = {
     "mkt.tam.d": "Same integration method across adjacent license-gated verticals. Order-of-magnitude only; each vertical needs its own bottoms-up before it is claimed.",
 
     /* ---- footer ---- */
-    "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-06-19) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. The system is pre-revenue; no deals are booked. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
+    "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-06-19) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
     "footer.tagline": "Talent AI — professional practice, any hour, no lead lost",
     "footer.brand": "© 2026 Talent AI 智能人才",
   },

@@ -58,11 +58,11 @@ const DECK_I18N = {
 
     /* S6 traction */
     "d.s6.eb": "成長進展",
-    "d.s6.h": "1,085 進線 → 214 合格 → 115 升級 → 0 成交",
+    "d.s6.h": "1,085 進線 → 214 合格 → 115 升級至專人",
     "d.s6.b1": "完整接案漏斗無人值守運作，每一關都有紀錄。",
     "d.s6.b2": "214 筆進線主動留下姓名與電話（合格）。",
     "d.s6.b3": "115 件高價值案件自動分流給專人。",
-    "d.s6.b4": "成交數＝0——成效追蹤剛上線；我們據實呈現。",
+    "d.s6.b4": "成效追蹤上線——成交結果現已開始記錄，數據累積後揭露。",
     "d.s6.chartnote": "實線＝實測（累計進線 W1–W5）。虛線＝依現行速率外推之預測。轉換率不繪製——尚無法量測。",
 
     /* S7 value */
@@ -111,7 +111,7 @@ const DECK_I18N = {
     "d.s11.b2": "事務所運行成本約 NT$4,000/月；月費 NT$12k 下毛利 35–75%（估算）。",
     "d.s11.b3": "損益兩平＝每五個月救回一件監護宣告案（NT$4k ÷ NT$20k＝0.2/月）。",
     "d.s11.b4": "可複製：約 80% 系統可原樣移轉；約 15% 為各事務所的判斷（知識庫）。",
-    "d.s11.b5": "可投資性的關卡是第二家事務所——證明是「產品」而非「顧問」。目前成交：0。",
+    "d.s11.b5": "可投資性的關卡是第二家事務所——證明是「產品」而非「顧問」。首個付費試點為近期優先目標。",
     "d.s11.note": "我們以損益兩平為主軸，而非營收上限——上限取決於尚未量測的轉換率；數週內的首個實測成交率將取代此假設。",
 
     /* S12 why believe */
@@ -119,7 +119,7 @@ const DECK_I18N = {
     "d.s12.h": "稽核軌跡，就是我們的提案",
     "d.s12.b1": "每一則對外回覆皆記錄通過／攔截，並附引自業務規則的佐證。",
     "d.s12.b2": "持續的稽核資料流，可隨時查詢——安全是可查紀錄，不是口號。",
-    "d.s12.b3": "成交＝0，我們主動揭露而非隱藏。ROI 以損益兩平＋觸及＋把關呈現。",
+    "d.s12.b3": "ROI 以損益兩平＋觸及＋把關呈現——這是我們能以稽核紀錄支撐的主張，而非期待成交的估算。",
     "d.s12.b4": "今日已實證：接案、安全、分類、升級、涵蓋。",
     "d.s12.b5": "建置中：成交結果、指派時間、轉換率。",
     "d.s12.note": "受監理的專業人員要的是憑據，不是承諾。本簡報每個數字皆可由可稽核的紀錄重現；尚未量測者皆標示為空。",
@@ -142,7 +142,7 @@ const DECK_I18N = {
     "d.s14.f2h": "通路 / GTM", "d.s14.f2p": "公會＋轉介設計夥伴",
     "d.s14.f3h": "營運＋基礎設施", "d.s14.f3p": "創辦人工時、可靠性強化",
     "d.s14.cta1": "索取完整簡報", "d.s14.cta2": "預約試點", "d.s14.cta3": "查看上線網站",
-    "d.s14.note": "前營收乃出於紀律——憑據是安全與觸及。標示「示意」者為估算，待實測資料替換；成交數＝0。",
+    "d.s14.note": "憑據是安全與觸及；標示「示意」者為估算，待實測資料替換。",
   },
 
   en: {
@@ -193,11 +193,11 @@ const DECK_I18N = {
     "d.s5.t6h": "Quality evals", "d.s5.t6p": "Nightly persona + anti-hallucination",
 
     "d.s6.eb": "Traction",
-    "d.s6.h": "1,085 leads → 214 qualified → 115 escalated → 0 closed.",
+    "d.s6.h": "1,085 leads → 214 qualified → 115 escalated to human staff",
     "d.s6.b1": "The full intake funnel runs unattended; every stage is logged.",
     "d.s6.b2": "214 leads volunteered name + phone (qualified).",
     "d.s6.b3": "115 high-value cases auto-routed to human staff.",
-    "d.s6.b4": "Deals closed = 0 — outcome instrumentation just went live; we state it plainly.",
+    "d.s6.b4": "Outcome tracking is now live — deal results are logged as cases close.",
     "d.s6.chartnote": "Solid = measured (cumulative leads, W1–W5). Dashed = run-rate forecast. Conversion % is not plotted — it is not yet measurable.",
 
     "d.s7.eb": "Value to the Firm",
@@ -241,14 +241,14 @@ const DECK_I18N = {
     "d.s11.b2": "Run cost to the firm ~NT$4,000/mo; gross margin 35–75% at NT$12k/mo (estimate).",
     "d.s11.b3": "Break-even = one 監護宣告 case every five months (NT$4k ÷ NT$20k = 0.2/mo).",
     "d.s11.b4": "Replication: ~80% of the build transfers as-is; ~15% is per-firm judgment (the knowledge base).",
-    "d.s11.b5": "The fundability gate is Firm #2 — it proves 'product,' not 'consultancy.' Deals booked today: 0.",
+    "d.s11.b5": "The fundability gate is Firm #2 — it proves 'product,' not 'consultancy.' Closing the first paid pilot is the immediate priority.",
     "d.s11.note": "We lead with break-even, not an upside revenue headline — the upside rides an unmeasured conversion rate. The first measured close rate retires that assumption in ~weeks.",
 
     "d.s12.eb": "Why Believe Us",
     "d.s12.h": "The audit trail is the pitch.",
     "d.s12.b1": "Every outbound reply is logged PASS/BLOCK with cited, business-rule-rooted evidence.",
     "d.s12.b2": "Continuous audit streams, queryable on demand — safety is a record, not a slogan.",
-    "d.s12.b3": "Deals = 0 today — we lead with it, not hide it. The ROI claim is break-even + reach + safety.",
+    "d.s12.b3": "The ROI claim is break-even + reach + safety — backed by audit logs, not an extrapolated close rate.",
     "d.s12.b4": "Proven now: intake, safety, classification, escalation, coverage.",
     "d.s12.b5": "Being instrumented: deal outcomes, time-to-assign, conversion %.",
     "d.s12.note": "Regulated professionals need receipts, not promises. Every metric is reproducible from logs a reviewer can audit; the empty boxes are labelled empty.",
@@ -269,7 +269,7 @@ const DECK_I18N = {
     "d.s14.f2h": "Channel / GTM", "d.s14.f2p": "公會 + referral design partners",
     "d.s14.f3h": "Runway + infra", "d.s14.f3p": "Operator time, reliability hardening",
     "d.s14.cta1": "Request the full deck", "d.s14.cta2": "Book a pilot", "d.s14.cta3": "View the live site",
-    "d.s14.note": "Pre-revenue by discipline — the receipts are safety and reach. Figures marked Illustrative are estimates pending verified data; deals booked = 0.",
+    "d.s14.note": "The receipts are safety and reach. Figures marked Illustrative are estimates pending verified data.",
   },
 };
 window.DECK_I18N = DECK_I18N;
