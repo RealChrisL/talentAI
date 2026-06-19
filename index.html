@@ -15,10 +15,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./assets/img/og.svg" />
 
-  <!-- fonts (CDN) -->
+  <!-- fonts (CDN) — loaded non-render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" /></noscript>
 
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
@@ -70,13 +72,13 @@
 
 <!-- ===================== nav ===================== -->
 <nav class="nav" id="nav">
-  <a class="nav-brand" href="#hero" aria-label="QuanJin AI home">
-    <svg class="logo"><use href="#logo"/></svg>
+  <a class="nav-brand" href="#hero">
+    <svg class="logo" aria-hidden="true"><use href="#logo"/></svg>
     <span>QuanJin AI</span><span class="nb-zh">全謹智能</span>
   </a>
   <ul class="nav-links" id="nav-links"></ul>
   <div class="nav-right">
-    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+    <button class="lang-toggle" id="lang-toggle" title="Switch language / 切換語言">EN</button>
     <a class="btn btn-primary" href="#ask" data-i18n="ui.cta_deck">索取簡報</a>
     <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -272,9 +274,9 @@
 </footer>
 
 <!-- scripts: globals (content, i18n) → Chart.js → app -->
-<script src="./assets/js/content.js"></script>
-<script src="./assets/js/i18n.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script src="./assets/js/main.js"></script>
+<script defer src="./assets/js/content.js"></script>
+<script defer src="./assets/js/i18n.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script defer src="./assets/js/main.js"></script>
 </body>
 </html>
