@@ -38,28 +38,23 @@ const SITE_CONFIG = {
 
   // -- Hero ticker (4 punchy VERIFIED numbers) ------------------------------
   heroMetrics: [
-    { value: 1080, suffix: "+", key: "m.leads",       verified: true },
+    { value: 1085, suffix: "+", key: "m.leads",       verified: true },
     { value: 911,  suffix: "",  key: "m.safe",        verified: true },
     { value: 30,   suffix: "%", key: "m.afterhours",  verified: true },
-    { value: 113,  suffix: "",  key: "m.escalated",   verified: true },
+    { value: 115,  suffix: "",  key: "m.escalated",   verified: true },
   ],
 
   // -- Case-study KPI tiles (count-up) --------------------------------------
   // Only metrics we genuinely measure. Omitted by design: turnaround-days,
   // NPS, "-80% drafting", revenue. Latency is illustrative (no provenance).
+  // All 6 tiles are measured (實測) — keeps the proof grid chip-free for diligence.
   kpiTiles: [
-    { value: 30,   decimals: 0, suffix: "%",       key: "kpi.afterhours", verified: true,
-      noteKey: "kpi.afterhours.note" },
-    { value: 911,  decimals: 0, suffix: " / 7",    key: "kpi.safety",     verified: true,
-      noteKey: "kpi.safety.note" },
-    { value: 1080, decimals: 0, suffix: "",        key: "kpi.leads",      verified: true,
-      noteKey: "kpi.leads.note" },
-    { value: 113,  decimals: 0, suffix: "",        key: "kpi.escalated",  verified: true,
-      noteKey: "kpi.escalated.note" },
-    { value: 0.2,  decimals: 1, suffix: "",        key: "kpi.breakeven",  verified: false,
-      noteKey: "kpi.breakeven.note" },
-    { value: 2,    decimals: 0, suffix: "s",       key: "kpi.latency",    verified: false,
-      noteKey: "kpi.latency.note" },
+    { value: 30,   decimals: 0, suffix: "%",    key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
+    { value: 31,   decimals: 0, suffix: "s",    key: "kpi.response",   verified: true, noteKey: "kpi.response.note" },
+    { value: 911,  decimals: 0, suffix: " / 7", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 1085, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
+    { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
+    { value: 115,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
   ],
 
   // -- Traction charts (Chart.js) -------------------------------------------
@@ -70,8 +65,8 @@ const SITE_CONFIG = {
     weekLabels: ["05-20", "05-27", "06-03", "06-10", "06-17", "06-24", "07-01"],
     lastMeasuredIndex: 4,   // index 0..4 measured; 5..6 forecast
     messagesPerWeek:    [1210, 2426, 2576, 2593, 984, 2600, 2650],
-    cumulativeLeads:    [135, 400, 650, 880, 1080, 1320, 1560],
-    escalationsCumul:   [8, 35, 62, 90, 113, 138, 163],
+    cumulativeLeads:    [135, 400, 650, 880, 1085, 1325, 1570],
+    escalationsCumul:   [8, 35, 62, 90, 115, 140, 165],
     footnoteKey: "traction.footnote",
   },
 
@@ -100,6 +95,7 @@ const SITE_CONFIG = {
     { id: "audit",        icon: "list-checks",  key: "moat.audit" },
     { id: "domainkb",     icon: "book",         key: "moat.domainkb" },
     { id: "humanloop",    icon: "user-cog",     key: "moat.humanloop" },
+    { id: "staffing",     icon: "route",        key: "moat.staffing" },
     { id: "flywheel",     icon: "refresh",      key: "moat.flywheel" },
     { id: "localization", icon: "map-pin",      key: "moat.localization" },
   ],

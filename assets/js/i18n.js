@@ -67,9 +67,11 @@ const I18N = {
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "新客戶於辦公時間外首次來訊", "kpi.afterhours.note": "641 位非員工客戶中 195 位，平日 09:00–18:00 之外【實測】",
+    "kpi.response.t": "中位數首次回應時間", "kpi.response.note": "實測 255 位客戶：中位數約 31 秒、p90 約 2 分（含 AI 推理）；全天候不打烊",
+    "kpi.crm.t": "對話自動分類（案型＋優先級）", "kpi.crm.note": "1,074／1,085 進線自動帶案型與優先級，並生成 314 則案例敘事——零人工建檔【實測】",
     "kpi.safety.t": "對外訊息安全檢查：通過／送出前攔截", "kpi.safety.note": "L0–L4 五層驗證；7 則於送達客戶前攔截【實測】",
     "kpi.leads.t": "完整處理的進線（接待→分流→建檔）", "kpi.leads.note": "impact_rollup 進線總數【實測】",
-    "kpi.escalated.t": "高價值案件附完整脈絡交給真人", "kpi.escalated.note": "稽核去重（69 自動＋46 人工−2 重疊）【實測】",
+    "kpi.escalated.t": "高價值案件附完整脈絡交給真人", "kpi.escalated.note": "稽核去重（71 自動＋46 人工−2 重疊）【實測】",
     "kpi.breakeven.t": "損益兩平：每月需救回的案件數", "kpi.breakeven.note": "NT$4,000 運行成本 ÷ NT$20,000 錨定案 ≈ 每 5 個月一件【估算】",
     "kpi.latency.t": "從來訊到送出完整問卷（約）", "kpi.latency.note": "示意：人工確認之操作常數，尚無量測基準",
 
@@ -80,7 +82,7 @@ const I18N = {
     "traction.c1": "每週客戶訊息量",
     "traction.c2": "累計進線（合格客戶）",
     "traction.c3": "累計高優先轉人工件數",
-    "traction.footnote": "僅 W5 端點（進線 1,080／轉人工 113／訊息累計約 9,790）與每週訊息量為點對點實測；W1–W4 累計進線為內插估算，W6–W7 為預測，以虛線呈現。",
+    "traction.footnote": "僅 W5 端點（進線 1,085／轉人工 115／訊息累計約 9,790）與每週訊息量為點對點實測；W1–W4 累計進線為內插估算，W6–W7 為預測，以虛線呈現。",
 
     /* ---- moats ---- */
     "moats.eyebrow": "競爭壁壘",
@@ -94,6 +96,8 @@ const I18N = {
     "moat.domainkb.b": "11 大業務的費用、文件、流程、問卷構成代理唯一的答案來源；它只依事務所的真實規則作答，不外推通用法律知識。",
     "moat.humanloop.t": "結構性的人機協作",
     "moat.humanloop.b": "高價值案件一旦合格即自動轉人工接管，把備妥脈絡的案件交給負責人——AI 接案，持牌專業人員判斷與結案。",
+    "moat.staffing.t": "智能分流與盯案",
+    "moat.staffing.b": "案件依專長自動分流給 10 人團隊（涵蓋 10 類案型）；逾時與未認領的案件，系統每日兩次主動盯回團隊，沒有一件被遺忘。",
     "moat.flywheel.t": "會複利的資料飛輪",
     "moat.flywheel.b": "每段對話寫入結構化案件資料、每次事故寫入新防護、每次升級訓練分流層——處理過的每一件進線都讓系統更安全、更準。",
     "moat.localization.t": "在地深耕的先行者",
@@ -225,9 +229,11 @@ const I18N = {
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "New clients first contacting outside office hours", "kpi.afterhours.note": "195 of 641 non-staff clients, outside Mon–Fri 09:00–18:00 【measured】",
+    "kpi.response.t": "Median first-response time", "kpi.response.note": "Measured, n=255: median ~31s, p90 ~2min (incl. AI reasoning); always-on 24/7",
+    "kpi.crm.t": "Conversations auto-classified (type + priority)", "kpi.crm.note": "1,074/1,085 leads auto-tagged with case-type + priority; 314 scenario narratives — zero staff entry 【measured】",
     "kpi.safety.t": "Outbound safety: passed / blocked before send", "kpi.safety.note": "L0–L4 validators; 7 blocked before reaching a client 【measured】",
     "kpi.leads.t": "Leads handled end-to-end (intake → triage → CRM)", "kpi.leads.note": "impact_rollup lead total 【measured】",
-    "kpi.escalated.t": "High-value cases handed to a human, with context", "kpi.escalated.note": "audit-deduped (69 auto + 46 manual − 2 overlap) 【measured】",
+    "kpi.escalated.t": "High-value cases handed to a human, with context", "kpi.escalated.note": "audit-deduped (71 auto + 46 manual − 2 overlap) 【measured】",
     "kpi.breakeven.t": "Break-even: cases per month to pay for itself", "kpi.breakeven.note": "NT$4,000 run cost ÷ NT$20,000 anchor case ≈ one case every 5 months 【estimate】",
     "kpi.latency.t": "Client message → full questionnaire pushed", "kpi.latency.note": "Illustrative: human-confirmed operating constant, not yet instrumented",
 
@@ -238,7 +244,7 @@ const I18N = {
     "traction.c1": "Client messages per week",
     "traction.c2": "Cumulative leads (qualified clients)",
     "traction.c3": "Cumulative high-priority hand-offs",
-    "traction.footnote": "Only the W5 endpoints (1,080 leads / 113 escalations / ~9,790 messages) and the weekly message bars are point-exact measured; W1–W4 cumulative leads are interpolated estimates and W6–W7 are forecast, shown dashed.",
+    "traction.footnote": "Only the W5 endpoints (1,085 leads / 115 escalations / ~9,790 messages) and the weekly message bars are point-exact measured; W1–W4 cumulative leads are interpolated estimates and W6–W7 are forecast, shown dashed.",
 
     /* ---- moats ---- */
     "moats.eyebrow": "Competitive Moats",
@@ -252,6 +258,8 @@ const I18N = {
     "moat.domainkb.b": "An 11-business curated knowledge base (fees, documents, steps, questionnaires) is the agent's only source of truth, so it answers from the firm's real rules instead of hallucinating.",
     "moat.humanloop.t": "Human-in-the-loop by construction",
     "moat.humanloop.b": "High-value cases auto-flip to human takeover the instant they qualify, handing a pre-documented case to the responsible person — AI does intake, the licensed professional does judgment and the close.",
+    "moat.staffing.t": "Smart routing & follow-up",
+    "moat.staffing.b": "Cases route to a 10-member team by specialty across 10 case types; overdue and unowned cases are surfaced back to the team twice daily, so none is forgotten.",
     "moat.flywheel.t": "A data flywheel that compounds",
     "moat.flywheel.b": "Every conversation writes structured case data, every incident writes a new guardrail, every escalation teaches the triage layer — the system sharpens with each of 1,080 leads handled.",
     "moat.localization.t": "First-mover, deeply localized",
