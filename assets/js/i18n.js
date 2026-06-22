@@ -128,7 +128,7 @@ const I18N = {
     /* ---- ecosystem ---- */
     "ecosystem.eyebrow": "生態系與夥伴",
     "ecosystem.h": "建立在成熟可靠的基礎設施上",
-    "ecosystem.note": "旗艦客戶 全謹地政士事務所 為系統實證現場；平台建構於 Anthropic Claude、Microsoft Azure、LINE 官方帳號、ngrok 與 Airtable。各商標屬其所有，此處表示「整合於／建構於」，非背書。",
+    "ecosystem.note": "旗艦客戶 全謹地政士事務所 為系統實證現場；平台整合並建構於 Anthropic Claude、Microsoft Azure、LINE 官方帳號、ngrok 與 Airtable。各品牌商標均屬其各自所有。",
     "ptr.quanjin.t": "全謹地政士事務所",
     "ptr.anthropic.t": "Claude AI",
     "ptr.azure.t": "Azure 雲端",
@@ -290,7 +290,7 @@ const I18N = {
     /* ---- ecosystem ---- */
     "ecosystem.eyebrow": "Ecosystem & Partners",
     "ecosystem.h": "Built on mature, reliable infrastructure",
-    "ecosystem.note": "全謹代書 is the live deployment; the platform is built on Anthropic Claude, Microsoft Azure, LINE Official Account, ngrok and Airtable. Marks belong to their owners; shown as 'built on / integrates with', not endorsement.",
+    "ecosystem.note": "全謹代書 is the live deployment; the platform is built on and integrates with Anthropic Claude, Microsoft Azure, LINE Official Account, ngrok and Airtable. All trademarks are the property of their respective owners.",
     "ptr.quanjin.t": "全謹 Land-Admin Office",
     "ptr.anthropic.t": "Claude AI",
     "ptr.azure.t": "Azure Cloud",
