@@ -72,7 +72,7 @@ const I18N = {
     "kpi.safety.t": "對外訊息安全檢查：通過／送出前攔截", "kpi.safety.note": "L0–L4 五層驗證；7 則於送達客戶前攔截【實測】",
     "kpi.leads.t": "完整處理的進線（接待→分流→建檔）", "kpi.leads.note": "impact_rollup 進線總數【實測】",
     "kpi.escalated.t": "高價值案件附完整脈絡交給真人", "kpi.escalated.note": "稽核去重（71 自動＋46 人工−2 重疊）【實測】",
-    "kpi.breakeven.t": "損益兩平：每月需救回的案件數", "kpi.breakeven.note": "NT$15,000 運行成本 ÷ NT$20,000 錨定案 ≈ 每月不到一件【估算】",
+    "kpi.breakeven.t": "損益兩平：每月需救回的案件數", "kpi.breakeven.note": "月費 NT$25,000 ÷ 每件監護宣告 NT$20,000 ≈ 每月救回約 1.25 件即回本【估算】",
     "kpi.latency.t": "從來訊到送出完整問卷（約）", "kpi.latency.note": "示意：人工確認之操作常數，尚無量測基準",
 
     /* ---- traction ---- */
@@ -234,7 +234,7 @@ const I18N = {
     "kpi.safety.t": "Outbound safety: passed / blocked before send", "kpi.safety.note": "L0–L4 validators; 7 blocked before reaching a client 【measured】",
     "kpi.leads.t": "Leads handled end-to-end (intake → triage → CRM)", "kpi.leads.note": "impact_rollup lead total 【measured】",
     "kpi.escalated.t": "High-value cases handed to a human, with context", "kpi.escalated.note": "audit-deduped (71 auto + 46 manual − 2 overlap) 【measured】",
-    "kpi.breakeven.t": "Break-even: cases per month to pay for itself", "kpi.breakeven.note": "NT$15,000 run cost ÷ NT$20,000 anchor case ≈ less than one case/month 【estimate】",
+    "kpi.breakeven.t": "Break-even: cases per month to pay for itself", "kpi.breakeven.note": "NT$25,000/mo ÷ NT$20,000 per anchor case ≈ ~1.25 rescued cases/month to break even 【estimate】",
     "kpi.latency.t": "Client message → full questionnaire pushed", "kpi.latency.note": "Illustrative: human-confirmed operating constant, not yet instrumented",
 
     /* ---- traction ---- */

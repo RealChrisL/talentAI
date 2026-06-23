@@ -107,9 +107,9 @@ const DECK_I18N = {
     /* S11 model */
     "d.s11.eb": "商業模式",
     "d.s11.h": "定價對標一名助理，一件案子即回本",
-    "d.s11.b1": "定價：月費 NT$18–25k＋導入 NT$60–80k；對標全職助理（連勞健保逾 NT$33k，且無法 24 小時）。",
-    "d.s11.b2": "運行成本約 NT$15,000/月；其中約 NT$12k 為跨事務所共用的平台成本，每多一家邊際成本僅約 NT$3k。",
-    "d.s11.b3": "損益兩平＝每月不到一件監護宣告案（NT$15k ÷ NT$20k＝0.75/月）。",
+    "d.s11.b1": "定價：月費 NT$25,000＋導入 NT$60–80k；定位為一位 24 小時數位接待同仁，對標全職助理（連勞健保逾 NT$33k，且無法 24 小時）。",
+    "d.s11.b2": "運行成本約 NT$15,000/月，為每家事務所獨立、固定（不隨家數下降）；NT$25,000 定價下單家毛利約 NT$10,000（40%）。",
+    "d.s11.b3": "對事務所而言：月費 NT$25,000 ÷ 每件監護宣告 NT$20,000＝每月救回約 1.25 件原本會流失的案子即回本。",
     "d.s11.b4": "可複製：約 80% 系統可原樣移轉；約 15% 為各事務所的判斷（知識庫）。",
     "d.s11.b5": "可投資性的關卡是第二家事務所——證明是「產品」而非「顧問」。首個付費試點為近期優先目標。",
     "d.s11.note": "我們以損益兩平為主軸，而非營收上限——上限取決於尚未量測的轉換率；數週內的首個實測成交率將取代此假設。",
@@ -132,7 +132,7 @@ const DECK_I18N = {
     "d.s13.p3t": "第三階段 鄰近垂直", "d.s13.p3d": "移民代辦、信託、記帳等業別",
     "d.s13.p4t": "第四階段 區域化", "d.s13.p4d": "日本司法書士、東南亞授權型服務",
     "d.s13.p5t": "第五階段 平台", "d.s13.p5d": "執照型事務所共用的 AI 基礎層",
-    "d.s13.note": "每一階段皆以前一階段的實測結果為前提——第二家的邊際成本將決定這是產品還是顧問。",
+    "d.s13.note": "每一階段皆以前一階段的實測結果為前提——能否將每家 NT$15k 的固定成本下殺至 NT$3–5k，將決定這是可規模化的產品，還是精品顧問。",
 
     /* S14 ask */
     "d.s14.eb": "我們的提案",
@@ -237,9 +237,9 @@ const DECK_I18N = {
 
     "d.s11.eb": "Business Model",
     "d.s11.h": "Priced against a clerk; pays for itself on one case.",
-    "d.s11.b1": "Pricing: NT$18–25k/mo + NT$60–80k setup; anchored to a full-time clerk (>NT$33k/mo with benefits, and no 24/7 cover).",
-    "d.s11.b2": "Run cost ~NT$15,000/mo; ~NT$12k is shared platform reused across firms — marginal cost per new firm is ~NT$3k.",
-    "d.s11.b3": "Break-even = less than one 監護宣告 case a month (NT$15k ÷ NT$20k = 0.75/mo).",
+    "d.s11.b1": "Pricing: NT$25,000/mo + NT$60–80k setup; positioned as a 24/7 digital intake colleague, anchored to a full-time clerk (>NT$33k/mo with benefits, and no 24/7 cover).",
+    "d.s11.b2": "Run cost ~NT$15,000/mo, dedicated and fixed per firm (does NOT fall with more firms); at NT$25,000 pricing, per-firm gross profit is ~NT$10,000 (40%).",
+    "d.s11.b3": "For the firm: NT$25,000/mo ÷ NT$20,000 per 監護宣告 case = pays for itself on ~1.25 rescued cases a month.",
     "d.s11.b4": "Replication: ~80% of the build transfers as-is; ~15% is per-firm judgment (the knowledge base).",
     "d.s11.b5": "The fundability gate is Firm #2 — it proves 'product,' not 'consultancy.' Closing the first paid pilot is the immediate priority.",
     "d.s11.note": "We lead with break-even, not an upside revenue headline — the upside rides an unmeasured conversion rate. The first measured close rate retires that assumption in ~weeks.",
@@ -260,7 +260,7 @@ const DECK_I18N = {
     "d.s13.p3t": "Phase 3 Adjacent", "d.s13.p3d": "Immigration, trust, accounting verticals",
     "d.s13.p4t": "Phase 4 Regional", "d.s13.p4d": "Japan 司法書士, SE-Asia licensed services",
     "d.s13.p5t": "Phase 5 Platform", "d.s13.p5d": "Shared AI layer for licensed practices",
-    "d.s13.note": "Each phase is gated on the prior one's measured result — Firm #2's marginal cost decides whether this is a product or a consultancy.",
+    "d.s13.note": "Each phase is gated on the prior one's measured result — whether the NT$15k/firm fixed cost can be driven down to NT$3–5k decides whether this scales as a product or stays a boutique consultancy.",
 
     "d.s14.eb": "The Ask",
     "d.s14.h": "One proof. One playbook. Many firms.",
