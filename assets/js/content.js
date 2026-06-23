@@ -137,6 +137,13 @@ const SITE_CONFIG = {
     { phase: 5, status: "future", key: "rm.p5" },
   ],
 
+  // -- Pricing tiers (buyer-facing; on the public site). Fundraising stays deck-only. --
+  pricing: [
+    { id: "starter",  featured: false, keyBase: "pricing.starter",  features: ["pricing.starter.f1","pricing.starter.f2","pricing.starter.f3","pricing.starter.f4"] },
+    { id: "pro",      featured: true,  keyBase: "pricing.pro",       features: ["pricing.pro.f1","pricing.pro.f2","pricing.pro.f3","pricing.pro.f4","pricing.pro.f5"] },
+    { id: "flagship", featured: false, keyBase: "pricing.flagship",  features: ["pricing.flagship.f1","pricing.flagship.f2","pricing.flagship.f3","pricing.flagship.f4","pricing.flagship.f5"] },
+  ],
+
   // -- Nav anchors ----------------------------------------------------------
   nav: [
     { href: "#shift",     key: "nav.shift" },
@@ -146,6 +153,7 @@ const SITE_CONFIG = {
     { href: "#moats",     key: "nav.moats" },
     { href: "#security",  key: "nav.security" },
     { href: "#roadmap",   key: "nav.roadmap" },
+    { href: "#pricing",   key: "nav.pricing" },
     { href: "#contact",   key: "nav.contact" },
   ],
 };

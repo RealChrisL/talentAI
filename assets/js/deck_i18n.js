@@ -112,9 +112,9 @@ const DECK_I18N = {
     "d.s11.b3": "對事務所而言：月費 ÷ 每件監護宣告 NT$20,000＝每月救回約 1–2 件即回本。",
     "d.s11.b4": "可複製：約 80% 系統可原樣移轉；約 15% 為各事務所的判斷（知識庫）。",
     "d.s11.b5": "可投資性的關卡是第二家事務所——證明是「產品」而非「顧問」。首個付費試點為近期優先目標。",
-    "d.s11.t1h": "基礎 Starter", "d.s11.t1p": "24/7 接案・問卷・安全把關・轉真人（約 60 件/月）",
-    "d.s11.t2h": "專業 Pro ⭐", "d.s11.t2p": "＋CRM 洞察・分流・成效追蹤・月報（約 150 件/月）",
-    "d.s11.t3h": "旗艦 Flagship", "d.s11.t3p": "＋Plaud 音檔・自訂業務・團隊・優先支援（約 350 件/月）",
+    "d.s11.t1h": "基礎 Starter", "d.s11.t1p": "24/7 接案・問卷・安全把關・轉真人（約 200 件進線/月）",
+    "d.s11.t2h": "專業 Pro ⭐", "d.s11.t2p": "＋CRM 洞察・分流・成效追蹤・月報（約 500 件進線/月）",
+    "d.s11.t3h": "旗艦 Flagship", "d.s11.t3p": "＋Plaud 音檔・自訂業務・團隊・優先支援（約 1,000 件進線/月）",
     "d.s11.note": "我們以損益兩平為主軸，而非營收上限——上限取決於尚未量測的轉換率；數週內的首個實測成交率將取代此假設。",
 
     /* S12 why believe */
@@ -245,9 +245,9 @@ const DECK_I18N = {
     "d.s11.b3": "For the firm: monthly fee ÷ NT$20,000 per 監護宣告 case = pays for itself on ~1–2 rescued cases a month.",
     "d.s11.b4": "Replication: ~80% of the build transfers as-is; ~15% is per-firm judgment (the knowledge base).",
     "d.s11.b5": "The fundability gate is Firm #2 — it proves 'product,' not 'consultancy.' Closing the first paid pilot is the immediate priority.",
-    "d.s11.t1h": "Starter", "d.s11.t1p": "24/7 intake · questionnaire · safety · human handoff (~60 leads/mo)",
-    "d.s11.t2h": "Pro ⭐", "d.s11.t2p": "+ CRM insight · routing · outcome tracking · monthly report (~150 leads/mo)",
-    "d.s11.t3h": "Flagship", "d.s11.t3p": "+ Plaud audio · custom case types · team · priority SLA (~350 leads/mo)",
+    "d.s11.t1h": "Starter", "d.s11.t1p": "24/7 intake · questionnaire · safety · human handoff (~200 leads/mo)",
+    "d.s11.t2h": "Pro ⭐", "d.s11.t2p": "+ CRM insight · routing · outcome tracking · monthly report (~500 leads/mo)",
+    "d.s11.t3h": "Flagship", "d.s11.t3p": "+ Plaud audio · custom case types · team · priority SLA (~1,000 leads/mo)",
     "d.s11.note": "We lead with break-even, not an upside revenue headline — the upside rides an unmeasured conversion rate. The first measured close rate retires that assumption in ~weeks.",
 
     "d.s12.eb": "Why Believe Us",

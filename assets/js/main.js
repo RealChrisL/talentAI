@@ -157,6 +157,34 @@
 
   /* ---------- ask ---------- */
   const FUND_COLORS = ["#17242E", "#C0392B", "#8A6A35", "#3E4A52"];
+  /* ---------- pricing tiers (buyer-facing) ---------- */
+  function buildPricing() {
+    const grid = $("#pricing-grid");
+    if (!grid || !CFG.pricing) return;
+    const mail = "mailto:" + CFG.brand.contactEmail;
+    CFG.pricing.forEach((tr) => {
+      const kb = tr.keyBase;
+      const card = el("div", "price-card" + (tr.featured ? " featured" : ""));
+      if (tr.featured) { const b = el("div", "price-badge"); b.setAttribute("data-i18n", kb + ".badge"); b.textContent = t(kb + ".badge"); card.appendChild(b); }
+      const nm = el("div", "price-name"); nm.setAttribute("data-i18n", kb + ".name"); nm.textContent = t(kb + ".name");
+      const tg = el("div", "price-tagline"); tg.setAttribute("data-i18n", kb + ".tagline"); tg.textContent = t(kb + ".tagline");
+      const amt = el("div", "price-amt");
+      const pr = el("span"); pr.setAttribute("data-i18n", kb + ".price"); pr.textContent = t(kb + ".price");
+      const per = el("span", "per"); per.setAttribute("data-i18n", "pricing.period"); per.textContent = t("pricing.period");
+      amt.appendChild(pr); amt.appendChild(document.createTextNode(" ")); amt.appendChild(per);
+      const meta = el("div", "price-meta");
+      const cap = el("div"); cap.setAttribute("data-i18n", kb + ".cap"); cap.textContent = t(kb + ".cap");
+      const seats = el("div"); seats.setAttribute("data-i18n", kb + ".seats"); seats.textContent = t(kb + ".seats");
+      meta.appendChild(cap); meta.appendChild(seats);
+      const ul = el("ul", "price-features");
+      tr.features.forEach((fk) => { const li = el("li"); li.setAttribute("data-i18n", fk); li.textContent = t(fk); ul.appendChild(li); });
+      const cta = el("a", "btn btn-primary"); cta.setAttribute("data-i18n", "pricing.cta"); cta.textContent = t("pricing.cta");
+      cta.href = mail + "?subject=" + encodeURIComponent("Pricing — " + t(kb + ".name") + " — " + CFG.brand.name);
+      card.appendChild(nm); card.appendChild(tg); card.appendChild(amt); card.appendChild(meta); card.appendChild(ul); card.appendChild(cta);
+      grid.appendChild(card);
+    });
+  }
+
   function buildAsk() {
     // Public site: buyer contact only — market sizing/use-of-funds/round live in the deck.
     const pilot = $("#cta-pilot");
@@ -253,7 +281,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     buildNav(); buildTicker(); buildShift(); buildFlow(); buildKpis();
-    buildMoats(); buildBadges(); buildPartners(); buildRoadmap(); buildAsk();
+    buildMoats(); buildBadges(); buildPartners(); buildRoadmap(); buildPricing(); buildAsk();
     applyI18n();
     chartTheme(); buildCharts();
     wireObservers(); wireScroll(); wireLang(); cadHero();

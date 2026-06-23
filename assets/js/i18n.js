@@ -25,7 +25,7 @@ const I18N = {
 
     "nav.shift": "現況", "nav.system": "系統", "nav.case": "實例",
     "nav.traction": "進展", "nav.moats": "護城河", "nav.security": "安全",
-    "nav.roadmap": "藍圖", "nav.contact": "預約",
+    "nav.roadmap": "藍圖", "nav.pricing": "費用", "nav.contact": "預約",
 
     "brand.tagline": "讓專業，不再因時間而流失",
 
@@ -157,6 +157,21 @@ const I18N = {
     "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-06-19）。標示「示意數字」者為估算或假設，待經稽核資料替換。ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
     "footer.tagline": "智能人才 — 讓專業，不再因時間而流失",
     "footer.brand": "© 2026 智能人才 Talent AI",
+    "pricing.eyebrow": "方案與費用",
+    "pricing.h": "選一位全天候的數位受理同仁",
+    "pricing.sub": "一位行政同仁月薪 NT$33,000 起，還不含假日、深夜與請假的空窗。三個方案，從單人到全團隊，月費自 NT$8,000 起。",
+    "pricing.period": "／月", "pricing.cta": "預約洽談",
+    "pricing.foot": "一次性建置費 NT$50,000（含業務知識庫撰寫・OA 接線・首兩週陪跑）；年繳享 8.3 折（送 2 個月）。",
+    "pricing.allplans": "三個方案均含：LINE 官方帳號串接・反幻覺安全驗證・自動 CRM 建檔・持牌地政士全程把關。",
+    "pricing.starter.name": "基礎 Starter", "pricing.starter.tagline": "24 小時不漏接的前台",
+    "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "每月最多 200 筆進線（超量每則 NT$50）", "pricing.starter.seats": "1 席・單人事務所",
+    "pricing.starter.f1": "24/7 接案・9 大選單問卷", "pricing.starter.f2": "L0–L4 五層安全把關", "pricing.starter.f3": "轉真人接管・恢復・結案", "pricing.starter.f4": "客戶紀錄自動建檔",
+    "pricing.pro.name": "專業 Pro", "pricing.pro.badge": "最受歡迎", "pricing.pro.tagline": "會整理案情、看見 ROI 的助理",
+    "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "每月最多 500 筆進線（超量每則 NT$40）", "pricing.pro.seats": "最多 3 席",
+    "pricing.pro.f1": "基礎方案全部功能", "pricing.pro.f2": "完整 CRM＋案件洞察＋案情敘事", "pricing.pro.f3": "智能分流・指派負責同仁", "pricing.pro.f4": "成交結果追蹤", "pricing.pro.f5": "每月 ROI 報告＋逾時盯案",
+    "pricing.flagship.name": "旗艦 Flagship", "pricing.flagship.tagline": "整個團隊的數位作業層",
+    "pricing.flagship.price": "NT$25,000", "pricing.flagship.cap": "每月最多 1,000 筆進線（超量每則 NT$35）", "pricing.flagship.seats": "不限席次",
+    "pricing.flagship.f1": "專業方案全部功能", "pricing.flagship.f2": "Plaud 錄音自動轉建案", "pricing.flagship.f3": "自訂業務類別（非 9 大）", "pricing.flagship.f4": "多人團隊委派路由", "pricing.flagship.f5": "優先支援・SLA 4 小時",
   },
 
   en: {
@@ -173,7 +188,7 @@ const I18N = {
 
     "nav.shift": "The Shift", "nav.system": "System", "nav.case": "Case Study",
     "nav.traction": "Traction", "nav.moats": "Moats", "nav.security": "Security",
-    "nav.roadmap": "Roadmap", "nav.contact": "Contact",
+    "nav.roadmap": "Roadmap", "nav.pricing": "Pricing", "nav.contact": "Contact",
 
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
@@ -305,6 +320,21 @@ const I18N = {
     "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-06-19) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
     "footer.tagline": "Talent AI — professional practice, any hour, no lead lost",
     "footer.brand": "© 2026 Talent AI 智能人才",
+    "pricing.eyebrow": "Plans & Pricing",
+    "pricing.h": "Your always-on intake colleague",
+    "pricing.sub": "A full-time admin hire runs NT$33,000+/mo and goes offline nights, weekends and holidays. Three plans, from solo practice to full team, from NT$8,000/mo.",
+    "pricing.period": "/mo", "pricing.cta": "Book a call",
+    "pricing.foot": "One-time onboarding NT$50,000 (knowledge-base authoring, LINE OA wiring, two-week guided launch); pay annually, get 2 months free.",
+    "pricing.allplans": "Every plan includes: LINE OA integration · anti-hallucination safety · automatic CRM · licensed 地政士 oversight.",
+    "pricing.starter.name": "Starter", "pricing.starter.tagline": "A 24/7 front desk — no lead slips through",
+    "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "Up to 200 leads/mo (NT$50 per lead over)", "pricing.starter.seats": "1 seat · solo practice",
+    "pricing.starter.f1": "24/7 intake · all 9 service menus", "pricing.starter.f2": "L0–L4 five-layer safety checks", "pricing.starter.f3": "Human handoff · resume · close-case", "pricing.starter.f4": "Auto CRM record",
+    "pricing.pro.name": "Pro", "pricing.pro.badge": "Most popular", "pricing.pro.tagline": "Organises the case, shows the ROI",
+    "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "Up to 500 leads/mo (NT$40 per lead over)", "pricing.pro.seats": "Up to 3 seats",
+    "pricing.pro.f1": "Everything in Starter", "pricing.pro.f2": "Full CRM + case insight + narrative", "pricing.pro.f3": "Smart routing + staff assignment", "pricing.pro.f4": "Deal-outcome tracking", "pricing.pro.f5": "Monthly ROI report + overdue follow-up",
+    "pricing.flagship.name": "Flagship", "pricing.flagship.tagline": "The digital ops layer for your whole team",
+    "pricing.flagship.price": "NT$25,000", "pricing.flagship.cap": "Up to 1,000 leads/mo (NT$35 per lead over)", "pricing.flagship.seats": "Unlimited seats",
+    "pricing.flagship.f1": "Everything in Pro", "pricing.flagship.f2": "Plaud audio → auto case records", "pricing.flagship.f3": "Custom service categories", "pricing.flagship.f4": "Multi-member team routing", "pricing.flagship.f5": "Priority support · 4-hour SLA",
   },
 };
 
