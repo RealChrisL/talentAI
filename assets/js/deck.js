@@ -10,8 +10,10 @@
   const $$ = (s) => Array.from(document.querySelectorAll(s));
 
   const deck = $("#deck");
-  const slides = $$(".deck-slide");
+  const slides = $$(".deck-slide:not([hidden])");
   const total = slides.length;
+  // eyebrow numbering follows the visible slides, so hiding one just renumbers cleanly
+  slides.forEach((s, i) => { const ix = s.querySelector(".idx"); if (ix) ix.textContent = String(i + 1).padStart(2, "0") + " / " + total; });
   const progress = $("#deck-progress");
   const count = $("#deck-count");
   const prev = $("#prev"), next = $("#next");

@@ -24,6 +24,7 @@ body { overflow: hidden; }                 /* the .deck scroller owns scrolling 
   position: relative;
   border-bottom: 1px solid var(--rule);
 }
+.deck-slide[hidden] { display: none !important; }
 .slide-inner { width: 100%; max-width: 1080px; margin-inline: auto; }
 
 /* slide chrome */
