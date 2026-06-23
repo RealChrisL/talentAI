@@ -146,6 +146,16 @@ const DECK_I18N = {
     "d.s14.f3h": "營運＋基礎設施", "d.s14.f3p": "創辦人工時、可靠性強化",
     "d.s14.cta1": "索取完整簡報", "d.s14.cta2": "預約試點", "d.s14.cta3": "查看上線網站",
     "d.s14.note": "憑據是安全與觸及；標示「示意」者為估算，待實測資料替換。",
+    "d.plat.eb": "規模化路徑",
+    "d.plat.h": "從代管服務，到可規模化平台",
+    "d.plat.sub": "今天是代管：每家 NT$15k 固定成本、毛利 40%、成本隨家數線性成長。平台化後：每家 ~NT$5k、毛利 ~80%、成本大部分固定——靠三件事達成。",
+    "d.plat.t1h": "多租戶共用基礎設施",
+    "d.plat.t1p": "一套 agent／VM／API 服務多家（事件驅動）；每家成本 NT$15k → ~NT$5k",
+    "d.plat.t2h": "產品化導入套件",
+    "d.plat.t2p": "知識庫設定從顧問工變成幾天自助上線，不靠創辦人逐家判斷",
+    "d.plat.t3h": "自動開通＋監控",
+    "d.plat.t3p": "通路／資料庫一鍵建立＋自癒，一位營運者可掛上數十家",
+    "d.plat.note": "誠實天花板：終點是 ~80% 毛利的 managed-SaaS，不是零邊際成本的純 SaaS——每家仍需自己的通路與資料隔離（個資法）。但 40%→80%、線性→大部分固定，已是可融資的曲線。資料隔離永不為降本妥協。",
   },
 
   en: {
@@ -276,6 +286,16 @@ const DECK_I18N = {
     "d.s14.f3h": "Runway + infra", "d.s14.f3p": "Operator time, reliability hardening",
     "d.s14.cta1": "Request the full deck", "d.s14.cta2": "Book a pilot", "d.s14.cta3": "View the live site",
     "d.s14.note": "The receipts are safety and reach. Figures marked Illustrative are estimates pending verified data.",
+    "d.plat.eb": "Path to Scale",
+    "d.plat.h": "From managed service to a scalable platform",
+    "d.plat.sub": "Today it's a managed service: NT$15k fixed cost per firm, 40% margin, cost grows linearly with each firm. As a platform: ~NT$5k per firm, ~80% margin, mostly-fixed cost — via three moves.",
+    "d.plat.t1h": "Multi-tenant shared infra",
+    "d.plat.t1p": "One agent / VM / API serves many firms (event-driven); per-firm cost NT$15k → ~NT$5k",
+    "d.plat.t2h": "Productized onboarding kit",
+    "d.plat.t2p": "Knowledge-base setup goes from consulting to a few-day self-serve flow — no per-firm founder judgment",
+    "d.plat.t3h": "Auto-provisioning + monitoring",
+    "d.plat.t3p": "One-click channel/database setup + self-healing; one operator runs dozens of firms",
+    "d.plat.note": "Honest ceiling: the endpoint is a ~80% managed-SaaS, not a zero-marginal pure SaaS — each firm still needs its own channel + data isolation (個資法). But 40%→80% and linear→mostly-fixed is already a fundable curve. Data isolation is never traded for cost.",
   },
 };
 window.DECK_I18N = DECK_I18N;
