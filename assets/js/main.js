@@ -158,27 +158,10 @@
   /* ---------- ask ---------- */
   const FUND_COLORS = ["#17242E", "#C0392B", "#8A6A35", "#3E4A52"];
   function buildAsk() {
-    const tiers = $("#market-tiers");
-    CFG.marketSizing.forEach((m) => {
-      const tier = el("div", "tier");
-      const top = el("div", "tier-top");
-      top.appendChild(el("span", "tier-name", m.tier));
-      top.appendChild(el("span", "tier-val", "NT$" + m.value + (m.unit.includes("M") ? "M" : "")));
-      const lab = el("div", "tier-label"); lab.setAttribute("data-i18n", m.key + ".t"); lab.textContent = t(m.key + ".t");
-      const det = el("div", "tier-detail"); det.setAttribute("data-i18n", m.key + ".d"); det.textContent = t(m.key + ".d");
-      const ch = chip(m.verified); if (ch) tier.appendChild(ch);
-      tier.appendChild(top); tier.appendChild(lab); tier.appendChild(det); tiers.appendChild(tier);
-    });
-    const leg = $("#fund-legend");
-    CFG.theAsk.useOfFunds.forEach((f, i) => {
-      const row = el("div", "fl");
-      const sw = el("span", "sw"); sw.style.background = FUND_COLORS[i % FUND_COLORS.length];
-      const s = el("span"); s.setAttribute("data-i18n", f.key + ".t"); s.dataset.pct = f.pct; s.textContent = f.pct + "% · " + t(f.key + ".t");
-      row.appendChild(sw); row.appendChild(s); leg.appendChild(row);
-    });
-    const mail = "mailto:" + CFG.brand.contactEmail;
-    $("#cta-deck").href = mail + "?subject=" + encodeURIComponent("Request the deck — " + CFG.brand.name);
+    // Public site: buyer contact only — market sizing/use-of-funds/round live in the deck.
     const pilot = $("#cta-pilot");
+    if (!pilot) return;
+    const mail = "mailto:" + CFG.brand.contactEmail;
     if (CFG.brand.bookingUrl) { pilot.href = CFG.brand.bookingUrl; pilot.target = "_blank"; pilot.rel = "noopener noreferrer"; }
     else pilot.href = mail + "?subject=" + encodeURIComponent("Book a pilot / 預約試點 — " + CFG.brand.name);
   }
@@ -221,11 +204,6 @@
       options: { animation: ANIM, responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { afterLabel: fcast } } }, scales: { x: axis(), y: { ...axis(), beginAtZero: true } } }
     }));
 
-    charts.push(new Chart($("#chart-funds"), {
-      type: "doughnut",
-      data: { labels: CFG.theAsk.useOfFunds.map((f) => f.pct + "%"), datasets: [{ data: CFG.theAsk.useOfFunds.map((f) => f.pct), backgroundColor: FUND_COLORS, borderColor: "#E8EAE3", borderWidth: 2 }] },
-      options: { animation: ANIM, responsive: true, maintainAspectRatio: false, cutout: "62%", plugins: { legend: { display: false } } }
-    }));
   }
 
   /* ---------- observers / motion ---------- */
@@ -270,7 +248,7 @@
   }
 
   function wireLang() {
-    $("#lang-toggle").addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; applyI18n(); refreshRoadmapStatus(); refreshFundLegend(); });
+    $("#lang-toggle").addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; applyI18n(); refreshRoadmapStatus(); });
   }
 
   document.addEventListener("DOMContentLoaded", () => {

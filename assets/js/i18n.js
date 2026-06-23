@@ -25,7 +25,7 @@ const I18N = {
 
     "nav.shift": "現況", "nav.system": "系統", "nav.case": "實例",
     "nav.traction": "進展", "nav.moats": "護城河", "nav.security": "安全",
-    "nav.roadmap": "藍圖", "nav.ask": "願景", "nav.deck": "簡報",
+    "nav.roadmap": "藍圖", "nav.contact": "預約",
 
     "brand.tagline": "讓專業，不再因時間而流失",
 
@@ -72,7 +72,6 @@ const I18N = {
     "kpi.safety.t": "對外訊息安全檢查：通過／送出前攔截", "kpi.safety.note": "L0–L4 五層驗證；7 則於送達客戶前攔截【實測】",
     "kpi.leads.t": "完整處理的進線（接待→分流→建檔）", "kpi.leads.note": "impact_rollup 進線總數【實測】",
     "kpi.escalated.t": "高價值案件附完整脈絡交給真人", "kpi.escalated.note": "稽核去重（71 自動＋46 人工−2 重疊）【實測】",
-    "kpi.breakeven.t": "損益兩平：每月需救回的案件數", "kpi.breakeven.note": "月費 NT$25,000 ÷ 每件監護宣告 NT$20,000 ≈ 每月救回約 1.25 件即回本【估算】",
     "kpi.latency.t": "從來訊到送出完整問卷（約）", "kpi.latency.note": "示意：人工確認之操作常數，尚無量測基準",
 
     /* ---- traction ---- */
@@ -148,24 +147,11 @@ const I18N = {
     "rm.p5.t": "第五階段・平台", "rm.p5.o": "成為執照型事務所共用的 AI 基礎建設層：合規模板、案件分析、跨所知識共享。",
 
     /* ---- the ask ---- */
-    "ask.eyebrow": "我們的願景",
+    "contact.eyebrow": "預約試點",
     "ask.h": "讓每一位持牌專業人員，都有一支 24 小時不打烊的智能接案團隊",
     "ask.vision": "把一套經實戰驗證、合規把關的智能營運層，標準化嵌入任何執照型中小企業的真實客戶通路——靠交付工具複製，而非靠顧問人力。",
-    "ask.vc": "台灣約有 5,000 至 6,500 間地政士事務所，可服務區段約 1,200 至 1,900 間。我們已有上線實證資產，現尋求資金以完成第二家付費試點，並打造可規模化的導入套件。",
     "ask.owner": "若您是事務所負責人，我們提供付費試點：兩週內為您的 LINE 官方帳號導入智能接案，先看數據，再決定是否繼續。",
-    "ask.markethdr": "市場規模（由下而上估算）",
-    "ask.usehdr": "資金用途（示意配置）",
-    "ask.round.t": "募資金額・尚未設定",
-    "fund.kit.t": "產品化導入套件＋防護編譯器",
-    "fund.channel.t": "通路經營（公會／設計夥伴・第 2…N 家）",
-    "fund.platform.t": "可靠性／合規平台強化（L0–L4・稽核・守護程式）",
-    "fund.gtm.t": "創始 GTM 與營運人力（緩解單人創辦注意力瓶頸）",
-    "mkt.som.t": "灘頭堡・現可觸及的台灣代書事務所",
-    "mkt.som.d": "100 家 × 月費 NT$12k＋導入 NT$80k ≈ NT$14.4M ARR。足以養活公司，尚非創投規模。",
-    "mkt.sam.t": "可服務・有實質 LINE 進線且承辦繼承／不動產的事務所",
-    "mkt.sam.d": "約 1,200–1,900 家（占 5,000–6,500 家的 20–30%）× 月費 NT$12k，滿覆蓋約 NT$170–270M ARR。",
-    "mkt.tam.t": "全台執照型專業服務（代書＋記帳士＋保險＋仲介＋長照…）",
-    "mkt.tam.d": "同一套整合方法延伸至相鄰執照型業別。數量級估計，每一業別需各自由下而上驗證後方可宣稱。",
+    // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
     "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-06-19）。標示「示意數字」者為估算或假設，待經稽核資料替換。ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
@@ -187,7 +173,7 @@ const I18N = {
 
     "nav.shift": "The Shift", "nav.system": "System", "nav.case": "Case Study",
     "nav.traction": "Traction", "nav.moats": "Moats", "nav.security": "Security",
-    "nav.roadmap": "Roadmap", "nav.ask": "Vision", "nav.deck": "Deck",
+    "nav.roadmap": "Roadmap", "nav.contact": "Contact",
 
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
@@ -234,7 +220,6 @@ const I18N = {
     "kpi.safety.t": "Outbound safety: passed / blocked before send", "kpi.safety.note": "L0–L4 validators; 7 blocked before reaching a client 【measured】",
     "kpi.leads.t": "Leads handled end-to-end (intake → triage → CRM)", "kpi.leads.note": "impact_rollup lead total 【measured】",
     "kpi.escalated.t": "High-value cases handed to a human, with context", "kpi.escalated.note": "audit-deduped (71 auto + 46 manual − 2 overlap) 【measured】",
-    "kpi.breakeven.t": "Break-even: cases per month to pay for itself", "kpi.breakeven.note": "NT$25,000/mo ÷ NT$20,000 per anchor case ≈ ~1.25 rescued cases/month to break even 【estimate】",
     "kpi.latency.t": "Client message → full questionnaire pushed", "kpi.latency.note": "Illustrative: human-confirmed operating constant, not yet instrumented",
 
     /* ---- traction ---- */
@@ -310,24 +295,11 @@ const I18N = {
     "rm.p5.t": "Phase 5 — Platform", "rm.p5.o": "Become the shared AI infrastructure layer for licensed practices — compliance templates, case analytics, cross-firm knowledge.",
 
     /* ---- the ask ---- */
-    "ask.eyebrow": "The Ask & Vision",
+    "contact.eyebrow": "Get started",
     "ask.h": "Give every licensed professional a 24/7 intake team that never misquotes, never forgets, never sleeps",
     "ask.vision": "One production-grade playbook to embed a compliance-guarded agentic operations layer into any license-gated SMB's real customer channel — ported by kit, not by consultants.",
-    "ask.vc": "Taiwan alone has an estimated 5,000–6,500 notary offices, with a serviceable segment of 1,200–1,900. We have a live proof deployment and are raising to close a second paid pilot and build the portable onboarding kit that turns a deployment into a product.",
     "ask.owner": "If you run a licensed practice, we offer a structured paid pilot — your LINE OA, your clients, your data, live within two weeks. You see the numbers before you commit.",
-    "ask.markethdr": "Market sizing (bottoms-up)",
-    "ask.usehdr": "Use of funds (illustrative)",
-    "ask.round.t": "Round size — not set",
-    "fund.kit.t": "Productize the onboarding kit + guardrail compiler",
-    "fund.channel.t": "Channel motion (association / design partners, firm #2…N)",
-    "fund.platform.t": "Reliability & compliance hardening (L0–L4, audit, canaries)",
-    "fund.gtm.t": "Founding GTM + ops hire (relieve solo-founder constraint)",
-    "mkt.som.t": "Beachhead — Taiwan 代書 firms reachable now",
-    "mkt.som.d": "100 firms × NT$12k/mo + NT$80k setup ≈ NT$14.4M ARR. Funds the company; not yet venture scale.",
-    "mkt.sam.t": "Serviceable — offices with real LINE inbound + inheritance/property mix",
-    "mkt.sam.d": "~1,200–1,900 offices (20–30% of 5,000–6,500) × NT$12k/mo ≈ NT$170–270M ARR at full penetration.",
-    "mkt.tam.t": "All Taiwan license-gated services (代書 + accountants + insurance + brokers + care…)",
-    "mkt.tam.d": "Same integration method across adjacent license-gated verticals. Order-of-magnitude only; each vertical needs its own bottoms-up before it is claimed.",
+    // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
     "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-06-19) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",

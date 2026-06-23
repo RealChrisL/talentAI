@@ -71,24 +71,8 @@ const SITE_CONFIG = {
     footnoteKey: "traction.footnote",
   },
 
-  // -- Market sizing TAM/SAM/SOM (bottoms-up, all estimates) ----------------
-  marketSizing: [
-    { tier: "SOM", value: 14.4,  unit: "NT$M ARR",          verified: false, key: "mkt.som" },
-    { tier: "SAM", value: 230,   unit: "NT$M ARR",          verified: false, key: "mkt.sam" },
-    { tier: "TAM", value: 2000,  unit: "NT$M ARR (o.o.m.)", verified: false, key: "mkt.tam" },
-  ],
-
-  // -- The Ask (illustrative — no round set) --------------------------------
-  theAsk: {
-    illustrative: true,
-    roundLabelKey: "ask.round",
-    useOfFunds: [
-      { pct: 40, key: "fund.kit" },
-      { pct: 25, key: "fund.channel" },
-      { pct: 20, key: "fund.platform" },
-      { pct: 15, key: "fund.gtm" },
-    ],
-  },
+  // Market sizing + fundraising (TAM/SAM/SOM, use-of-funds, the ask) are DECK-ONLY
+  // (deck.html / deck_i18n.js) — deliberately removed from the public bundle.
 
   // -- Six moats (grounded in real artifacts) -------------------------------
   moats: [
@@ -162,8 +146,7 @@ const SITE_CONFIG = {
     { href: "#moats",     key: "nav.moats" },
     { href: "#security",  key: "nav.security" },
     { href: "#roadmap",   key: "nav.roadmap" },
-    { href: "#ask",       key: "nav.ask" },
-    { href: "./deck.html", key: "nav.deck" },
+    { href: "#contact",   key: "nav.contact" },
   ],
 };
 

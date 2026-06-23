@@ -68,7 +68,7 @@
   <ul class="nav-links" id="nav-links"></ul>
   <div class="nav-right">
     <button class="lang-toggle" id="lang-toggle" title="Switch language / 切換語言">EN</button>
-    <a class="btn btn-primary" href="#ask" data-i18n="ui.cta_deck">索取簡報</a>
+    <a class="btn btn-primary" href="#contact" data-i18n="ui.cta_pilot">預約試點洽談</a>
     <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -81,7 +81,7 @@
       <h1 data-i18n="hero.h1"></h1>
       <p class="sub" data-i18n="hero.sub"></p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#ask" data-i18n="ui.cta_deck">索取簡報</a>
+        <a class="btn btn-primary" href="#contact" data-i18n="ui.cta_pilot">預約試點洽談</a>
         <a class="btn btn-ghost" href="#case" data-i18n="ui.cta_case">看實例 ↓</a>
       </div>
       <div class="ticker" id="hero-ticker"></div>
@@ -261,29 +261,17 @@
   </div>
 </section>
 
-<!-- ===================== the ask ===================== -->
-<section id="ask">
+<!-- ===================== contact / pilot (buyer-facing) ===================== -->
+<section id="contact">
   <div class="wrap">
-    <span class="eyebrow reveal" data-i18n="ask.eyebrow"></span>
+    <span class="eyebrow reveal" data-i18n="contact.eyebrow"></span>
     <h2 class="h-sec reveal" data-i18n="ask.h"></h2>
-    <p class="ask-vision reveal" data-i18n="ask.vision"></p>
-    <div class="ask-grid">
-      <div class="ask-panel glass glass-lum reveal">
-        <h3 data-i18n="ask.markethdr"></h3>
-        <div class="market-tiers" id="market-tiers"></div>
-      </div>
-      <div class="ask-panel glass glass-lum reveal" data-delay="1">
-        <h3><span data-i18n="ask.usehdr"></span> <span class="chip" data-i18n="ui.illustrative">示意數字</span></h3>
-        <div class="fund-box"><canvas id="chart-funds"></canvas></div>
-        <div class="fund-legend" id="fund-legend"></div>
-        <div class="ask-cta">
-          <a class="btn btn-primary" id="cta-deck" data-i18n="ui.cta_deck" href="#">索取簡報</a>
-          <a class="btn btn-ghost" id="cta-pilot" data-i18n="ui.cta_pilot" href="#">預約試點洽談</a>
-        </div>
-      </div>
-    </div>
-    <p class="sub reveal" style="margin-top:1.6rem" data-i18n="ask.vc"></p>
+    <p class="ask-vision grad-text reveal" data-i18n="ask.vision"></p>
     <p class="sub reveal" data-i18n="ask.owner"></p>
+    <div class="ask-cta reveal" style="margin-top:1.6rem">
+      <a class="btn btn-primary" id="cta-pilot" data-i18n="ui.cta_pilot" href="#">預約試點洽談</a>
+      <a class="btn btn-ghost" href="#case" data-i18n="ui.cta_case">看實例 ↓</a>
+    </div>
   </div>
 </section>
 </main>
