@@ -30,9 +30,9 @@ const I18N = {
     "brand.tagline": "讓專業，不再因時間而流失",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "專業事務所的 AI 即戰力",
-    "hero.h1": "請不到人，AI 接得住每一位客戶",
-    "hero.sub": "不用學、不用改流程，開箱即用。24 小時接待、整理案件、追進度——瑣事全交給 AI，您專心做專業。已在真實事務所上線。",
+    "hero.eyebrow": "給扛起整間事務所的您",
+    "hero.h1": "您把專業顧好，營運和數字交給我們",
+    "hero.sub": "撐起一間事務所，最累的常常不是專業本身，而是沒人幫您追案子、盯團隊、看懂生意的數字。這些交給 AI，您專心做最擅長的事——已經在真實事務所每天運轉。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -41,12 +41,12 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "現況",
-    "shift.h": "人難請、難留，客戶卻不等人",
-    "shift.sub": "案量在漲，人請不到，團隊被瑣事拖垮。",
-    "shift.pain1.t": "瑣事吃掉人力", "shift.pain1.b": "問卷、歸檔、分類，全在吃掉專業時間。",
-    "shift.pain2.t": "慢一步就出局", "shift.pain2.b": "慢一步回覆，客戶就轉身走人。",
-    "shift.pain3.t": "下班後沒人接", "shift.pain3.b": "近三成客戶下班後才來，沒人接。",
-    "shift.pain4.t": "請不到、留不住人", "shift.pain4.b": "養不起輪班，客戶卻要全天候。",
+    "shift.h": "案子誰在追？團隊誰在盯？數字誰在看？",
+    "shift.sub": "專業您做得最好，可是這些事，一個人實在顧不來。",
+    "shift.pain1.t": "案子追不完", "shift.pain1.b": "案子一多，總有幾件在成交前被忘掉。",
+    "shift.pain2.t": "團隊看不清", "shift.pain2.b": "誰手上有什麼案、卡在哪，您其實沒十足把握。",
+    "shift.pain3.t": "數字憑感覺", "shift.pain3.b": "哪種案最值得做、客人從哪來，憑感覺多過憑數字。",
+    "shift.pain4.t": "下班還在轉", "shift.pain4.b": "客人晚上才來訊，您不可能整天守著手機。",
 
     /* ---- the system ---- */
     "system.eyebrow": "它怎麼幫您運作",
@@ -148,9 +148,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "預約試點",
-    "ask.h": "每一家事務所，都該有一位不打烊的 AI 同仁",
-    "ask.vision": "缺前台，開「接客戶」；缺追蹤，開「管案子」。進線不漏接、案件看得到、同仁不會忘。",
-    "ask.owner": "人手撐不住了？兩週試點，上您的 LINE，用數據說話。",
+    "ask.h": "每一間事務所，都值得有人幫忙撐後場",
+    "ask.vision": "您缺哪一塊，就補哪一塊——前台接待、案件追蹤，還是看懂數字。從最讓您頭痛的地方開始。",
+    "ask.owner": "想試試看？兩週，接上您的 LINE，用您自己的數字說話，再決定要不要繼續。",
     // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
@@ -193,9 +193,9 @@ const I18N = {
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "AI firepower for professional firms",
-    "hero.h1": "Can't hire? AI answers every client.",
-    "hero.sub": "Nothing to learn, no workflow to change. It receives clients, organises cases and tracks progress 24/7 — the busywork is AI's, the expert work is yours. Live in a real firm.",
+    "hero.eyebrow": "For the owner who carries the whole firm",
+    "hero.h1": "You handle the expertise. We'll mind the operations and the numbers.",
+    "hero.sub": "Running a whole firm, the exhausting part usually isn't the professional work — it's that no one's chasing the cases, watching the team, or making sense of the numbers. Let AI carry that, so you can do what you do best. Already running in a real firm, every day.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
@@ -204,12 +204,12 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "The Shift",
-    "shift.h": "Can't hire, can't keep staff — and clients won't wait",
-    "shift.sub": "Caseloads climb, hiring fails, busywork buries the team.",
-    "shift.pain1.t": "Busywork eats your people", "shift.pain1.b": "Forms, filing, sorting — all eating expert hours.",
-    "shift.pain2.t": "A step slow, you're out", "shift.pain2.b": "Reply a step late and the client walks.",
-    "shift.pain3.t": "No one after hours", "shift.pain3.b": "Nearly a third arrive after hours. No one's there.",
-    "shift.pain4.t": "Can't hire or keep staff", "shift.pain4.b": "You can't staff 24/7. Clients expect it anyway.",
+    "shift.h": "Who's chasing the cases? Watching the team? Reading the numbers?",
+    "shift.sub": "You do the professional work brilliantly — but one person can't keep an eye on all of this too.",
+    "shift.pain1.t": "Cases slip away", "shift.pain1.b": "When cases pile up, a few always get forgotten before they close.",
+    "shift.pain2.t": "The team's a blur", "shift.pain2.b": "Who's handling what, and where it's stuck — you can't really be sure.",
+    "shift.pain3.t": "Numbers on a hunch", "shift.pain3.b": "Which work pays best, where clients come from — mostly gut feel.",
+    "shift.pain4.t": "It never clocks off", "shift.pain4.b": "Clients write at night; you can't watch the phone around the clock.",
 
     /* ---- the system ---- */
     "system.eyebrow": "How it helps you",
@@ -311,9 +311,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "Get started",
-    "ask.h": "Every firm deserves a colleague that never clocks out",
-    "ask.vision": "Need a front desk? Switch on intake. Need tracking? Switch on cases. Nothing dropped, everything visible, nothing forgotten.",
-    "ask.owner": "Team at breaking point? Two-week pilot on your LINE. Let the numbers talk.",
+    "ask.h": "Every firm deserves someone minding the back office",
+    "ask.vision": "Add whichever piece you're missing — the front desk, case-tracking, or making sense of the numbers. Start where it hurts most.",
+    "ask.owner": "Want to try it? Two weeks on your own LINE, judged on your own numbers — then you decide.",
     // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
