@@ -8,7 +8,7 @@
  * Holding-co brand "QuanJin AI / 全謹智能" is a PLACEHOLDER, distinct from the
  * client firm.
  *
- * Live figures audited from production as-of 2026-06-19 (see docs/venture/004).
+ * Live figures audited from production as-of 2026-06-26 (see docs/venture/004).
  * ROI is framed as break-even + reach + safety (not booked revenue); any revenue
  * figure is forward-looking / Illustrative only.
  *
@@ -19,7 +19,7 @@
 
 const SITE_CONFIG = {
   demoData: true,            // master honesty switch: show illustrative chips + footer disclaimer
-  asOf: "2026-06-19",        // shown next to metrics; bump when numbers refreshed
+  asOf: "2026-06-26",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
     name: "Talent AI",
@@ -39,10 +39,10 @@ const SITE_CONFIG = {
 
   // -- Hero ticker (4 punchy VERIFIED numbers) ------------------------------
   heroMetrics: [
-    { value: 1085, suffix: "+", key: "m.leads",       verified: true },
-    { value: 911,  suffix: "",  key: "m.safe",        verified: true },
-    { value: 30,   suffix: "%", key: "m.afterhours",  verified: true },
-    { value: 115,  suffix: "",  key: "m.escalated",   verified: true },
+    { value: 1205, suffix: "+", key: "m.leads",       verified: true },
+    { value: 1041, suffix: "",  key: "m.safe",        verified: true },
+    { value: 32,   suffix: "%", key: "m.afterhours",  verified: true },
+    { value: 224,  suffix: "",  key: "m.escalated",   verified: true },
   ],
 
   // -- Case-study KPI tiles (count-up) --------------------------------------
@@ -50,12 +50,12 @@ const SITE_CONFIG = {
   // NPS, "-80% drafting", revenue. Latency is illustrative (no provenance).
   // All 6 tiles are measured (實測) — keeps the proof grid chip-free for diligence.
   kpiTiles: [
-    { value: 30,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
+    { value: 32,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
     { value: 14,   decimals: 0, suffix: " / 14", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
-    { value: 911,  decimals: 0, suffix: " / 7",  key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
-    { value: 1085, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
+    { value: 1041, decimals: 0, suffix: " / 10", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 1205, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
     { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
-    { value: 115,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
+    { value: 224,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
   ],
 
   // -- Traction charts (Chart.js) -------------------------------------------
@@ -64,10 +64,10 @@ const SITE_CONFIG = {
   tractionChart: {
     weeks: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
     weekLabels: ["05-20", "05-27", "06-03", "06-10", "06-17", "06-24", "07-01"],
-    lastMeasuredIndex: 4,   // index 0..4 measured; 5..6 forecast
-    messagesPerWeek:    [1210, 2426, 2576, 2593, 984, 2600, 2650],
-    cumulativeLeads:    [135, 400, 650, 880, 1085, 1325, 1570],
-    escalationsCumul:   [8, 35, 62, 90, 115, 140, 165],
+    lastMeasuredIndex: 5,   // index 0..5 measured; 6 forecast
+    messagesPerWeek:    [1210, 2426, 2576, 2593, 2548, 2435, 2650],
+    cumulativeLeads:    [135, 400, 640, 850, 1030, 1205, 1380],
+    escalationsCumul:   [8, 40, 80, 120, 170, 224, 275],
     footnoteKey: "traction.footnote",
   },
 

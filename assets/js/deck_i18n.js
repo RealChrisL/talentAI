@@ -58,7 +58,7 @@ const DECK_I18N = {
     "d.s1.m1": "全天候處理的進線",
     "d.s1.m2": "對外訊息檢查 / 攔截——0 則不安全送出",
     "d.s1.m3": "新客戶於辦公時間外首次來訊",
-    "d.s1.m4": "合格名單 14 天自動交辦團隊",
+    "d.s1.m4": "高優先案件附脈絡交給真人（累計）",
 
     /* S2 problem */
     "d.s2.eb": "現況挑戰",
@@ -256,7 +256,7 @@ const DECK_I18N = {
     "d.s1.m1": "Leads handled, 24/7",
     "d.s1.m2": "Outbound checked / blocked — 0 unsafe sent",
     "d.s1.m3": "First contact after-hours",
-    "d.s1.m4": "Qualified leads auto-handed in 14 days",
+    "d.s1.m4": "High-value cases handed to a human (cumulative)",
 
     "d.s2.eb": "The Problem",
     "d.s2.h": "Professional firms lose paying cases to silence.",
