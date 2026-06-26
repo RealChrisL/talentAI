@@ -107,7 +107,7 @@ const DECK_I18N = {
     "d.s6.b1": "完整接案漏斗無人值守運作，每一關都有紀錄。",
     "d.s6.b2": "214 筆進線主動留下姓名與電話（合格）。",
     "d.s6.b3": "115 件高價值案件自動分流給專人。",
-    "d.s6.b4": "成效追蹤上線——成交結果現已開始記錄，數據累積後揭露。",
+    "d.s6.b4": "成交結果擷取是下一步——這正是本輪要點亮的數字，今天誠實地還是空的。",
     "d.s6.chartnote": "實線＝實測（累計進線 W1–W5）。虛線＝依現行速率外推之預測。轉換率不繪製——尚無法量測。",
 
     /* S7 value */
@@ -300,7 +300,7 @@ const DECK_I18N = {
     "d.s6.b1": "The full intake funnel runs unattended; every stage is logged.",
     "d.s6.b2": "214 leads volunteered name + phone (qualified).",
     "d.s6.b3": "115 high-value cases auto-routed to human staff.",
-    "d.s6.b4": "Outcome tracking is now live — deal results are logged as cases close.",
+    "d.s6.b4": "Deal-outcome capture is the next step — the very number this round is raised to light up; today it is honestly still empty.",
     "d.s6.chartnote": "Solid = measured (cumulative leads, W1–W5). Dashed = run-rate forecast. Conversion % is not plotted — it is not yet measurable.",
 
     "d.s7.eb": "Value to the Firm",
