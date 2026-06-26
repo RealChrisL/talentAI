@@ -30,9 +30,9 @@ const I18N = {
     "brand.tagline": "讓專業，不再因時間而流失",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "AI 原生・專業服務",
-    "hero.h1": "專業服務，為 AI 時代重新打造",
-    "hero.sub": "一套合規把關、全天候的智能營運層，嵌入執照型專業事務所的真實客戶通路——已在真實事務所上線實證，不漏接、不亂報、不出錯。",
+    "hero.eyebrow": "為人手吃緊的專業事務所而生",
+    "hero.h1": "你請不到的那個人，讓智能助手幫你補上",
+    "hero.sub": "人手不夠、團隊忙不過來？智能助手 24 小時幫你接客戶、整理案件、盯進度——你缺哪一塊，就開哪一塊。已在真實事務所上線，不漏接、不亂報、不出錯。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -41,12 +41,12 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "現況",
-    "shift.h": "客戶在辦公時間以外傳訊息，等不到回音，就轉向下一家",
-    "shift.sub": "專業服務正處於轉折點：文件繁瑣、回覆慢、受限上班時間、人力成本攀升。",
-    "shift.pain1.t": "文件繁瑣", "shift.pain1.b": "問卷、歸檔、優先序判斷，吃掉專業人員的時間",
-    "shift.pain2.t": "回覆慢半拍", "shift.pain2.b": "客戶焦慮時詢問，等到人工回覆往往已失去信任",
-    "shift.pain3.t": "受限上班時間", "shift.pain3.b": "近三成新客戶在辦公時間外首次聯繫",
-    "shift.pain4.t": "人力成本攀升", "shift.pain4.b": "小型事務所養不起輪班行政，卻得面對全天候期待",
+    "shift.h": "請不到人、留不住人，團隊卻得面對全天候的客戶",
+    "shift.sub": "專業服務卡在同一道難題：案量在增加，人卻請不到、留不住，團隊被重複瑣事塞滿。",
+    "shift.pain1.t": "重複瑣事吃掉人力", "shift.pain1.b": "問卷、歸檔、分類判斷，把專業人員的時間耗在低價值工作上",
+    "shift.pain2.t": "回覆慢半拍", "shift.pain2.b": "客戶焦慮時來問，人手忙不過來，等到回覆往往已失去信任",
+    "shift.pain3.t": "下班後沒人值班", "shift.pain3.b": "近三成新客戶在辦公時間外首次聯繫，卻沒有人能接",
+    "shift.pain4.t": "請不到、留不住人", "shift.pain4.b": "小型事務所養不起輪班人力，卻得面對客戶全天候的期待",
 
     /* ---- the system ---- */
     "system.eyebrow": "系統架構",
@@ -148,9 +148,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "預約試點",
-    "ask.h": "讓每一位持牌專業人員，都有一支 24 小時不打烊的智能接案團隊",
-    "ask.vision": "把一套經實戰驗證、合規把關的智能營運層，標準化嵌入任何執照型中小企業的真實客戶通路——靠交付工具複製，而非靠顧問人力。",
-    "ask.owner": "若您是事務所負責人，我們提供付費試點：兩週內為您的 LINE 官方帳號導入智能接案，先看數據，再決定是否繼續。",
+    "ask.h": "讓每一家人手吃緊的事務所，都有一位 24 小時不打烊的智能同仁",
+    "ask.vision": "不是一套硬塞的系統。你缺前台，就開「接客戶」；你缺後端追蹤，就開「管案子」。結果很具體：進線不漏接、案件看得到、同仁不會忘。",
+    "ask.owner": "若您正為人手不足、團隊被塞爆而頭痛：我們提供付費試點，兩週內為您的 LINE 官方帳號導入智能接案，先看數據，再決定是否繼續。",
     // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
@@ -193,9 +193,9 @@ const I18N = {
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "AI-native professional services",
-    "hero.h1": "Professional services, re-engineered for the AI era.",
-    "hero.sub": "A compliance-guarded, always-on agentic operations layer — embedded in the real client channel of licensed professional firms, and already proven live in production.",
+    "hero.eyebrow": "Built for short-staffed professional practices",
+    "hero.h1": "The teammate you can't hire — working 24/7.",
+    "hero.sub": "Short-staffed and stretched thin? An always-on agent receives clients, organises cases and tracks progress — switch on the piece you need. Already proven live in a real firm.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
@@ -204,12 +204,12 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "The Shift",
-    "shift.h": "Clients message after hours, hear silence, and leave for the next firm",
-    "shift.sub": "Professional services are at an inflection point: document-heavy, slow to respond, office-hours-bound, and rising in labour cost.",
-    "shift.pain1.t": "Document-heavy", "shift.pain1.b": "Questionnaires, filing and triage eat the hours a professional should bill",
-    "shift.pain2.t": "Slow turnaround", "shift.pain2.b": "A worried client who waits until morning is already calling the next firm",
-    "shift.pain3.t": "Office-hours bound", "shift.pain3.b": "Nearly a third of new clients first make contact outside business hours",
-    "shift.pain4.t": "Rising labour cost", "shift.pain4.b": "A 1–3 person firm can't staff round-the-clock intake, yet clients expect it",
+    "shift.h": "Can't hire, can't retain — yet the team faces round-the-clock clients",
+    "shift.sub": "Professional firms are stuck on one problem: caseloads rise, staff are hard to hire and keep, and the team drowns in repetitive work.",
+    "shift.pain1.t": "Busywork eats your people", "shift.pain1.b": "Questionnaires, filing and triage burn a professional's hours on low-value work",
+    "shift.pain2.t": "Slow turnaround", "shift.pain2.b": "An anxious client asks, the team is swamped, and by reply time the trust is already gone",
+    "shift.pain3.t": "No one on after hours", "shift.pain3.b": "Nearly a third of new clients first make contact when no one is there to answer",
+    "shift.pain4.t": "Can't hire or keep staff", "shift.pain4.b": "A 1–3 person firm can't staff round-the-clock cover, yet clients expect it",
 
     /* ---- the system ---- */
     "system.eyebrow": "The System",
@@ -311,9 +311,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "Get started",
-    "ask.h": "Give every licensed professional a 24/7 intake team that never misquotes, never forgets, never sleeps",
-    "ask.vision": "One production-grade playbook to embed a compliance-guarded agentic operations layer into any license-gated SMB's real customer channel — ported by kit, not by consultants.",
-    "ask.owner": "If you run a licensed practice, we offer a structured paid pilot — your LINE OA, your clients, your data, live within two weeks. You see the numbers before you commit.",
+    "ask.h": "Give every short-staffed firm a 24/7 colleague that never misquotes, never forgets, never sleeps",
+    "ask.vision": "Not a rigid system bolted on. Need a front desk? Switch on intake. Need back-end tracking? Switch on case management. The result is concrete: no inquiry dropped, every case visible, nothing forgotten.",
+    "ask.owner": "If short-staffing and an overwhelmed team are your daily headache: we offer a paid pilot — your LINE OA live within two weeks. See the numbers before you commit.",
     // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
