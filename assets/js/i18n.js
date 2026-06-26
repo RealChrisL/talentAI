@@ -24,7 +24,7 @@ const I18N = {
     "ui.scroll": "向下探索",
 
     "nav.shift": "現況", "nav.system": "系統", "nav.case": "實例",
-    "nav.traction": "進展", "nav.moats": "護城河", "nav.security": "安全",
+    "nav.traction": "進展", "nav.moats": "為什麼選我們", "nav.security": "安全",
     "nav.roadmap": "藍圖", "nav.pricing": "費用", "nav.contact": "預約",
 
     "brand.tagline": "讓專業，不再因時間而流失",
@@ -187,7 +187,7 @@ const I18N = {
     "ui.scroll": "Scroll to explore",
 
     "nav.shift": "The Shift", "nav.system": "System", "nav.case": "Case Study",
-    "nav.traction": "Traction", "nav.moats": "Moats", "nav.security": "Security",
+    "nav.traction": "Traction", "nav.moats": "Why us", "nav.security": "Security",
     "nav.roadmap": "Roadmap", "nav.pricing": "Pricing", "nav.contact": "Contact",
 
     "brand.tagline": "Professional practice — any hour, no lead lost",
