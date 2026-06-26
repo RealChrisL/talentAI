@@ -30,9 +30,9 @@ const I18N = {
     "brand.tagline": "讓專業，不再因時間而流失",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "為台灣專業事務所打造的 AI 智能助手",
-    "hero.h1": "人手不足沒關係，AI 智能助手替您把客戶顧好",
-    "hero.sub": "您不需要懂科技，也不用改變團隊原本的習慣。AI 智能助手 24 小時替您接待客戶、整理案件、提醒進度，把繁瑣的事都顧好，讓您和同仁專心處理最重要的專業判斷。已在真實事務所穩定上線，不漏接、不亂報，每一句對外回覆都先為您把關。",
+    "hero.eyebrow": "台灣專業事務所的 AI 智能助手",
+    "hero.h1": "人手不足，AI 幫您把客戶顧好",
+    "hero.sub": "不用懂科技，不用改流程。24 小時接待、整理案件、追進度——瑣事交給它，您專心做專業。已在真實事務所上線。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -41,17 +41,17 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "現況",
-    "shift.h": "請不到人、留不住人，團隊卻得面對全天候的客戶",
-    "shift.sub": "專業服務卡在同一道難題：案量在增加，人卻請不到、留不住，團隊被重複瑣事塞滿。",
-    "shift.pain1.t": "重複瑣事吃掉人力", "shift.pain1.b": "問卷、歸檔、分類判斷，把專業人員的時間耗在低價值工作上",
-    "shift.pain2.t": "回覆慢半拍", "shift.pain2.b": "客戶焦慮時來問，人手忙不過來，等到回覆往往已失去信任",
-    "shift.pain3.t": "下班後沒人值班", "shift.pain3.b": "近三成新客戶在辦公時間外首次聯繫，卻沒有人能接",
-    "shift.pain4.t": "請不到、留不住人", "shift.pain4.b": "小型事務所養不起輪班人力，卻得面對客戶全天候的期待",
+    "shift.h": "請不到人、留不住人，客戶卻不分晝夜",
+    "shift.sub": "案量在增加，人卻請不到，團隊被瑣事塞滿。",
+    "shift.pain1.t": "重複瑣事吃掉人力", "shift.pain1.b": "問卷、歸檔、分類，吃掉專業人員的時間。",
+    "shift.pain2.t": "回覆慢半拍", "shift.pain2.b": "客戶焦慮時來問，等到回覆，信任已經沒了。",
+    "shift.pain3.t": "下班後沒人接", "shift.pain3.b": "近三成客戶下班後才來訊，沒人在線。",
+    "shift.pain4.t": "請不到、留不住人", "shift.pain4.b": "養不起輪班人力，客戶卻要全天候。",
 
     /* ---- the system ---- */
     "system.eyebrow": "它怎麼幫您運作",
-    "system.h": "從客戶上門到案件完成，AI 和您的同仁一起把關",
-    "system.loop": "每一件案子，都由您的專業同仁全程把關；AI 只負責接待、分類、把資料整理好，真正的判斷和結案，始終在您和團隊手上。",
+    "system.h": "從客戶上門到結案，AI 和同仁一起把關",
+    "system.loop": "每件案子都由您的同仁把關。AI 負責接待、分類、整理；判斷與結案，始終在您手上。",
     "wf.intake.t": "親切接待", "wf.intake.d": "客戶一傳訊息，就自動聽懂需求、分好類別",
     "wf.form.t": "自動問齊資料", "wf.form.d": "確認案件類型後，把該服務需要的資料，一項一項替您問齊",
     "wf.guard.t": "回覆先把關", "wf.guard.d": "每一句回覆送出前都先安全檢查，絕不亂報價、亂承諾",
@@ -61,8 +61,8 @@ const I18N = {
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
     "case.h": "全謹代書：從靜默的下班頻道，到 24 小時接案",
-    "case.narr": "全謹地政士事務所於 2026 年 5 月導入 Talent AI 智能代理系統。上線以來，系統累計接住並完成初步問診的進線達 1,205 件、自動建立逾千筆 CRM 紀錄，無需額外行政人力。約三成新客戶在辦公時間外首次聯繫——這條過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並即時通知負責地政士。",
-    "case.oversight": "每一則對外回覆皆通過反幻覺安全驗證；系統已於送出前攔截 7 則潛在不實陳述，確保事務所執照從未承擔未經核實的費用或法律主張。所有案件最終由持牌地政士審核並親自辦理。",
+    "case.narr": "全謹地政士事務所 2026 年 5 月導入。至今已接住並完成初步問診 1,205 件、自動建檔逾千筆，不必多請人。約三成客戶在下班後才來訊——過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並通知負責地政士。",
+    "case.oversight": "每一則對外回覆送出前都先安全把關，已攔下 10 則可能不實的陳述；不讓事務所承擔未經核實的費用或說法。每件案子最終由持牌地政士親自辦理。",
     "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
 
     /* ---- KPI tiles ---- */
@@ -85,22 +85,22 @@ const I18N = {
 
     /* ---- moats ---- */
     "moats.eyebrow": "為什麼可以放心交給我們",
-    "moats.h": "不是冷冰冰的通用 AI，是真正懂事務所規矩、處處替您把關的幫手",
-    "moats.intro": "每一道把關，都是從一個個真實案例慢慢磨出來的。前面踩過的坑、繳過的學費，您都不必再走一次。",
+    "moats.h": "不是冷冰冰的通用 AI——它懂事務所的規矩，處處替您把關",
+    "moats.intro": "每一道把關，都是真實案例磨出來的。前面的坑，您不必再踩。",
     "moat.compliance.t": "規矩內建，不會亂來",
-    "moat.compliance.b": "近 79 條把關規則直接寫進系統——對執照型專業來說，一次亂報費用或亂講法律都可能出大事；這些底線，系統替您守得牢牢的。",
-    "moat.audit.t": "每一句話都留得下紀錄",
-    "moat.audit.b": "對外的每一則訊息都先檢查、都留有紀錄、隨時可查——安全不是嘴上說說，是攤得開來看的紀錄。",
-    "moat.domainkb.t": "只照您事務所的規矩回答",
-    "moat.domainkb.b": "11 大業務的費用、文件、流程、問卷，全部以您事務所的真實規則為準；遇到不確定的，它會老實說再幫您確認，絕不自己亂編。",
-    "moat.humanloop.t": "重要的事，永遠是人來決定",
-    "moat.humanloop.b": "重要案件一出現就自動轉給您的同仁，連同整理好的脈絡一起交到手上——AI 負責接待與整理，判斷和結案，始終是專業人員的事。",
-    "moat.staffing.t": "案子不漏接、也不會忘記",
-    "moat.staffing.b": "案件依專長分給對的同仁；逾時或還沒人接的，系統每天主動提醒兩次，沒有一件會被忘記。",
-    "moat.flywheel.t": "用得越久，越懂您的事務所",
-    "moat.flywheel.b": "每一段對話、每一次調整，都讓系統更貼近您事務所的做事方式——時間越久，幫得越上手、越準。",
-    "moat.localization.t": "為台灣事務所量身打造",
-    "moat.localization.b": "整套設計就為台灣的事務所而生——LINE、繁體中文、個資法與業別規範、轉介與公會往來，這些在地的細節，通用工具一時補不上。",
+    "moat.compliance.b": "近 79 條把關規則寫進系統，絕不亂報費用、亂講法律。",
+    "moat.audit.t": "每句話都留紀錄",
+    "moat.audit.b": "每則對外訊息先檢查、留紀錄，隨時可查。",
+    "moat.domainkb.t": "只照您的規矩回答",
+    "moat.domainkb.b": "全照您事務所的費用與流程；不確定就說、再確認，絕不亂編。",
+    "moat.humanloop.t": "重要的事，人來決定",
+    "moat.humanloop.b": "重要案件立刻轉給同仁；判斷與結案，永遠是人來做。",
+    "moat.staffing.t": "不漏接、不忘記",
+    "moat.staffing.b": "案件分給對的同仁；逾時沒接的，每天提醒兩次。",
+    "moat.flywheel.t": "越用越懂您",
+    "moat.flywheel.b": "用得越久，越貼近您事務所的做事方式。",
+    "moat.localization.t": "為台灣事務所而生",
+    "moat.localization.b": "LINE、繁中、個資法、公會往來——在地細節，通用工具補不上。",
 
     /* ---- security ---- */
     "security.eyebrow": "安全與合規",
@@ -148,9 +148,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "預約試點",
-    "ask.h": "讓每一家人手吃緊的事務所，都有一位 24 小時不打烊的智能同仁",
-    "ask.vision": "不是一套硬塞的系統。你缺前台，就開「接客戶」；你缺後端追蹤，就開「管案子」。結果很具體：進線不漏接、案件看得到、同仁不會忘。",
-    "ask.owner": "若您正為人手不足、團隊被塞爆而頭痛：我們提供付費試點，兩週內為您的 LINE 官方帳號導入智能接案，先看數據，再決定是否繼續。",
+    "ask.h": "給人手吃緊的事務所，一位不打烊的智能同仁",
+    "ask.vision": "缺前台，就開「接客戶」；缺追蹤，就開「管案子」。進線不漏接、案件看得到、同仁不會忘。",
+    "ask.owner": "人手不足、團隊被塞爆？兩週試點，導入您的 LINE，先看數據再決定。",
     // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
@@ -193,9 +193,9 @@ const I18N = {
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "An AI assistant built for Taiwan's professional firms",
-    "hero.h1": "Short-staffed? Let an AI assistant look after your clients for you.",
-    "hero.sub": "You don't need to understand the technology, or change how your team already works. The AI assistant receives clients, organises cases and tracks progress around the clock — handling the busywork so you and your colleagues focus on the professional judgment that matters. Already running quietly in a real firm: nothing dropped, nothing misquoted, and every outbound reply checked for you first.",
+    "hero.eyebrow": "An AI assistant for Taiwan's professional firms",
+    "hero.h1": "Short-staffed? Let AI look after your clients.",
+    "hero.sub": "No tech to learn, no workflow to change. It receives clients, organises cases and tracks progress 24/7 — busywork handled, so your people do the expert work. Live in a real firm.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
@@ -204,17 +204,17 @@ const I18N = {
 
     /* ---- the shift ---- */
     "shift.eyebrow": "The Shift",
-    "shift.h": "Can't hire, can't retain — yet the team faces round-the-clock clients",
-    "shift.sub": "Professional firms are stuck on one problem: caseloads rise, staff are hard to hire and keep, and the team drowns in repetitive work.",
-    "shift.pain1.t": "Busywork eats your people", "shift.pain1.b": "Questionnaires, filing and triage burn a professional's hours on low-value work",
-    "shift.pain2.t": "Slow turnaround", "shift.pain2.b": "An anxious client asks, the team is swamped, and by reply time the trust is already gone",
-    "shift.pain3.t": "No one on after hours", "shift.pain3.b": "Nearly a third of new clients first make contact when no one is there to answer",
-    "shift.pain4.t": "Can't hire or keep staff", "shift.pain4.b": "A 1–3 person firm can't staff round-the-clock cover, yet clients expect it",
+    "shift.h": "Can't hire, can't keep staff — yet clients come at all hours",
+    "shift.sub": "Caseloads rise, staff are hard to hire, the team drowns in busywork.",
+    "shift.pain1.t": "Busywork eats your people", "shift.pain1.b": "Forms, filing, sorting — they eat a pro's hours.",
+    "shift.pain2.t": "Slow to reply", "shift.pain2.b": "An anxious client asks; by reply time, trust is gone.",
+    "shift.pain3.t": "No one after hours", "shift.pain3.b": "Nearly a third first message after hours — no one's there.",
+    "shift.pain4.t": "Can't hire or keep staff", "shift.pain4.b": "You can't staff 24/7, yet clients expect it.",
 
     /* ---- the system ---- */
     "system.eyebrow": "How it helps you",
-    "system.h": "From the first message to a finished case — the AI handles intake, your people decide",
-    "system.loop": "Every case stays in your professionals' hands. The AI receives clients, sorts them and organises the details — the judgment and the close always belong to you and your team.",
+    "system.h": "From first message to closed case — AI assists, your people decide",
+    "system.loop": "Every case stays with your professionals. AI receives, sorts and organises; the judgment and the close stay yours.",
     "wf.intake.t": "A warm welcome", "wf.intake.d": "The moment a client writes in, their need is understood and sorted",
     "wf.form.t": "Gathers the details", "wf.form.d": "Once the case type is clear, it asks for exactly what that service needs, one item at a time",
     "wf.guard.t": "Every reply checked first", "wf.guard.d": "Each reply is safety-checked before it sends — never a wrong fee, never an over-promise",
@@ -224,8 +224,8 @@ const I18N = {
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
     "case.h": "全謹代書: from a silent after-hours channel to 24/7 qualified intake",
-    "case.narr": "全謹地政士事務所 deployed the Talent AI agent in May 2026. Since launch it has captured and qualified 1,205 leads and built over a thousand CRM records automatically — with zero added administrative staff. About a third of new clients first make contact outside business hours; that previously-silent channel is now received, classified and escalated to the responsible licensee within seconds.",
-    "case.oversight": "Every outbound reply passes a multi-layer anti-hallucination validator; 7 replies were blocked before delivery to protect the firm's licence from unverified fee or legal claims. Every case is ultimately reviewed and closed by a licensed 地政士.",
+    "case.narr": "全謹地政士事務所 went live in May 2026. Since then it has captured and qualified 1,205 leads and built over a thousand CRM records automatically — no extra staff. About a third of clients first write in after hours; that once-silent channel is now answered, sorted and routed to the right licensee within seconds.",
+    "case.oversight": "Every outbound reply is safety-checked before it sends — 10 were blocked before delivery, sparing the firm any unverified fee or legal claim. Every case is ultimately handled by a licensed 地政士.",
     "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. ROI is shown as break-even + reach + safety, not as booked revenue.",
 
     /* ---- KPI tiles ---- */
@@ -247,23 +247,23 @@ const I18N = {
     "traction.footnote": "Only the W6 endpoints (1,205 leads / 224 escalations / ~13,800 messages) and the weekly message bars are point-exact measured; W1–W4 cumulative leads are interpolated estimates and W7 is forecast, shown dashed.",
 
     /* ---- moats ---- */
-    "moats.eyebrow": "Why you can trust it with your clients",
-    "moats.h": "Not a cold, generic AI — a helper that truly knows a firm's rules and guards every line for you",
-    "moats.intro": "Every safeguard was shaped from a real case, one at a time. The mistakes already made, the lessons already paid for — you won't have to repeat any of them.",
+    "moats.eyebrow": "Why you can trust it",
+    "moats.h": "Not a cold, generic AI — it knows a firm's rules and guards every line",
+    "moats.intro": "Every safeguard came from a real case. You won't repeat the mistakes.",
     "moat.compliance.t": "The rules are built in",
-    "moat.compliance.b": "Nearly 79 guard rules are written right into the system — for a licensed profession, one wrong fee or careless legal claim can do real harm, so the system holds those lines for you.",
-    "moat.audit.t": "Every message leaves a record",
-    "moat.audit.b": "Each outbound message is checked first and kept on record, reviewable any time — safety you can open up and read, not a marketing line.",
-    "moat.domainkb.t": "It answers only by your firm's rules",
-    "moat.domainkb.b": "Fees, documents, steps and questionnaires across 11 services all follow your firm's real rules; when it isn't sure, it says so and checks with you — it never makes things up.",
-    "moat.humanloop.t": "The important calls are always a person's",
-    "moat.humanloop.b": "The moment an important case appears it passes to your colleague, with the details organised and ready — the AI receives and tidies, the judgment and the close stay with your professionals.",
-    "moat.staffing.t": "Nothing dropped, nothing forgotten",
-    "moat.staffing.b": "Cases go to the right colleague by specialty; anything overdue or unclaimed is surfaced to the team twice a day, so none is forgotten.",
-    "moat.flywheel.t": "The longer you use it, the better it knows your firm",
-    "moat.flywheel.b": "Every conversation and every adjustment tunes it closer to how your firm works — the more time passes, the more naturally it helps.",
-    "moat.localization.t": "Built for Taiwan's firms",
-    "moat.localization.b": "The whole thing is made for how Taiwan's firms actually work — LINE, Traditional Chinese, 個資法 and sector rules, referral and association ties — local detail a generic global tool can't quickly match.",
+    "moat.compliance.b": "Nearly 79 guard rules in the system — never a wrong fee or careless claim.",
+    "moat.audit.t": "Every message on record",
+    "moat.audit.b": "Each outbound is checked, logged, reviewable any time.",
+    "moat.domainkb.t": "Answers by your rules",
+    "moat.domainkb.b": "Only your firm's fees and process — unsure, it asks; never invents.",
+    "moat.humanloop.t": "People make the calls",
+    "moat.humanloop.b": "Important cases go to your colleague; judgment and the close stay human.",
+    "moat.staffing.t": "Nothing dropped or forgotten",
+    "moat.staffing.b": "Routed to the right colleague; overdue cases flagged twice a day.",
+    "moat.flywheel.t": "It learns your firm",
+    "moat.flywheel.b": "The longer you use it, the closer it fits how you work.",
+    "moat.localization.t": "Built for Taiwan",
+    "moat.localization.b": "LINE, 繁中, 個資法, 公會 ties — local detail a global tool can't match.",
 
     /* ---- security ---- */
     "security.eyebrow": "Security & Compliance",
@@ -311,9 +311,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "Get started",
-    "ask.h": "Give every short-staffed firm a 24/7 colleague that never misquotes, never forgets, never sleeps",
-    "ask.vision": "Not a rigid system bolted on. Need a front desk? Switch on intake. Need back-end tracking? Switch on case management. The result is concrete: no inquiry dropped, every case visible, nothing forgotten.",
-    "ask.owner": "If short-staffing and an overwhelmed team are your daily headache: we offer a paid pilot — your LINE OA live within two weeks. See the numbers before you commit.",
+    "ask.h": "A 24/7 colleague for the short-staffed firm",
+    "ask.vision": "Need a front desk? Switch on intake. Need tracking? Switch on cases. Nothing dropped, everything visible, nothing forgotten.",
+    "ask.owner": "Short-staffed and swamped? A two-week pilot on your LINE — see the numbers, then decide.",
     // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
