@@ -5,6 +5,11 @@
  * No Markdown in values (plain text only). Numbers live in content.js; this
  * file holds the words around them.
  *
+ * Voice: confident, AI-native, proof-led (the "為 AI 時代重新打造" register).
+ * Strategy: one agent, four pluggable modules — 接得住 / 追得到 / 管得動 / 看得懂 —
+ * on a trust-the-data foundation. Not a CRM; an agent layer in the channel.
+ * 追得到 (dropped-lead) is the wedge. Mirrors deck d.p3.
+ *
  * Convention for list items referenced from content.js by a base key:
  *   <base>.t  title/label      <base>.b  body
  *   <base>.d  detail/desc      <base>.o  outcome
@@ -42,21 +47,21 @@ const I18N = {
     /* ---- the shift ---- */
     "shift.eyebrow": "現況",
     "shift.h": "案子誰在追？團隊誰在盯？數字誰在看？",
-    "shift.sub": "專業您做得最好，可是這些事，一個人實在顧不來。",
-    "shift.pain1.t": "案子追不完", "shift.pain1.b": "案子一多，總有幾件在成交前被忘掉。",
-    "shift.pain2.t": "團隊看不清", "shift.pain2.b": "誰手上有什麼案、卡在哪，您其實沒十足把握。",
-    "shift.pain3.t": "數字憑感覺", "shift.pain3.b": "哪種案最值得做、客人從哪來，憑感覺多過憑數字。",
-    "shift.pain4.t": "下班還在轉", "shift.pain4.b": "客人晚上才來訊，您不可能整天守著手機。",
+    "shift.sub": "專業，您做得最好。但接案、追案、盯團隊、看數字——這層營運，本就不該全壓在一個人身上。",
+    "shift.pain1.t": "案子追不完", "shift.pain1.b": "案量一上來，總有幾件在成交前被漏掉——而每漏一件，都是真金白銀。",
+    "shift.pain2.t": "團隊看不清", "shift.pain2.b": "誰手上有什麼案、卡在哪一關，您手邊沒有一個準數。",
+    "shift.pain3.t": "數字憑感覺", "shift.pain3.b": "哪種案最值得做、客人從哪來——靠的是感覺，不是數字。",
+    "shift.pain4.t": "下班還在轉", "shift.pain4.b": "三成客人下班後才來訊；您守不了一整天的手機，但案子不等人。",
 
     /* ---- the system ---- */
-    "system.eyebrow": "它怎麼幫您運作",
-    "system.h": "從客戶上門到結案，它和您的同仁一棒接一棒",
-    "system.loop": "案子始終握在您同仁手上。AI 負責接待、分類、把資料整理好；要怎麼判斷、什麼時候結案，您說了算。",
-    "wf.intake.t": "親切接待", "wf.intake.d": "客戶一傳訊息，就自動聽懂需求、分好類別",
+    "system.eyebrow": "產品",
+    "system.h": "一個 agent：接得住、追得到、管得動、看得懂",
+    "system.loop": "不是再多一套要人填的 CRM，而是嵌進您 LINE 的代理層——接得住每一通、追得到每一案、管得動團隊、看得懂數字。四個能力可開可關、逐家在地化，從您最痛的「追得到」先上，其餘隨需點亮。底下是一件案子從進線到結案的流動——判斷與結案永遠是您的人說了算，資料筆筆有跡可循。",
+    "wf.intake.t": "秒級接待", "wf.intake.d": "客戶一進線，立刻聽懂需求、自動分類，不漏接任何一通",
     "wf.form.t": "自動問齊資料", "wf.form.d": "確認案件類型後，把該服務需要的資料，一項一項替您問齊",
-    "wf.guard.t": "回覆先把關", "wf.guard.d": "每一句回覆送出前都先安全檢查，絕不亂報價、亂承諾",
-    "wf.crm.t": "自動整理案件", "wf.crm.d": "對話自動整理成案件紀錄，來龍去脈您隨時看得到",
-    "wf.human.t": "專人親自接手", "wf.human.d": "重要的案件自動轉給您的同仁，由專業人員親自處理",
+    "wf.guard.t": "回覆先把關", "wf.guard.d": "每一句回覆送出前都先過安全檢查，絕不亂報價、亂承諾",
+    "wf.crm.t": "自動整理案件", "wf.crm.d": "對話自動整理成案件紀錄，來龍去脈隨時看得到",
+    "wf.human.t": "專人親自接手", "wf.human.d": "重要案件自動轉給您的同仁，由持牌專業人員親自處理",
 
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
@@ -85,8 +90,8 @@ const I18N = {
 
     /* ---- moats ---- */
     "moats.eyebrow": "為什麼敢交給它",
-    "moats.h": "它不是那種會對客戶亂講話的 AI",
-    "moats.intro": "您最擔心的，大概是 AI 對客戶亂講話。這點我們花的力氣最多——每一條規矩，都是真實踩過的坑換來的。",
+    "moats.h": "敢嵌進客戶頻道的 AI，門檻在這裡",
+    "moats.intro": "把 AI 接到真實客戶面前，最大的風險是它亂講話——我們把最多工程花在這。而真正的護城河不是單一功能，是這幾項疊起來的複利。",
     "moat.compliance.t": "不會亂報價、亂講法律",
     "moat.compliance.b": "該守的規矩都寫進去了，說錯話之前就先擋下來。",
     "moat.audit.t": "講了什麼，都查得到",
@@ -97,10 +102,10 @@ const I18N = {
     "moat.humanloop.b": "一遇到重要案件就轉給您的人；判斷和結案，永遠是人來。",
     "moat.staffing.t": "不會讓案子被忘記",
     "moat.staffing.b": "案子分給對的人；太久沒動的，它每天提醒兩次。",
-    "moat.flywheel.t": "越用越懂您",
-    "moat.flywheel.b": "用得越久，它越摸得清您事務所的做事方式。",
-    "moat.localization.t": "它懂台灣的眉角",
-    "moat.localization.b": "LINE、繁體中文、個資法、公會往來——這些在地的眉角，國外的工具一時補不上。",
+    "moat.flywheel.t": "越用越貼合您所",
+    "moat.flywheel.b": "資料越積越厚；跨所學到的，回過頭讓每一家都更準。",
+    "moat.localization.t": "在地的眉角，外來工具補不上",
+    "moat.localization.b": "LINE、繁體中文、個資法、公會往來——這些在地的縫，國外工具一時補不齊。",
 
     /* ---- security ---- */
     "security.eyebrow": "安全與合規",
@@ -148,9 +153,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "預約試點",
-    "ask.h": "每一間事務所，都值得有人幫忙撐後場",
-    "ask.vision": "您缺哪一塊，就補哪一塊——前台接待、案件追蹤，還是看懂數字。從最讓您頭痛的地方開始。",
-    "ask.owner": "想試試看？兩週，接上您的 LINE，用您自己的數字說話，再決定要不要繼續。",
+    "ask.h": "把後場交給一層 AI，您專心做專業",
+    "ask.vision": "可開可關：接得住、追得到、管得動、看得懂——缺哪一塊就開哪一塊，從最讓您頭痛的地方先上。",
+    "ask.owner": "兩週，接上您的 LINE，用您自己的數字驗證，再決定要不要繼續。",
     // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
@@ -158,18 +163,18 @@ const I18N = {
     "footer.tagline": "智能人才 — 讓專業，不再因時間而流失",
     "footer.brand": "© 2026 智能人才 Talent AI",
     "pricing.eyebrow": "方案與費用",
-    "pricing.h": "選一位全天候的數位受理同仁",
+    "pricing.h": "從一層模組開始，按需要長成整個營運層",
     "pricing.sub": "一位行政同仁月薪 NT$33,000 起，還不含假日、深夜與請假的空窗。三個方案，從單人到全團隊，月費自 NT$8,000 起。",
     "pricing.period": "／月", "pricing.cta": "預約洽談",
     "pricing.foot": "一次性建置費 NT$50,000（含業務知識庫撰寫・OA 接線・首兩週陪跑）；年繳享 8.3 折（送 2 個月）。",
     "pricing.allplans": "三個方案均含：LINE 官方帳號串接・反幻覺安全驗證・自動 CRM 建檔・持牌地政士全程把關。",
-    "pricing.starter.name": "基礎 Starter", "pricing.starter.tagline": "24 小時不漏接的前台",
+    "pricing.starter.name": "基礎 Starter", "pricing.starter.tagline": "接得住：24 小時不漏接的前台",
     "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "每月最多 200 筆進線（超量每則 NT$50）", "pricing.starter.seats": "1 席・單人事務所",
     "pricing.starter.f1": "24/7 接案・9 大選單問卷", "pricing.starter.f2": "層層安全把關・不亂報價", "pricing.starter.f3": "轉真人接管・恢復・結案", "pricing.starter.f4": "客戶紀錄自動建檔",
-    "pricing.pro.name": "專業 Pro", "pricing.pro.badge": "最受歡迎", "pricing.pro.tagline": "會整理案情、看見 ROI 的助理",
+    "pricing.pro.name": "專業 Pro", "pricing.pro.badge": "最受歡迎", "pricing.pro.tagline": "追得到＋看得懂：盯緊每一案，看見 ROI",
     "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "每月最多 500 筆進線（超量每則 NT$40）", "pricing.pro.seats": "最多 3 席",
     "pricing.pro.f1": "基礎方案全部功能", "pricing.pro.f2": "完整 CRM＋案件洞察＋案情敘事", "pricing.pro.f3": "智能分流・指派負責同仁", "pricing.pro.f4": "成交結果追蹤", "pricing.pro.f5": "每月 ROI 報告＋逾時盯案",
-    "pricing.flagship.name": "旗艦 Flagship", "pricing.flagship.tagline": "整個團隊的數位作業層",
+    "pricing.flagship.name": "旗艦 Flagship", "pricing.flagship.tagline": "管得動：整個團隊的數位作業層",
     "pricing.flagship.price": "NT$25,000", "pricing.flagship.cap": "每月最多 1,000 筆進線（超量每則 NT$35）", "pricing.flagship.seats": "不限席次",
     "pricing.flagship.f1": "專業方案全部功能", "pricing.flagship.f2": "Plaud 錄音自動轉建案", "pricing.flagship.f3": "自訂業務類別（非 9 大）", "pricing.flagship.f4": "多人團隊委派路由", "pricing.flagship.f5": "優先支援・SLA 4 小時",
   },
@@ -205,21 +210,21 @@ const I18N = {
     /* ---- the shift ---- */
     "shift.eyebrow": "The Shift",
     "shift.h": "Who's chasing the cases? Watching the team? Reading the numbers?",
-    "shift.sub": "You do the professional work brilliantly — but one person can't keep an eye on all of this too.",
-    "shift.pain1.t": "Cases slip away", "shift.pain1.b": "When cases pile up, a few always get forgotten before they close.",
-    "shift.pain2.t": "The team's a blur", "shift.pain2.b": "Who's handling what, and where it's stuck — you can't really be sure.",
-    "shift.pain3.t": "Numbers on a hunch", "shift.pain3.b": "Which work pays best, where clients come from — mostly gut feel.",
-    "shift.pain4.t": "It never clocks off", "shift.pain4.b": "Clients write at night; you can't watch the phone around the clock.",
+    "shift.sub": "You do the professional work brilliantly. But intake, follow-up, the team, the numbers — that operating layer was never meant to rest on one person.",
+    "shift.pain1.t": "Cases slip away", "shift.pain1.b": "When cases pile up, a few always get dropped before they close — and every one is real money.",
+    "shift.pain2.t": "The team's a blur", "shift.pain2.b": "Who's handling what, and where it's stuck — you don't have a hard number to hand.",
+    "shift.pain3.t": "Numbers on a hunch", "shift.pain3.b": "Which work pays best, where clients come from — gut feel, not data.",
+    "shift.pain4.t": "It never clocks off", "shift.pain4.b": "A third of clients write after hours; you can't watch the phone all day, but cases won't wait.",
 
     /* ---- the system ---- */
-    "system.eyebrow": "How it helps you",
-    "system.h": "From the first message to a closed case, it and your team pass the baton",
-    "system.loop": "Cases stay in your people's hands. AI greets, sorts and organises the details; how to judge and when to close — that's your call.",
-    "wf.intake.t": "A warm welcome", "wf.intake.d": "The moment a client writes in, their need is understood and sorted",
+    "system.eyebrow": "Product",
+    "system.h": "One agent: capture, don't-drop, run-the-team, see-the-numbers",
+    "system.loop": "Not another CRM to fill in — an agent layer embedded in your LINE: it captures every lead, never drops a case, runs the team, reads the numbers. Four capabilities, switch on what you need, localized per firm — start with the one that hurts most ('don't-drop'). Below is how a single case flows from intake to close — judgment and the close stay with your people, every write traceable.",
+    "wf.intake.t": "Instant welcome", "wf.intake.d": "The moment a client writes in, their need is understood and sorted — not one missed",
     "wf.form.t": "Gathers the details", "wf.form.d": "Once the case type is clear, it asks for exactly what that service needs, one item at a time",
     "wf.guard.t": "Every reply checked first", "wf.guard.d": "Each reply is safety-checked before it sends — never a wrong fee, never an over-promise",
     "wf.crm.t": "Cases organised for you", "wf.crm.d": "Conversations become tidy case records you can review any time",
-    "wf.human.t": "A person takes over", "wf.human.d": "Important cases pass straight to your colleague, handled in person",
+    "wf.human.t": "A person takes over", "wf.human.d": "Important cases pass straight to your colleague, handled in person by a licensee",
 
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
@@ -248,8 +253,8 @@ const I18N = {
 
     /* ---- moats ---- */
     "moats.eyebrow": "Why owners trust it",
-    "moats.h": "It's not the kind of AI that says the wrong thing",
-    "moats.intro": "What you probably fear most is an AI saying the wrong thing to a client. That's where we put the most work — every rule earned from a real mistake.",
+    "moats.h": "An AI you can put in front of clients is another class entirely",
+    "moats.intro": "Put AI in front of real clients and the biggest risk is it saying the wrong thing — that's where we spent the most engineering. And the real moat isn't one feature; it's the compounding of these.",
     "moat.compliance.t": "No wrong fees, no loose legal claims",
     "moat.compliance.b": "The rules that matter are built in — it's stopped before it can misspeak.",
     "moat.audit.t": "Whatever it said, you can check",
@@ -260,10 +265,10 @@ const I18N = {
     "moat.humanloop.b": "Anything important goes to your people; the judgment and the close are always human.",
     "moat.staffing.t": "Nothing gets forgotten",
     "moat.staffing.b": "Cases go to the right person; if one sits too long, it nudges twice a day.",
-    "moat.flywheel.t": "It gets to know your firm",
-    "moat.flywheel.b": "The longer you use it, the better it reads how your firm works.",
-    "moat.localization.t": "It knows Taiwan's quirks",
-    "moat.localization.b": "LINE, Traditional Chinese, 個資法, 公會 ties — local detail a foreign tool can't quickly match.",
+    "moat.flywheel.t": "It fits your firm closer over time",
+    "moat.flywheel.b": "The data deepens; what it learns across firms makes every one of them sharper.",
+    "moat.localization.t": "Local detail a foreign tool can't match",
+    "moat.localization.b": "LINE, Traditional Chinese, 個資法, 公會 ties — local seams a foreign tool can't quickly close.",
 
     /* ---- security ---- */
     "security.eyebrow": "Security & Compliance",
@@ -311,9 +316,9 @@ const I18N = {
 
     /* ---- the ask ---- */
     "contact.eyebrow": "Get started",
-    "ask.h": "Every firm deserves someone minding the back office",
-    "ask.vision": "Add whichever piece you're missing — the front desk, case-tracking, or making sense of the numbers. Start where it hurts most.",
-    "ask.owner": "Want to try it? Two weeks on your own LINE, judged on your own numbers — then you decide.",
+    "ask.h": "Hand the back office to a layer of AI — and stay on the work you do best",
+    "ask.vision": "Switch on what you need: capture, don't-drop, run-the-team, see-the-numbers — add the piece you're missing, starting where it hurts most.",
+    "ask.owner": "Two weeks on your own LINE, judged on your own numbers — then you decide.",
     // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
@@ -321,18 +326,18 @@ const I18N = {
     "footer.tagline": "Talent AI — professional practice, any hour, no lead lost",
     "footer.brand": "© 2026 Talent AI 智能人才",
     "pricing.eyebrow": "Plans & Pricing",
-    "pricing.h": "Your always-on intake colleague",
+    "pricing.h": "Start with one module; grow into the whole operating layer",
     "pricing.sub": "A full-time admin hire runs NT$33,000+/mo and goes offline nights, weekends and holidays. Three plans, from solo practice to full team, from NT$8,000/mo.",
     "pricing.period": "/mo", "pricing.cta": "Book a call",
     "pricing.foot": "One-time onboarding NT$50,000 (knowledge-base authoring, LINE OA wiring, two-week guided launch); pay annually, get 2 months free.",
     "pricing.allplans": "Every plan includes: LINE OA integration · anti-hallucination safety · automatic CRM · licensed 地政士 oversight.",
-    "pricing.starter.name": "Starter", "pricing.starter.tagline": "A 24/7 front desk — no lead slips through",
+    "pricing.starter.name": "Starter", "pricing.starter.tagline": "Capture: a 24/7 front desk, no lead slips through",
     "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "Up to 200 leads/mo (NT$50 per lead over)", "pricing.starter.seats": "1 seat · solo practice",
     "pricing.starter.f1": "24/7 intake · all 9 service menus", "pricing.starter.f2": "Layered safety checks on every reply", "pricing.starter.f3": "Human handoff · resume · close-case", "pricing.starter.f4": "Auto CRM record",
-    "pricing.pro.name": "Pro", "pricing.pro.badge": "Most popular", "pricing.pro.tagline": "Organises the case, shows the ROI",
+    "pricing.pro.name": "Pro", "pricing.pro.badge": "Most popular", "pricing.pro.tagline": "Don't-drop + see-the-numbers: stay on every case, see the ROI",
     "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "Up to 500 leads/mo (NT$40 per lead over)", "pricing.pro.seats": "Up to 3 seats",
     "pricing.pro.f1": "Everything in Starter", "pricing.pro.f2": "Full CRM + case insight + narrative", "pricing.pro.f3": "Smart routing + staff assignment", "pricing.pro.f4": "Deal-outcome tracking", "pricing.pro.f5": "Monthly ROI report + overdue follow-up",
-    "pricing.flagship.name": "Flagship", "pricing.flagship.tagline": "The digital ops layer for your whole team",
+    "pricing.flagship.name": "Flagship", "pricing.flagship.tagline": "Run-the-team: the digital ops layer for your whole team",
     "pricing.flagship.price": "NT$25,000", "pricing.flagship.cap": "Up to 1,000 leads/mo (NT$35 per lead over)", "pricing.flagship.seats": "Unlimited seats",
     "pricing.flagship.f1": "Everything in Pro", "pricing.flagship.f2": "Plaud audio → auto case records", "pricing.flagship.f3": "Custom service categories", "pricing.flagship.f4": "Multi-member team routing", "pricing.flagship.f5": "Priority support · 4-hour SLA",
   },
