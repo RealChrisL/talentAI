@@ -30,9 +30,9 @@ const I18N = {
     "brand.tagline": "讓專業，不再因時間而流失",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "給扛起整間事務所的您",
-    "hero.h1": "您把專業顧好，營運和數字交給我們",
-    "hero.sub": "撐起一間事務所，最累的常常不是專業本身，而是沒人幫您追案子、盯團隊、看懂生意的數字。這些交給 AI，您專心做最擅長的事——已經在真實事務所每天運轉。",
+    "hero.eyebrow": "AI 原生・專業服務",
+    "hero.h1": "專業服務，為 AI 時代重新打造",
+    "hero.sub": "一套合規把關、全天候的智能營運層，嵌入執照型專業事務所的真實客戶通路——已在真實事務所上線實證，不漏接、不亂報、不出錯。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -193,9 +193,9 @@ const I18N = {
     "brand.tagline": "Professional practice — any hour, no lead lost",
 
     /* ---- hero ---- */
-    "hero.eyebrow": "For the owner who carries the whole firm",
-    "hero.h1": "You handle the expertise. We'll mind the operations and the numbers.",
-    "hero.sub": "Running a whole firm, the exhausting part usually isn't the professional work — it's that no one's chasing the cases, watching the team, or making sense of the numbers. Let AI carry that, so you can do what you do best. Already running in a real firm, every day.",
+    "hero.eyebrow": "AI-native professional services",
+    "hero.h1": "Professional services, re-engineered for the AI era.",
+    "hero.sub": "A compliance-guarded, always-on agentic operations layer — embedded in the real client channel of licensed professional firms, and already proven live in production.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
