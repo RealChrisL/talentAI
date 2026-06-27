@@ -8,7 +8,7 @@
  * Holding-co brand "QuanJin AI / 全謹智能" is a PLACEHOLDER, distinct from the
  * client firm.
  *
- * Live figures audited from production as-of 2026-06-26 (see docs/venture/004).
+ * Live figures audited from production as-of 2026-06-26; compliance count refreshed 2026-06-27 (see docs/venture/004).
  * ROI is framed as break-even + reach + safety (not booked revenue); any revenue
  * figure is forward-looking / Illustrative only.
  *
@@ -19,7 +19,7 @@
 
 const SITE_CONFIG = {
   demoData: true,            // master honesty switch: show illustrative chips + footer disclaimer
-  asOf: "2026-06-26",        // shown next to metrics; bump when numbers refreshed
+  asOf: "2026-06-27",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
     name: "Talent AI",
@@ -40,7 +40,7 @@ const SITE_CONFIG = {
   // -- Hero ticker (4 punchy VERIFIED numbers) ------------------------------
   heroMetrics: [
     { value: 1205, suffix: "+", key: "m.leads",       verified: true },
-    { value: 1041, suffix: "",  key: "m.safe",        verified: true },
+    { value: 1061, suffix: "",  key: "m.safe",        verified: true },
     { value: 32,   suffix: "%", key: "m.afterhours",  verified: true },
     { value: 224,  suffix: "",  key: "m.escalated",   verified: true },
   ],
@@ -52,7 +52,7 @@ const SITE_CONFIG = {
   kpiTiles: [
     { value: 32,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
     { value: 14,   decimals: 0, suffix: " / 14", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
-    { value: 1041, decimals: 0, suffix: " / 10", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 1061, decimals: 0, suffix: " / 10", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
     { value: 1205, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
     { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
     { value: 224,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
