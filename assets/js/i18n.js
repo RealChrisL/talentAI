@@ -37,7 +37,7 @@ const I18N = {
     /* ---- hero ---- */
     "hero.eyebrow": "AI 原生・專業服務",
     "hero.h1": "專業服務，為 AI 時代重新打造",
-    "hero.sub": "Talent AI 打造 AI 人才艦隊——接待、營運、行銷等職能隨需啟用。服務你的生意，而不是要你學工具：LINE、Asana 或任何你既有的系統，人才自己接上。第一位人才已在專業事務所在職 68 天：1,490 筆自動建檔、0 則違規出訊、全程可稽核。",
+    "hero.sub": "Talent AI 打造 AI 人才艦隊——接待、營運、行銷等職能隨需啟用。服務你的生意，而不是要你學工具：LINE、Asana 或任何你既有的系統，人才自己接上。首支 AI 人才團隊已在專業事務所在職 68 天：1,490 筆自動建檔、0 則違規出訊、全程可稽核。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -47,10 +47,47 @@ const I18N = {
     /* ---- AI 人才艦隊 (fleet) ---- */
     "fleet.eyebrow": "AI 人才艦隊",
     "fleet.h": "您需要哪幾位，就啟用哪幾位",
-    "fleet.sub": "Talent AI 維護一支可按需組建的 AI 人才艦隊。每位代理專責一個職能；工具與系統整合可插拔——服務你的生意，而不是要你學工具。",
-    "fleet.greeting.t": "接待代理", "fleet.greeting.b": "接住每一通進線、問齊資料、分流轉案。",
-    "fleet.ops.t": "營運代理", "fleet.ops.b": "盯緊每一案進度、通知團隊、自動建檔。",
-    "fleet.marketing.t": "行銷代理", "fleet.marketing.b": "成交追蹤、高價值客群識別、觸及分析。",
+    "fleet.sub": "Talent AI 維護一支可按需組建的 AI 人才艦隊。每位人才專責一個職能；工具與系統整合可插拔——服務你的生意，而不是要你學工具。最關鍵的一層：把每天的營運資料變成看得見的決策依據——多數企業主手上沒有這一層，只能憑感覺。",
+    "fleet.more": "查看全部能力", "fleet.less": "收合",
+
+    "fleet.greeting.t": "接待專員", "fleet.greeting.en": "Front Desk Agent", "fleet.greeting.tag": "接得住",
+    "fleet.greeting.b": "全天候接住每一通進線：問齊資料、合規回覆、自動建檔。",
+    "fleet.greeting.c1": "逐層驗證每一則出訊，未確認的費用回覆送出前先攔下",
+    "fleet.greeting.c2": "辨識案型後送出專屬問卷，程式保證送達、漏送自動補送",
+    "fleet.greeting.c3": "連發訊息智能合併，客戶講完才回一次完整確認",
+    "fleet.greeting.c4": "12 項服務選單，回覆數字即鎖定業務",
+    "fleet.greeting.c5": "客戶用白話描述，也能自動判斷業務與急迫度",
+    "fleet.greeting.c6": "圖片與檔案智能群組回覆，不逐則轟炸",
+
+    "fleet.ops.t": "案件管理師", "fleet.ops.en": "Case Manager Agent", "fleet.ops.tag": "追得到",
+    "fleet.ops.b": "每一案都盯到底：進度追蹤、團隊通知、自動建檔。",
+    "fleet.ops.c1": "每則互動自動建檔更新，承辦人打開即有完整脈絡",
+    "fleet.ops.c2": "一鍵委派給負責同仁，代理自動退場、不再出訊",
+    "fleet.ops.c3": "監控每案追蹤節奏，逾時案件每日兩次催辦",
+    "fleet.ops.c4": "語音會談自動轉逐字稿並綁定案件",
+    "fleet.ops.c5": "同事手機開啟「我的案件」，直接結案回報",
+    "fleet.ops.c6": "每案可自訂追蹤週期與下次提醒日期",
+    "fleet.ops.c7": "委派通知卡一鍵操作：查、接管、交回、結案",
+
+    "fleet.marketing.t": "行銷分析師", "fleet.marketing.en": "Growth Analyst Agent", "fleet.marketing.tag": "看得準",
+    "fleet.marketing.b": "看得準哪些客戶值得追：成交追蹤、高價值識別。",
+    "fleet.marketing.c1": "客戶場景故事化記錄，直接成為行銷案例素材",
+    "fleet.marketing.c2": "識別從未獲回覆的高價值線索，附完整脈絡重新浮出",
+    "fleet.marketing.c3": "需求分布與時段統計：客戶最常問什麼、何時上門",
+    "fleet.marketing.c4": "成交金額與結案日期逐案記錄，轉換率自動推算",
+    "fleet.marketing.c5": "結案客戶回訊自動喚醒，重啟諮詢流程",
+
+    "fleet.chief.t": "幕僚長", "fleet.chief.en": "Chief of Staff Agent", "fleet.chief.tag": "管得動",
+    "fleet.chief.b": "分優先、派對人、控升級；把營運數據變成決策依據——決定，永遠在您。",
+    "fleet.chief.c1": "營運資料自動彙整成決策依據：需求分布、進線時段、成交漏斗、成效週報",
+    "fleet.chief.c2": "高價值案件自動轉真人，危機案型 24/7 即時接管",
+    "fleet.chief.c3": "每夜自我考核出訊品質，語氣偏移上線前攔下",
+    "fleet.chief.c4": "自動分案白名單：只有核准案型自動指派，越界即警示",
+    "fleet.chief.c5": "上班時段人力判斷：上班交團隊、下班代理續接",
+    "fleet.chief.c6": "六道送出前守門，價格只報確認過的",
+    "fleet.chief.c7": "約 19 支常駐監控自我守望，異常才彙整警示",
+    "fleet.chief.c8": "100+ 稽核軌跡，每個決策可追溯重算",
+
     "fleet.ghost.t": "下一位人才", "fleet.ghost.b": "你需要的職能還不在艦隊裡？告訴我們下一個缺口。",
 
     /* ---- the shift ---- */
@@ -74,7 +111,7 @@ const I18N = {
 
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
-    "case.h": "第一位人才的工作履歷：全謹代書",
+    "case.h": "首支人才團隊的工作履歷：全謹代書",
     "case.narr": "全謹地政士事務所 2026 年 5 月到職，至今在職 68 天。1,490 筆案件自動建檔、不必多請人；逾四成客戶在下班後才來訊——過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並通知負責地政士；273 次含完整脈絡轉交人工。",
     "case.oversight": "每一則對外回覆送出前都先安全把關，6 則未經確認的費用回覆在送出前被攔下；0 則違規訊息送達客戶；不讓事務所承擔未經核實的費用或說法。每件案子最終由持牌地政士親自辦理。",
     "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
@@ -82,7 +119,7 @@ const I18N = {
     /* ---- 跨專業服務業 (industries) ---- */
     "industries.eyebrow": "跨專業服務業",
     "industries.h": "地政士是第一位雇主，不是市場邊界",
-    "industries.body": "職前訓練＝把行業的業務知識庫寫成教材，兩週上崗。同一套僱傭基礎設施——權限、稽核、監督、交接——通用於法律、會計、保險、診所、顧問等專業服務業。",
+    "industries.body": "職前訓練＝把行業的業務知識庫寫成教材，兩週上崗。同一套僱傭基礎設施——權限、稽核、監督、交接——通用於法律、會計、保險、診所、顧問、教育、零售等行業。",
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "下班後也接得住的新客戶", "kpi.afterhours.note": "1,251 位有進線紀錄的新客戶中，519 位（41.5%）在平日 09:00–18:00 以外第一次找上門【實測】",
@@ -218,7 +255,7 @@ const I18N = {
     /* ---- hero ---- */
     "hero.eyebrow": "AI-native professional services",
     "hero.h1": "Professional services, re-engineered for the AI era.",
-    "hero.sub": "Talent AI fields a fleet of AI talent — greeting, operations, marketing and beyond, staffed on demand. They serve your business, not ask you to learn tools: LINE, Asana, or whatever you already run, the talent plugs in. The first talent has been on the job at a professional firm for 68 days: 1,490 records auto-built, zero unsafe messages, fully auditable.",
+    "hero.sub": "Talent AI fields a fleet of AI talent — greeting, operations, marketing and beyond, staffed on demand. They serve your business, not ask you to learn tools: LINE, Asana, or whatever you already run, the talent plugs in. A first team of AI talents has been on the job at a professional firm for 68 days: 1,490 records auto-built, zero unsafe messages, fully auditable.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
@@ -228,10 +265,47 @@ const I18N = {
     /* ---- AI talent fleet ---- */
     "fleet.eyebrow": "AI Talent Fleet",
     "fleet.h": "The fleet: staff the roles you need",
-    "fleet.sub": "Talent AI maintains a fleet of AI talent staffed on demand. Each agent owns one function; tools and integrations plug in per business — serving your business, not asking you to learn tools.",
-    "fleet.greeting.t": "Greeting Agent", "fleet.greeting.b": "Catches every inbound, gathers the facts, routes the case.",
-    "fleet.ops.t": "Operations Agent", "fleet.ops.b": "Tracks every case, alerts the team, files everything automatically.",
-    "fleet.marketing.t": "Marketing Agent", "fleet.marketing.b": "Deal tracking, high-value client signals, reach analytics.",
+    "fleet.sub": "Talent AI maintains a fleet of AI talent staffed on demand. Each owns one function; tools and integrations plug in per business — serving your business, not asking you to learn tools. The layer that matters most: turning each day's operating data into a decision you can see — most owners run on gut feel because this layer has never existed for them.",
+    "fleet.more": "See all capabilities", "fleet.less": "Show less",
+
+    "fleet.greeting.t": "Front Desk Agent", "fleet.greeting.en": "Front Desk Agent", "fleet.greeting.tag": "Catches it",
+    "fleet.greeting.b": "Catches every inbound round the clock: gathers the facts, replies within the rules, files the record.",
+    "fleet.greeting.c1": "Checks every outbound line by line — an unconfirmed fee reply is stopped before it sends",
+    "fleet.greeting.c2": "Sends the right questionnaire once the case type is known — delivery guaranteed, a miss re-sent",
+    "fleet.greeting.c3": "Merges rapid-fire messages — one full reply once the client has finished",
+    "fleet.greeting.c4": "12 service menus — reply with a number to lock the case",
+    "fleet.greeting.c5": "Reads plain-language descriptions and sorts type and urgency on its own",
+    "fleet.greeting.c6": "Groups images and files into one reply — no message-by-message barrage",
+
+    "fleet.ops.t": "Case Manager Agent", "fleet.ops.en": "Case Manager Agent", "fleet.ops.tag": "Tracks it",
+    "fleet.ops.b": "Rides every case to the end: tracks progress, alerts the team, files the record.",
+    "fleet.ops.c1": "Files and updates each interaction — the handler opens to full context",
+    "fleet.ops.c2": "Assign to a colleague in one tap — the agent steps back and goes quiet",
+    "fleet.ops.c3": "Watches each case's cadence — overdue cases nudged twice a day",
+    "fleet.ops.c4": "Turns voice meetings into transcripts and binds them to the case",
+    "fleet.ops.c5": "Colleagues open 'My Cases' on their phone and close-report directly",
+    "fleet.ops.c6": "Set a follow-up cycle and next-reminder date per case",
+    "fleet.ops.c7": "One-tap on the assignment card: view, take over, hand back, close",
+
+    "fleet.marketing.t": "Growth Analyst Agent", "fleet.marketing.en": "Growth Analyst Agent", "fleet.marketing.tag": "Reads it right",
+    "fleet.marketing.b": "Reads which clients are worth the chase: deal tracking, high-value signals.",
+    "fleet.marketing.c1": "Records client stories as ready-made marketing case material",
+    "fleet.marketing.c2": "Spots high-value leads never replied to and re-surfaces them with full context",
+    "fleet.marketing.c3": "Counts demand and timing — what clients ask most, when they arrive",
+    "fleet.marketing.c4": "Logs deal value and close date per case — conversion worked out automatically",
+    "fleet.marketing.c5": "Wakes a closed client on their next message and restarts the consultation",
+
+    "fleet.chief.t": "Chief of Staff Agent", "fleet.chief.en": "Chief of Staff Agent", "fleet.chief.tag": "Runs it",
+    "fleet.chief.b": "Sets priority, assigns the person, controls escalation — turns operating data into a decision. The call is always yours.",
+    "fleet.chief.c1": "Rolls operating data into a decision base: demand mix, inbound timing, deal funnel, weekly report",
+    "fleet.chief.c2": "Routes high-value cases to a person — crisis types taken over 24/7",
+    "fleet.chief.c3": "Grades its own message quality nightly — tone drift caught before it ships",
+    "fleet.chief.c4": "Auto-assign whitelist — only approved case types assign themselves, overreach flagged",
+    "fleet.chief.c5": "Reads the clock for staffing — team by day, agent covers after hours",
+    "fleet.chief.c6": "Six pre-send gates — quotes only confirmed prices",
+    "fleet.chief.c7": "About 19 standing monitors watch the system — anomalies alert, nothing else",
+    "fleet.chief.c8": "100+ audit trails — every decision traceable and re-checkable",
+
     "fleet.ghost.t": "The next hire", "fleet.ghost.b": "Need a role that isn't in the fleet yet? Tell us the gap.",
 
     /* ---- the shift ---- */
@@ -255,15 +329,15 @@ const I18N = {
 
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
-    "case.h": "The first talent's employment record: QuanJin Notary",
-    "case.narr": "全謹地政士事務所 hired the first talent in May 2026 — 68 days on the job so far. 1,490 cases filed automatically, with no extra headcount; over four in ten clients first write in after hours — that once-silent channel is now caught, sorted and routed to the responsible 地政士 within seconds; 273 hand-offs to a person came with full context attached.",
+    "case.h": "The first team's employment record: QuanJin Notary",
+    "case.narr": "全謹地政士事務所 hired the first team in May 2026 — 68 days on the job so far. 1,490 cases filed automatically, with no extra headcount; over four in ten clients first write in after hours — that once-silent channel is now caught, sorted and routed to the responsible 地政士 within seconds; 273 hand-offs to a person came with full context attached.",
     "case.oversight": "Every outbound reply is safety-checked before it sends — 6 unverified fee replies were blocked before they went out, and zero unsafe messages reached a client, sparing the firm any unverified fee or legal claim. Every case is ultimately handled by a licensed 地政士.",
     "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. ROI is shown as break-even + reach + safety, not as booked revenue.",
 
     /* ---- Across professional services (industries) ---- */
     "industries.eyebrow": "Across professional services",
     "industries.h": "The notary firm is the first employer — not the market boundary.",
-    "industries.body": "Onboarding = writing the industry's playbook into a knowledge base; two weeks to on-the-job. The same employment infrastructure — permissions, audit, supervision, handoff — serves law, accounting, insurance, clinics, and consulting alike.",
+    "industries.body": "Onboarding = writing the industry's playbook into a knowledge base; two weeks to on-the-job. The same employment infrastructure — permissions, audit, supervision, handoff — serves law, accounting, insurance, clinics, consulting, education, and retail alike.",
 
     /* ---- KPI tiles ---- */
     "kpi.afterhours.t": "New clients reached even after hours", "kpi.afterhours.note": "519 of 1,251 new clients with a recorded first contact (41.5%) first wrote in outside Mon–Fri 09:00–18:00 【measured】",

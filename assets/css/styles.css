@@ -228,6 +228,37 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .moat.moat-ghost h3 { color: var(--ink-2); }
 .moat.moat-ghost:hover { transform: translateY(-3px); border-color: var(--rule-2); opacity: 1; }
 
+/* ============================================================= fleet role cards */
+.fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--gap); margin-top: 2.4rem; align-items: start; }
+.fleet-card { padding: 1.7rem 1.6rem; display: flex; flex-direction: column; transition: border-color .3s, transform .3s var(--ease); }
+.fleet-card:hover { transform: translateY(-3px); border-color: var(--seal); }
+.fleet-card .fc-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem .7rem; margin-bottom: .3rem; }
+.fleet-card h3 { font-size: 1.14rem; }
+.fleet-card .fc-en { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.fleet-card .fc-tag { font-family: var(--font-mono); font-size: .74rem; font-weight: 500; letter-spacing: .04em; color: var(--seal-ink); border: 1px solid var(--rule-2); border-radius: 2px; padding: .1rem .5rem; margin-bottom: .7rem; align-self: flex-start; }
+.fleet-card .fc-desc { font-size: .9rem; color: var(--ink-2); margin-bottom: 1.05rem; }
+/* bullets — plain lines, thin left-accent, NO icons */
+.fleet-card .fc-bullets { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
+.fleet-card .fc-bullets li { position: relative; padding-left: .95rem; font-size: .86rem; color: var(--ink); line-height: 1.5; border-left: 2px solid var(--rule-2); }
+.fleet-card .fc-bullets li.fc-extra { display: none; }
+/* expand region: independent per card, no accordion lock */
+.fleet-card.expanded .fc-bullets li.fc-extra { display: block; }
+.fleet-card .fc-extra-wrap { overflow: hidden; max-height: 0; transition: max-height .42s var(--ease); }
+.fleet-card.expanded .fc-extra-wrap { max-height: 900px; }
+.fleet-card .fc-extra-wrap .fc-bullets { margin-top: .6rem; }
+.fleet-card .fc-toggle { margin-top: 1.05rem; align-self: flex-start; display: inline-flex; align-items: center; gap: .4rem; background: none; border: none; cursor: pointer; font-family: var(--font-mono); font-size: .78rem; letter-spacing: .04em; color: var(--seal-ink); padding: 0; }
+.fleet-card .fc-toggle:hover { color: var(--seal); }
+.fleet-card .fc-toggle .fc-chev { display: inline-block; transition: transform .3s var(--ease); font-size: .7em; }
+.fleet-card.expanded .fc-toggle .fc-chev { transform: rotate(180deg); }
+/* ghost card — a role not yet in the fleet: muted, dashed, invitational */
+.fleet-card.fleet-ghost { border-style: dashed; background: transparent; box-shadow: none; opacity: .72; }
+.fleet-card.fleet-ghost h3 { color: var(--ink-2); }
+.fleet-card.fleet-ghost:hover { transform: translateY(-3px); border-color: var(--rule-2); opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .fleet-card .fc-extra-wrap { transition: none; }
+  .fleet-card .fc-toggle .fc-chev { transition: none; }
+}
+
 /* ============================================================= security */
 .sec-wrap { margin-top: 2.4rem; padding: 1.8rem; }
 .sec-diagram { width: 100%; height: auto; }

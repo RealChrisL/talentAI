@@ -85,6 +85,17 @@ const SITE_CONFIG = {
     { id: "localization", icon: "map-pin",      key: "moat.localization" },
   ],
 
+  // -- AI talent fleet (4 role cards + ghost) -------------------------------
+  // Each role: 3 visible bullets (c1..c3) + the rest expand inline (c4..cN).
+  // i18n keys: fleet.<role>.t/.en/.tag/.b + .c1..cN. Icons removed by design —
+  // bullets are plain lines with a thin left-accent.
+  fleet: [
+    { id: "greeting",  key: "fleet.greeting",  bullets: 6 },
+    { id: "ops",       key: "fleet.ops",       bullets: 7 },
+    { id: "marketing", key: "fleet.marketing", bullets: 5 },
+    { id: "chief",     key: "fleet.chief",     bullets: 8 },
+  ],
+
   // -- System workflow (5 stages, code-accurate) ----------------------------
   workflow: [
     { id: "intake",   icon: "chat",     key: "wf.intake" },

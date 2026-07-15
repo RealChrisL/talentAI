@@ -81,6 +81,62 @@
     });
   }
 
+  /* ---------- fleet role cards ---------- */
+  function buildFleet() {
+    const grid = $("#fleet-grid");
+    if (!grid || !CFG.fleet) return;
+    CFG.fleet.forEach((role) => {
+      const kb = role.key, n = role.bullets || 0;
+      const card = el("div", "fleet-card glass");
+
+      const head = el("div", "fc-head");
+      const h = el("h3"); h.setAttribute("data-i18n", kb + ".t"); h.textContent = t(kb + ".t");
+      const en = el("span", "fc-en"); en.setAttribute("data-i18n", kb + ".en"); en.textContent = t(kb + ".en");
+      head.appendChild(h); head.appendChild(en);
+
+      const tag = el("span", "fc-tag"); tag.setAttribute("data-i18n", kb + ".tag"); tag.textContent = t(kb + ".tag");
+      const desc = el("p", "fc-desc"); desc.setAttribute("data-i18n", kb + ".b"); desc.textContent = t(kb + ".b");
+
+      // visible bullets (c1..c3)
+      const vis = el("ul", "fc-bullets");
+      for (let i = 1; i <= Math.min(3, n); i++) {
+        const li = el("li"); li.setAttribute("data-i18n", kb + ".c" + i); li.textContent = t(kb + ".c" + i); vis.appendChild(li);
+      }
+
+      card.appendChild(head); card.appendChild(tag); card.appendChild(desc); card.appendChild(vis);
+
+      // expandable rest (c4..cN)
+      if (n > 3) {
+        const wrap = el("div", "fc-extra-wrap");
+        const extra = el("ul", "fc-bullets");
+        for (let i = 4; i <= n; i++) {
+          const li = el("li", "fc-extra"); li.setAttribute("data-i18n", kb + ".c" + i); li.textContent = t(kb + ".c" + i); extra.appendChild(li);
+        }
+        wrap.appendChild(extra); card.appendChild(wrap);
+
+        const btn = el("button", "fc-toggle"); btn.type = "button"; btn.setAttribute("aria-expanded", "false");
+        const lbl = el("span", "fc-toggle-lbl"); lbl.setAttribute("data-i18n", "fleet.more"); lbl.textContent = t("fleet.more");
+        const chev = el("span", "fc-chev"); chev.setAttribute("aria-hidden", "true"); chev.textContent = "▾";
+        btn.appendChild(lbl); btn.appendChild(chev);
+        btn.addEventListener("click", () => {
+          const open = card.classList.toggle("expanded");
+          btn.setAttribute("aria-expanded", String(open));
+          lbl.setAttribute("data-i18n", open ? "fleet.less" : "fleet.more");
+          lbl.textContent = t(open ? "fleet.less" : "fleet.more");
+        });
+        card.appendChild(btn);
+      }
+
+      grid.appendChild(card);
+    });
+
+    // ghost card — a role not yet in the fleet
+    const ghost = el("div", "fleet-card fleet-ghost glass");
+    const gh = el("h3"); gh.setAttribute("data-i18n", "fleet.ghost.t"); gh.textContent = t("fleet.ghost.t");
+    const gp = el("p", "fc-desc"); gp.setAttribute("data-i18n", "fleet.ghost.b"); gp.textContent = t("fleet.ghost.b");
+    ghost.appendChild(gh); ghost.appendChild(gp); grid.appendChild(ghost);
+  }
+
   /* ---------- case KPIs ---------- */
   function buildKpis() {
     const grid = $("#kpi-grid");
@@ -283,7 +339,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    buildNav(); buildTicker(); buildShift(); buildFlow(); buildKpis();
+    buildNav(); buildTicker(); buildShift(); buildFlow(); buildFleet(); buildKpis();
     buildMoats(); buildBadges(); buildPartners(); buildRoadmap(); buildPricing(); buildAsk();
     applyI18n();
     chartTheme(); buildCharts();
