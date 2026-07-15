@@ -19,7 +19,7 @@
 
 const SITE_CONFIG = {
   demoData: true,            // master honesty switch: show illustrative chips + footer disclaimer
-  asOf: "2026-06-27",        // shown next to metrics; bump when numbers refreshed
+  asOf: "2026-07-16",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
     name: "Talent AI",
@@ -39,10 +39,10 @@ const SITE_CONFIG = {
 
   // -- Hero ticker (4 punchy VERIFIED numbers) ------------------------------
   heroMetrics: [
-    { value: 1205, suffix: "+", key: "m.leads",       verified: true },
-    { value: 1061, suffix: "",  key: "m.safe",        verified: true },
-    { value: 32,   suffix: "%", key: "m.afterhours",  verified: true },
-    { value: 224,  suffix: "",  key: "m.escalated",   verified: true },
+    { value: 1490, suffix: "+", key: "m.leads",       verified: true },
+    { value: 1289, suffix: "",  key: "m.safe",        verified: true },
+    { value: 41,   suffix: "%", key: "m.afterhours",  verified: true },
+    { value: 273,  suffix: "",  key: "m.escalated",   verified: true },
   ],
 
   // -- Case-study KPI tiles (count-up) --------------------------------------
@@ -50,12 +50,12 @@ const SITE_CONFIG = {
   // NPS, "-80% drafting", revenue. Latency is illustrative (no provenance).
   // All 6 tiles are measured (實測) — keeps the proof grid chip-free for diligence.
   kpiTiles: [
-    { value: 32,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
+    { value: 41,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
     { value: 14,   decimals: 0, suffix: " / 14", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
-    { value: 1061, decimals: 0, suffix: " / 10", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
-    { value: 1205, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
+    { value: 1289, decimals: 0, suffix: " / 6",  key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 1490, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
     { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
-    { value: 224,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
+    { value: 273,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
   ],
 
   // -- Traction charts (Chart.js) -------------------------------------------
@@ -66,8 +66,8 @@ const SITE_CONFIG = {
     weekLabels: ["05-20", "05-27", "06-03", "06-10", "06-17", "06-24", "07-01"],
     lastMeasuredIndex: 5,   // index 0..5 measured; 6 forecast
     messagesPerWeek:    [1210, 2426, 2576, 2593, 2548, 2435, 2650],
-    cumulativeLeads:    [135, 400, 640, 850, 1030, 1205, 1380],
-    escalationsCumul:   [8, 40, 80, 120, 170, 224, 275],
+    cumulativeLeads:    [135, 400, 640, 850, 1030, 1205, 1490],
+    escalationsCumul:   [8, 40, 80, 120, 170, 224, 273],
     footnoteKey: "traction.footnote",
   },
 
@@ -119,13 +119,15 @@ const SITE_CONFIG = {
   },
 
   // -- Ecosystem / partners (real marks where applicable) -------------------
+  // kind groups render in first-seen order: flagship → input → progress → compute.
   partners: [
     { id: "quanjin",   mark: "quanjin",  kind: "flagship", key: "ptr.quanjin",   href: "https://www.lystudio.com.tw/service/7.htm" },
-    { id: "anthropic", mark: "claude",   kind: "tech",     key: "ptr.anthropic", href: "https://claude.ai" },
-    { id: "azure",     mark: "azure",    kind: "tech",     key: "ptr.azure",     href: "https://azure.microsoft.com" },
-    { id: "line",      mark: "line",     kind: "tech",     key: "ptr.line",      href: "https://line.me" },
-    { id: "ngrok",     mark: "ngrok",    kind: "tech",     key: "ptr.ngrok",     href: "https://ngrok.com" },
-    { id: "airtable",  mark: "airtable", kind: "tech",     key: "ptr.airtable",  href: "https://airtable.com" },
+    { id: "line",      mark: "line",     kind: "input",    key: "ptr.line",      href: "https://line.me" },
+    { id: "asana",     mark: "asana",    kind: "progress", key: "ptr.asana",     href: "https://asana.com", muted: true },
+    { id: "anthropic", mark: "claude",   kind: "compute",  key: "ptr.anthropic", href: "https://claude.ai" },
+    { id: "azure",     mark: "azure",    kind: "compute",  key: "ptr.azure",     href: "https://azure.microsoft.com" },
+    { id: "airtable",  mark: "airtable", kind: "compute",  key: "ptr.airtable",  href: "https://airtable.com" },
+    { id: "ngrok",     mark: "ngrok",    kind: "compute",  key: "ptr.ngrok",     href: "https://ngrok.com" },
   ],
 
   // -- Roadmap (5 phases) ---------------------------------------------------
@@ -148,6 +150,7 @@ const SITE_CONFIG = {
   nav: [
     { href: "#shift",     key: "nav.shift" },
     { href: "#system",    key: "nav.system" },
+    { href: "#fleet",     key: "nav.fleet" },
     { href: "#case",      key: "nav.case" },
     { href: "#traction",  key: "nav.traction" },
     { href: "#moats",     key: "nav.moats" },

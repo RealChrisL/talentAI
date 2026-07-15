@@ -118,7 +118,8 @@
 
   /* ---------- partners (register row, real logos + links) ---------- */
   function partnerCard(p) {
-    const a = el("a", "partner-card" + (p.kind === "flagship" ? " flagship" : ""));
+    const cls = "partner-card" + (p.kind === "flagship" ? " flagship" : "") + (p.muted ? " muted" : "");
+    const a = el("a", cls);
     a.href = p.href; a.target = "_blank"; a.rel = "noopener noreferrer";
     a.innerHTML = `<span class="pm"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pm-${p.mark}"/></svg></span>`;
     const cap = el("span", "pcap");
@@ -128,12 +129,14 @@
   }
   function buildPartners() {
     const wrap = $("#partner-grid");
-    const groups = [["flagship", "ecosystem.flagship"], ["tech", "ecosystem.tech"]];
-    groups.forEach(([kind, labelKey]) => {
+    // group by kind in first-seen order; label key = ecosystem.<kind>
+    const order = [];
+    CFG.partners.forEach((p) => { if (!order.includes(p.kind)) order.push(p.kind); });
+    order.forEach((kind) => {
       const list = CFG.partners.filter((p) => p.kind === kind);
       if (!list.length) return;
       const g = el("div", "partner-group");
-      const lab = el("div", "partner-group-label"); lab.setAttribute("data-i18n", labelKey); lab.textContent = t(labelKey);
+      const lab = el("div", "partner-group-label"); lab.setAttribute("data-i18n", "ecosystem." + kind); lab.textContent = t("ecosystem." + kind);
       const row = el("div", "partner-row");
       list.forEach((p) => row.appendChild(partnerCard(p)));
       g.appendChild(lab); g.appendChild(row); wrap.appendChild(g);

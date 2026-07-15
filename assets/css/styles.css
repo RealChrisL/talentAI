@@ -221,6 +221,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .moat .ic svg { width: 23px; height: 23px; stroke: var(--seal-ink); }
 .moat h3 { font-size: 1.1rem; margin-bottom: .55rem; }
 .moat p { font-size: .89rem; color: var(--ink-2); }
+/* ghost card — a role not yet in the fleet: muted, dashed, invitational */
+.moat.moat-ghost { border-style: dashed; background: transparent; box-shadow: none; opacity: .72; }
+.moat.moat-ghost .ic { border-style: dashed; }
+.moat.moat-ghost .ic svg { stroke: var(--ink-3); }
+.moat.moat-ghost h3 { color: var(--ink-2); }
+.moat.moat-ghost:hover { transform: translateY(-3px); border-color: var(--rule-2); opacity: 1; }
 
 /* ============================================================= security */
 .sec-wrap { margin-top: 2.4rem; padding: 1.8rem; }
@@ -254,6 +260,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .partner-card .pcap .pl { font-family: var(--font-mono); font-size: .66rem; color: var(--ink-3); overflow-wrap: anywhere; }
 .sec-diagram-scroll { width: 100%; }
 .partner-card.flagship { border-color: var(--seal); background: rgba(192,57,43,.04); }
+.partner-card.muted { opacity: .62; border-style: dashed; }
+.partner-card.muted .pm svg { filter: grayscale(1); }
+.partner-card.muted:hover { opacity: 1; border-color: var(--rule-2); }
 .ecosystem-note { margin-top: 1.6rem; font-family: var(--font-mono); font-size: .72rem; color: var(--ink-3); max-width: 74ch; line-height: 1.6; }
 
 /* ============================================================= roadmap */
