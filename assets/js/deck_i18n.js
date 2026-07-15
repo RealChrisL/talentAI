@@ -69,7 +69,7 @@ const DECK_I18N = {
     "d.s2.eb": "現況挑戰",
     "d.s2.h": "專業事務所，正把付費案件流失於靜默",
     "d.s2.b1": "執照型事務所（代書、診所、代辦）多以個人 LINE 帳號處理接案。",
-    "d.s2.b2": "近三成客戶，是在無人在桌前時首次來訊。",
+    "d.s2.b2": "逾四成客戶，是在無人在桌前時首次來訊。",
     "d.s2.b3": "導入助手前，這些訊息往往要等到隔天上班才被看見。",
     "d.s2.b4": "在焦慮、靠口碑的產業裡，等不到回覆的客戶就轉向下一家。",
     "d.s2.b5": "1–3 人的事務所，無法以任何負擔得起的薪資排出 24 小時輪班。",
@@ -87,7 +87,7 @@ const DECK_I18N = {
 
     /* S4 how it works */
     "d.s4.eb": "運作方式",
-    "d.s4.h": "五道把關，從接案到專業人員接手",
+    "d.s4.h": "六層把關，從接案到專業人員接手",
     "d.s4.p1t": "接案", "d.s4.p1d": "問候、分類並分流每一筆進線",
     "d.s4.p2t": "問卷", "d.s4.p2d": "鎖定案型後發送完整範本",
     "d.s4.p3t": "防護回覆", "d.s4.p3d": "送出前皆通過 L0–L4 驗證",
@@ -271,7 +271,7 @@ const DECK_I18N = {
     "d.s2.eb": "The Problem",
     "d.s2.h": "Professional firms lose paying cases to silence.",
     "d.s2.b1": "License-gated firms (代書, clinics, agencies) run intake on a personal LINE account.",
-    "d.s2.b2": "Nearly a third of clients first message when no human is at the desk.",
+    "d.s2.b2": "Over four in ten clients first message when no human is at the desk.",
     "d.s2.b3": "Before the agent, those messages met silence until the next morning.",
     "d.s2.b4": "In an anxiety-driven, referral economy, the client who waits messages the next firm.",
     "d.s2.b5": "A 1–3 person office cannot staff 24/7 shift cover at any wage it can pay.",
@@ -287,7 +287,7 @@ const DECK_I18N = {
     "d.s3.note": "Human-in-the-loop is structural, not a promise — the code flips status to 人工接管中 and the agent goes silent.",
 
     "d.s4.eb": "How It Works",
-    "d.s4.h": "Five guarded stages, intake to licensed handoff.",
+    "d.s4.h": "Six guarded layers, intake to licensed handoff.",
     "d.s4.p1t": "Intake", "d.s4.p1d": "Greet, classify & route every inbound",
     "d.s4.p2t": "Questionnaire", "d.s4.p2d": "Case locked → full template sent",
     "d.s4.p3t": "Guarded reply", "d.s4.p3d": "L0–L4 validators before every send",
