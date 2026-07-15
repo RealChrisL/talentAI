@@ -107,7 +107,7 @@ const I18N = {
     "wf.form.t": "自動問齊資料", "wf.form.d": "確認案件類型後，把該服務需要的資料，一項一項替您問齊",
     "wf.guard.t": "回覆先把關", "wf.guard.d": "每一句回覆送出前都先過安全檢查，絕不亂報價、亂承諾",
     "wf.crm.t": "自動整理案件", "wf.crm.d": "對話自動整理成案件紀錄，來龍去脈隨時看得到",
-    "wf.human.t": "專人親自接手", "wf.human.d": "重要案件自動轉給您的同仁，由持牌專業人員親自處理",
+    "wf.human.t": "專人親自接手", "wf.human.d": "重要案件自動轉給您的團隊，關鍵判斷永遠由人做",
 
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
@@ -148,15 +148,15 @@ const I18N = {
     "moat.audit.t": "講了什麼，都查得到",
     "moat.audit.b": "每一句對外的話都留著紀錄，您隨時翻得到。",
     "moat.domainkb.t": "只照您的規矩回答",
-    "moat.domainkb.b": "費用、流程都照您事務所的來；不確定，它會問，不會自己編。",
+    "moat.domainkb.b": "費用、流程都照您公司的規矩來；不確定，它會問，不會自己編。",
     "moat.humanloop.t": "重要的事還是您決定",
     "moat.humanloop.b": "一遇到重要案件就轉給您的人；判斷和結案，永遠是人來。",
     "moat.staffing.t": "不會讓案子被忘記",
     "moat.staffing.b": "案子分給對的代理與對的人；太久沒動的，它每天提醒兩次。",
-    "moat.flywheel.t": "越用越貼合您所",
-    "moat.flywheel.b": "資料越積越厚；跨所學到的，回過頭讓每一家都更準。",
+    "moat.flywheel.t": "越用越貼合您的生意",
+    "moat.flywheel.b": "資料越積越厚；跨企業學到的，回過頭讓每一家都更準。",
     "moat.localization.t": "在地的眉角，外來工具補不上",
-    "moat.localization.b": "LINE、繁體中文、個資法、公會往來——這些在地的縫，國外工具一時補不齊。",
+    "moat.localization.b": "LINE、繁體中文、個資法、在地商業慣例——這些在地的縫，國外工具一時補不齊。",
 
     /* ---- security ---- */
     "security.eyebrow": "安全與合規",
@@ -199,12 +199,12 @@ const I18N = {
 
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "發展藍圖",
-    "roadmap.h": "從一家事務所的實證，到整個執照型市場的基礎建設",
-    "rm.p1.t": "第一階段・實證", "rm.p1.o": "全謹代書已上線；數週實測在案，六層安全驗證架構確立。",
-    "rm.p2.t": "第二階段・產品化", "rm.p2.o": "可移植導入套件，第二家事務所兩週內上線，取得首個付費試點。",
-    "rm.p3.t": "第三階段・鄰近垂直", "rm.p3.o": "擴展至行政書士、移民代辦、信託規劃等授權制度相近的服務。",
-    "rm.p4.t": "第四階段・區域化", "rm.p4.o": "進入日本（司法書士）與東南亞授權型法律服務市場。",
-    "rm.p5.t": "第五階段・平台", "rm.p5.o": "成為執照型事務所共用的 AI 基礎建設層：合規模板、案件分析、跨所知識共享。",
+    "roadmap.h": "從一家企業的實證，到各行各業的 AI 人才基礎建設",
+    "rm.p1.t": "第一階段・實證", "rm.p1.o": "首支 AI 人才團隊已在專業事務所上線；數週實測在案，六層安全驗證架構確立。",
+    "rm.p2.t": "第二階段・產品化", "rm.p2.o": "可移植導入套件，第二家企業兩週內上線，取得首個付費試點。",
+    "rm.p3.t": "第三階段・艦隊擴編", "rm.p3.o": "新職能人才上崗；導入會計、保險、診所、顧問、教育、零售等行業。",
+    "rm.p4.t": "第四階段・區域化", "rm.p4.o": "跨語言、跨市場：進入日本與東南亞，在地化整支人才艦隊。",
+    "rm.p5.t": "第五階段・平台", "rm.p5.o": "成為企業共用的 AI 人才基礎建設：隨需組建、跨業知識共享、可稽核的決策層。",
 
     /* ---- the ask ---- */
     "contact.eyebrow": "預約試點",
@@ -325,7 +325,7 @@ const I18N = {
     "wf.form.t": "Gathers the details", "wf.form.d": "Once the case type is clear, it asks for exactly what that service needs, one item at a time",
     "wf.guard.t": "Every reply checked first", "wf.guard.d": "Each reply is safety-checked before it sends — never a wrong fee, never an over-promise",
     "wf.crm.t": "Cases organised for you", "wf.crm.d": "Conversations become tidy case records you can review any time",
-    "wf.human.t": "A person takes over", "wf.human.d": "Important cases pass straight to your colleague, handled in person by a licensee",
+    "wf.human.t": "A person takes over", "wf.human.d": "Important cases pass straight to your team — the judgment calls always stay human",
 
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
@@ -366,15 +366,15 @@ const I18N = {
     "moat.audit.t": "Whatever it said, you can check",
     "moat.audit.b": "Every outbound line is kept on record, there whenever you look.",
     "moat.domainkb.t": "It answers by your rules",
-    "moat.domainkb.b": "Fees and process follow your firm's; unsure, it asks — it doesn't make things up.",
+    "moat.domainkb.b": "Fees and process follow your company's rules; unsure, it asks — it doesn't make things up.",
     "moat.humanloop.t": "The big calls stay yours",
     "moat.humanloop.b": "Anything important goes to your people; the judgment and the close are always human.",
     "moat.staffing.t": "Nothing gets forgotten",
     "moat.staffing.b": "Cases go to the right agent and the right person; if one sits too long, it nudges twice a day.",
-    "moat.flywheel.t": "It fits your firm closer over time",
-    "moat.flywheel.b": "The data deepens; what it learns across firms makes every one of them sharper.",
+    "moat.flywheel.t": "It fits your business closer over time",
+    "moat.flywheel.b": "The data deepens; what it learns across businesses makes every one of them sharper.",
     "moat.localization.t": "Local detail a foreign tool can't match",
-    "moat.localization.b": "LINE, Traditional Chinese, 個資法, 公會 ties — local seams a foreign tool can't quickly close.",
+    "moat.localization.b": "LINE, Traditional Chinese, local privacy law and business custom — local seams a foreign tool can't quickly close.",
 
     /* ---- security ---- */
     "security.eyebrow": "Security & Compliance",
@@ -417,12 +417,12 @@ const I18N = {
 
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "Roadmap",
-    "roadmap.h": "From one firm's proof to infrastructure for every licensed practice",
-    "rm.p1.t": "Phase 1 — Proof", "rm.p1.o": "Live at 全謹代書 — weeks of measured data, six-layer compliance stack proven in production.",
-    "rm.p2.t": "Phase 2 — Productize", "rm.p2.o": "Portable onboarding kit — a second firm goes live within two weeks; first paid pilot signed.",
-    "rm.p3.t": "Phase 3 — Adjacent verticals", "rm.p3.o": "Expand into analogous licence-gated verticals — immigration agents, trust planning, administrative services.",
-    "rm.p4.t": "Phase 4 — Regional", "rm.p4.o": "Enter Japan (司法書士) and SE-Asian licensed legal-service markets, led by the Taiwan proof asset.",
-    "rm.p5.t": "Phase 5 — Platform", "rm.p5.o": "Become the shared AI infrastructure layer for licensed practices — compliance templates, case analytics, cross-firm knowledge.",
+    "roadmap.h": "From one company's proof to AI-talent infrastructure for every industry",
+    "rm.p1.t": "Phase 1 — Proof", "rm.p1.o": "The first team of AI talents live at a professional firm — weeks of measured data, six-layer compliance stack proven in production.",
+    "rm.p2.t": "Phase 2 — Productize", "rm.p2.o": "Portable onboarding kit — a second business goes live within two weeks; first paid pilot signed.",
+    "rm.p3.t": "Phase 3 — Fleet expansion", "rm.p3.o": "New talent roles come on shift; deployments reach accounting, insurance, clinics, consulting, education and retail.",
+    "rm.p4.t": "Phase 4 — Regional", "rm.p4.o": "Across languages and markets — Japan and Southeast Asia, with the whole fleet localised.",
+    "rm.p5.t": "Phase 5 — Platform", "rm.p5.o": "The shared AI-talent infrastructure for business — staffed on demand, cross-industry knowledge, an auditable decision layer.",
 
     /* ---- the ask ---- */
     "contact.eyebrow": "Get started",
