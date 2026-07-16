@@ -166,7 +166,7 @@ const SITE_CONFIG = {
     { href: "#traction",  key: "nav.traction" },
     { href: "#moats",     key: "nav.moats" },
     { href: "#security",  key: "nav.security" },
-    { href: "#roadmap",   key: "nav.roadmap" },
+    // { href: "#roadmap",   key: "nav.roadmap" }, // hidden per Chris 2026-07-16
     { href: "#pricing",   key: "nav.pricing" },
     { href: "#contact",   key: "nav.contact" },
   ],
