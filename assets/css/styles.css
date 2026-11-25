@@ -266,6 +266,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .sec-diagram .node-box.real { stroke: var(--ink); }
 .sec-diagram .node-box.pattern { stroke-dasharray: 5 4; stroke: var(--brass); }
 .sec-diagram text { fill: var(--ink); font-family: var(--font-mono); font-size: 11px; }
+.sec-diagram text.nm { font-weight: 600; }
+.sec-diagram text.sub { fill: var(--ink-3); font-size: 10px; }
 .sec-diagram .edge { stroke: var(--rule-2); stroke-width: 1.4; fill: none; }
 .sec-diagram .packet { fill: var(--seal); }
 .sec-residency { margin-top: 1.1rem; font-family: var(--font-mono); font-size: .78rem; color: var(--seal-ink); display: flex; align-items: center; gap: .5rem; }

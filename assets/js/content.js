@@ -145,6 +145,7 @@ const SITE_CONFIG = {
     { id: "line",      mark: "line",     kind: "input",    key: "ptr.line",      href: "https://line.me" },
     { id: "asana",     mark: "asana",    kind: "progress", key: "ptr.asana",     href: "https://asana.com", muted: true },
     { id: "anthropic", mark: "claude",   kind: "compute",  key: "ptr.anthropic", href: "https://claude.ai" },
+    { id: "openai",    mark: "openai",   kind: "compute",  key: "ptr.openai",    href: "https://openai.com" },
     { id: "azure",     mark: "azure",    kind: "compute",  key: "ptr.azure",     href: "https://azure.microsoft.com" },
     { id: "airtable",  mark: "airtable", kind: "compute",  key: "ptr.airtable",  href: "https://airtable.com" },
     { id: "ngrok",     mark: "ngrok",    kind: "compute",  key: "ptr.ngrok",     href: "https://ngrok.com" },
