@@ -8,7 +8,14 @@
  * Holding-co brand "QuanJin AI / 全謹智能" is a PLACEHOLDER, distinct from the
  * client firm.
  *
- * Live figures audited from production as-of 2026-06-26; compliance count refreshed 2026-06-27 (see docs/venture/004).
+ * Live figures re-measured from production, data cut 2026-11-24 24:00 TPE (measured 2026-11-25):
+ *   clients / messages  history/U*.log, staff excluded, first log 2026-05-24  -> 2,793 clients / 62,736 messages
+ *   outbound            logs/outbound_audit.jsonl verdicts                    -> 2,429 PASS / 22 BLOCK (6 fee replies)
+ *   after-hours         follows.json followedAt outside Mon-Fri 09:00-18:00   -> 1,036 of 2,483 = 41.7%
+ *   hand-offs           logs/auto_takeover_audit.jsonl, distinct clients, high-priority arms only
+ *                       (immediate_reason fired / signal_takeover non-firstlock) -> 804
+ *   nightly eval        logs/eval_layer2_cron.log latest run                  -> 17/17
+ *   CRM classification  Airtable scan: 3,442 of 3,483 records carry type + priority -> 98.8%
  * ROI is framed as break-even + reach + safety (not booked revenue); any revenue
  * figure is forward-looking / Illustrative only.
  *
@@ -19,7 +26,7 @@
 
 const SITE_CONFIG = {
   demoData: true,            // master honesty switch: show illustrative chips + footer disclaimer
-  asOf: "2026-07-16",        // shown next to metrics; bump when numbers refreshed
+  asOf: "2026-11-24",        // shown next to metrics; bump when numbers refreshed
 
   brand: {
     name: "Talent AI",
@@ -33,16 +40,16 @@ const SITE_CONFIG = {
   flagship: {
     name: "全謹代書",
     firm: "全謹地政士事務所",
-    sectorEn: "Land administration & legal documents (代書 / 地政士)",
+    sectorEn: "Real estate & probate services (代書 / 地政士)",
     liveSince: "2026-05",
   },
 
   // -- Hero ticker (4 punchy VERIFIED numbers) ------------------------------
   heroMetrics: [
-    { value: 1490, suffix: "+", key: "m.leads",       verified: true },
-    { value: 1289, suffix: "",  key: "m.safe",        verified: true },
+    { value: 2793, suffix: "+", key: "m.leads",       verified: true },
+    { value: 2429, suffix: "",  key: "m.safe",        verified: true },
     { value: 41,   suffix: "%", key: "m.afterhours",  verified: true },
-    { value: 273,  suffix: "",  key: "m.escalated",   verified: true },
+    { value: 804,  suffix: "",  key: "m.escalated",   verified: true },
   ],
 
   // -- Case-study KPI tiles (count-up) --------------------------------------
@@ -51,23 +58,25 @@ const SITE_CONFIG = {
   // All 6 tiles are measured (實測) — keeps the proof grid chip-free for diligence.
   kpiTiles: [
     { value: 41,   decimals: 0, suffix: "%",     key: "kpi.afterhours", verified: true, noteKey: "kpi.afterhours.note" },
-    { value: 14,   decimals: 0, suffix: " / 14", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
-    { value: 1289, decimals: 0, suffix: " / 6",  key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
-    { value: 1490, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
+    { value: 17,   decimals: 0, suffix: " / 17", key: "kpi.eval",       verified: true, noteKey: "kpi.eval.note" },
+    { value: 2429, decimals: 0, suffix: " / 22", key: "kpi.safety",     verified: true, noteKey: "kpi.safety.note" },
+    { value: 2793, decimals: 0, suffix: "",     key: "kpi.leads",      verified: true, noteKey: "kpi.leads.note" },
     { value: 99,   decimals: 0, suffix: "%",    key: "kpi.crm",        verified: true, noteKey: "kpi.crm.note" },
-    { value: 273,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
+    { value: 804,  decimals: 0, suffix: "",     key: "kpi.escalated",  verified: true, noteKey: "kpi.escalated.note" },
   ],
 
   // -- Traction charts (Chart.js) -------------------------------------------
-  // Only the W5 endpoints + weekly message bars are point-exact 實測.
-  // W1–W4 cumulative waypoints are interpolated 估算; W6–W7 are forecast.
+  // Monthly, every point measured (實測) — no interpolation, no forecast.
+  // Months are Taipei time. May starts 05-24 (first conversation log); November runs to 11-24.
+  // The hand-off audit log starts 06-10, so May has no point (null).
+  // (Field names keep their "week" wording so main.js needs no rename.)
   tractionChart: {
-    weeks: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
-    weekLabels: ["05-20", "05-27", "06-03", "06-10", "06-17", "06-24", "07-01"],
-    lastMeasuredIndex: 5,   // index 0..5 measured; 6 forecast
-    messagesPerWeek:    [1210, 2426, 2576, 2593, 2548, 2435, 2650],
-    cumulativeLeads:    [135, 400, 640, 850, 1030, 1205, 1490],
-    escalationsCumul:   [8, 40, 80, 120, 170, 224, 273],
+    weeks: ["05", "06", "07", "08", "09", "10", "11"],
+    weekLabels: ["05-24→", "", "", "", "", "", "→11-24"],
+    lastMeasuredIndex: 6,   // all 7 points measured; nothing forecast
+    messagesPerWeek:    [2582, 11163, 10590, 10686, 9242, 10223, 8250],
+    cumulativeLeads:    [257, 818, 1253, 1694, 2120, 2528, 2793],
+    escalationsCumul:   [null, 145, 319, 510, 615, 732, 804],
     footnoteKey: "traction.footnote",
   },
 
@@ -90,10 +99,10 @@ const SITE_CONFIG = {
   // i18n keys: fleet.<role>.t/.en/.tag/.b + .c1..cN. Icons removed by design —
   // bullets are plain lines with a thin left-accent.
   fleet: [
-    { id: "greeting",  key: "fleet.greeting",  bullets: 6 },
-    { id: "ops",       key: "fleet.ops",       bullets: 7 },
+    { id: "greeting",  key: "fleet.greeting",  bullets: 7 },
+    { id: "ops",       key: "fleet.ops",       bullets: 11 },
     { id: "marketing", key: "fleet.marketing", bullets: 5 },
-    { id: "chief",     key: "fleet.chief",     bullets: 8 },
+    { id: "chief",     key: "fleet.chief",     bullets: 10 },
   ],
 
   // -- System workflow (5 stages, code-accurate) ----------------------------

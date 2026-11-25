@@ -7,7 +7,9 @@
   "use strict";
   const CFG = window.SITE_CONFIG, I18N = window.I18N;
   const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let lang = "zh";
+  // Language: zh by default; ?lang=en opens the page in English (shareable URL; /en/ redirects here).
+  const QS_LANG = (new URLSearchParams(window.location.search).get("lang") || "").toLowerCase();
+  let lang = QS_LANG.indexOf("en") === 0 ? "en" : "zh";
 
   const $  = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
@@ -23,6 +25,8 @@
 
   function applyI18n() {
     document.documentElement.lang = lang === "zh" ? "zh-TW" : "en";
+    document.title = t("meta.title");
+    const md = $('meta[name="description"]'); if (md) md.setAttribute("content", t("meta.desc"));
     $$("[data-i18n]").forEach((n) => { n.textContent = t(n.getAttribute("data-i18n")); });
     $("#lang-toggle").textContent = t("ui.lang");
     $("#footer-asof").textContent = t("ui.asof") + " " + CFG.asOf;
@@ -258,7 +262,7 @@
   let charts = [];
   function chartTheme() { Chart.defaults.color = "#3E4A52"; Chart.defaults.font.family = "'IBM Plex Mono', monospace"; Chart.defaults.font.size = 10; Chart.defaults.borderColor = "rgba(23,36,46,0.08)"; }
   const axis = () => ({ grid: { color: "rgba(23,36,46,0.07)" }, ticks: { color: "#586168" } });
-  const split = (arr, last) => ({ solid: arr.map((v, i) => i <= last ? v : null), dash: arr.map((v, i) => i >= last ? v : null) });
+  const split = (arr, last) => ({ solid: arr.map((v, i) => i <= last ? v : null), dash: arr.map((v, i) => (last < arr.length - 1 && i >= last) ? v : null) });
   const fcast = (c) => (c.dataIndex > CFG.tractionChart.lastMeasuredIndex ? t("ui.forecast") : t("ui.measured"));
 
   function buildCharts() {
@@ -334,8 +338,17 @@
     window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
   }
 
+  // Keep the address bar copy-pasteable: English = ?lang=en, Chinese = the bare URL.
+  function syncLangUrl() {
+    try {
+      const u = new URL(window.location.href);
+      if (lang === "en") u.searchParams.set("lang", "en"); else u.searchParams.delete("lang");
+      window.history.replaceState(null, "", u);
+    } catch (e) { /* file:// or locked-down history: the language still switches */ }
+  }
+
   function wireLang() {
-    $("#lang-toggle").addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; applyI18n(); refreshRoadmapStatus(); });
+    $("#lang-toggle").addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; applyI18n(); refreshRoadmapStatus(); syncLangUrl(); });
   }
 
   document.addEventListener("DOMContentLoaded", () => {

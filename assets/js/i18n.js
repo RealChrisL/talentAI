@@ -19,6 +19,8 @@ const I18N = {
   zh: {
     /* ---- chrome / UI ---- */
     "ui.lang": "EN",
+    "meta.title": "Talent AI 智能人才 — 專業事務所的 AI 智能助手",
+    "meta.desc": "為人手吃緊的專業事務所打造的 AI 智能助手：24 小時接待客戶、整理案件、提醒進度，已在真實事務所穩定上線。",
     "ui.cta_deck": "索取簡報",
     "ui.cta_case": "看實例 ↓",
     "ui.cta_pilot": "預約試點洽談",
@@ -37,7 +39,7 @@ const I18N = {
     /* ---- hero ---- */
     "hero.eyebrow": "AI 原生・專業服務",
     "hero.h1": "專業服務，為 AI 時代重新打造",
-    "hero.sub": "Talent AI 打造 AI 人才艦隊——接待、營運、行銷等職能隨需啟用。服務你的生意，而不是要你學工具：LINE、Asana 或任何你既有的系統，人才自己接上。首支 AI 人才團隊已在專業事務所在職 68 天：1,490 筆自動建檔、0 則違規出訊、全程可稽核。",
+    "hero.sub": "Talent AI 打造 AI 人才艦隊——接待、營運、行銷等職能隨需啟用。服務你的生意，而不是要你學工具：LINE、Asana 或任何你既有的系統，人才自己接上。首支 AI 人才團隊已在專業事務所在職 200 天：2,793 位來訊客戶自動建檔、0 則違規出訊、全程可稽核。",
 
     "m.leads": "接住並完成初步問診的進線",
     "m.safe": "對外訊息送出，0 則不安全",
@@ -58,6 +60,7 @@ const I18N = {
     "fleet.greeting.c4": "12 項服務選單，回覆數字即鎖定業務",
     "fleet.greeting.c5": "客戶用白話描述，也能自動判斷業務與急迫度",
     "fleet.greeting.c6": "圖片與檔案智能群組回覆，不逐則轟炸",
+    "fleet.greeting.c7": "客戶點選服務項目後，問卷約一秒內送出",
 
     "fleet.ops.t": "案件管理師", "fleet.ops.en": "Case Manager Agent", "fleet.ops.tag": "追得到",
     "fleet.ops.b": "每一案都盯到底：進度追蹤、團隊通知、自動建檔。",
@@ -68,6 +71,10 @@ const I18N = {
     "fleet.ops.c5": "同事手機開啟「我的案件」，直接結案回報",
     "fleet.ops.c6": "每案可自訂追蹤週期與下次提醒日期",
     "fleet.ops.c7": "委派通知卡一鍵操作：查、接管、交回、結案",
+    "fleet.ops.c8": "客戶線上預約諮詢，團隊一鍵確認，時間同步到 Google 日曆",
+    "fleet.ops.c9": "在日曆上改了時間，系統自動通知客戶新時段，前一天再提醒一次",
+    "fleet.ops.c10": "在 LINE 官方帳號後台換負責人，案件自動跟著改派",
+    "fleet.ops.c11": "已結案的客戶再來訊，自動回到團隊的待辦清單",
 
     "fleet.marketing.t": "行銷分析師", "fleet.marketing.en": "Growth Analyst Agent", "fleet.marketing.tag": "看得準",
     "fleet.marketing.b": "看得準哪些客戶值得追：成交追蹤、高價值識別。",
@@ -84,9 +91,11 @@ const I18N = {
     "fleet.chief.c3": "每夜自我考核出訊品質，語氣偏移上線前攔下",
     "fleet.chief.c4": "自動分案白名單：只有核准案型自動指派，越界即警示",
     "fleet.chief.c5": "上班時段人力判斷：上班交團隊、下班代理續接",
-    "fleet.chief.c6": "六道送出前守門，價格只報確認過的",
-    "fleet.chief.c7": "約 19 支常駐監控自我守望，異常才彙整警示",
+    "fleet.chief.c6": "八道送出前守門，價格只報確認過的",
+    "fleet.chief.c7": "22 支常駐監控自我守望，異常才彙整警示",
     "fleet.chief.c8": "100+ 稽核軌跡，每個決策可追溯重算",
+    "fleet.chief.c9": "營運戰情室：全所案件、負責人、逾期，一頁看完",
+    "fleet.chief.c10": "每週成效週報，LINE 與網頁各一份",
 
     "fleet.ghost.t": "下一位人才", "fleet.ghost.b": "你需要的職能還不在艦隊裡？告訴我們下一個缺口。",
 
@@ -112,7 +121,7 @@ const I18N = {
     /* ---- case study ---- */
     "case.eyebrow": "旗艦實例",
     "case.h": "首支人才團隊的工作履歷：全謹代書",
-    "case.narr": "全謹地政士事務所 2026 年 5 月到職，至今在職 68 天。1,490 筆案件自動建檔、不必多請人；逾四成客戶在下班後才來訊——過去石沉大海的頻道，如今每一通都在數秒內被接住、分類，並通知負責地政士；273 次含完整脈絡轉交人工。",
+    "case.narr": "全謹地政士事務所 2026 年 5 月到職，至今在職 200 天。2,793 位來訊客戶自動建檔、不必多請人；逾四成客戶在下班後才來訊——過去石沉大海的頻道，如今多半在一分鐘內被接住、分類，並通知負責地政士；804 位高優先客戶含完整脈絡轉交人工。",
     "case.oversight": "每一則對外回覆送出前都先安全把關，6 則未經確認的費用回覆在送出前被攔下；0 則違規訊息送達客戶；不讓事務所承擔未經核實的費用或說法。每件案子最終由持牌地政士親自辦理。",
     "case.disclaimer": "收益轉換數據尚在追蹤中；以上為實測運營數據，非預測收入。ROI 以「損益兩平＋觸及＋把關」呈現，而非已成交金額。",
 
@@ -122,22 +131,22 @@ const I18N = {
     "industries.body": "職前訓練＝把行業的業務知識庫寫成教材，兩週上崗。同一套僱傭基礎設施——權限、稽核、監督、交接——通用於法律、會計、保險、診所、顧問、教育、零售等行業。",
 
     /* ---- KPI tiles ---- */
-    "kpi.afterhours.t": "下班後也接得住的新客戶", "kpi.afterhours.note": "1,251 位有進線紀錄的新客戶中，519 位（41.5%）在平日 09:00–18:00 以外第一次找上門【實測】",
-    "kpi.eval.t": "上線前的品質把關", "kpi.eval.note": "每晚自動檢查回答的品質與分寸，14／14 全數通過【實測】",
+    "kpi.afterhours.t": "下班後也接得住的新客戶", "kpi.afterhours.note": "2,483 位有進線紀錄的新客戶中，1,036 位（41.7%）在平日 09:00–18:00 以外第一次找上門【實測】",
+    "kpi.eval.t": "上線前的品質把關", "kpi.eval.note": "每晚自動檢查回答的品質與分寸，17／17 全數通過【實測】",
     "kpi.crm.t": "對話自動分類整理", "kpi.crm.note": "進線幾乎都自動分好案件類型與優先順序，並自動整理成案件紀錄，完全不用人工輸入【實測】",
-    "kpi.safety.t": "對外回覆把關：通過／攔下", "kpi.safety.note": "1,289 則回覆全數通過送出前六層檢查；6 則未經確認的費用回覆在送到客戶前先攔了下來【實測】",
-    "kpi.leads.t": "完整接待過的客戶", "kpi.leads.note": "系統實際接待並完成初步處理的客戶總數【實測】",
+    "kpi.safety.t": "對外回覆把關：通過／攔下", "kpi.safety.note": "2,429 則回覆通過送出前八層檢查；另有 22 則在送到客戶前攔下：6 則未經確認的費用回覆、15 則客戶已由團隊接手、1 則格式不合【實測】",
+    "kpi.leads.t": "完整接待過的客戶", "kpi.leads.note": "有對話紀錄（5/24 起）以來，實際來訊並由系統接待、建檔的客戶數【實測】",
     "kpi.escalated.t": "附完整紀錄、轉給專人的案件", "kpi.escalated.note": "高價值案件自動轉給專人，對話脈絡一併附上【實測】",
     "kpi.latency.t": "從收到訊息到問卷送出（約）", "kpi.latency.note": "示意：人工確認之操作常數，尚無量測基準",
 
     /* ---- traction ---- */
     "traction.eyebrow": "進展",
-    "traction.h": "從零到實證，上線數週的曲線在案",
-    "traction.sub": "實線為實測；虛線為依現行速率外推之預測，已明確標示。",
-    "traction.c1": "每週客戶訊息量（LINE 通道）",
-    "traction.c2": "累計進線（合格客戶）",
+    "traction.h": "從零到實證，上線半年的曲線在案",
+    "traction.sub": "圖上每一點都是實測，沒有預測值。",
+    "traction.c1": "每月客戶訊息量（LINE 通道）",
+    "traction.c2": "累計來訊客戶",
     "traction.c3": "累計高優先轉人工件數",
-    "traction.footnote": "僅 W6 端點（進線 1,490／轉人工 273／訊息累計約 13,800）與每週訊息量為點對點實測；W1–W4 累計進線為內插估算，W7 為預測，以虛線呈現。",
+    "traction.footnote": "全部為實測：訊息量與來訊客戶取自對話紀錄（5/24 起，計至 11/24），高優先轉人工取自稽核紀錄（6/10 起）。端點：來訊客戶 2,793／高優先轉人工 804／訊息累計 62,736。",
 
     /* ---- moats ---- */
     "moats.eyebrow": "為什麼敢交給它",
@@ -161,7 +170,7 @@ const I18N = {
     /* ---- security ---- */
     "security.eyebrow": "安全與合規",
     "security.h": "執照在你手上，風險由系統把關",
-    "security.framing": "每則對外訊息在送出前皆通過六層驗證：不虛報費用、不承諾時間、不偽造法律效果；任何可疑指令（含提示注入）皆靜默記錄並阻擋。",
+    "security.framing": "每則對外訊息在送出前皆通過八層驗證：不虛報費用、不承諾時間、不偽造法律效果；任何可疑指令（含提示注入）皆靜默記錄並阻擋。",
     "security.flow": "資料流向（依實際架構繪製）",
     "security.residency": "運算部署於隔離的 Azure 虛擬機；對外傳輸全程 TLS 加密，並保留完整稽核軌跡。",
     "sec.n.client.t": "LINE 使用者（客戶）",
@@ -200,7 +209,7 @@ const I18N = {
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "發展藍圖",
     "roadmap.h": "從一家企業的實證，到各行各業的 AI 人才基礎建設",
-    "rm.p1.t": "第一階段・實證", "rm.p1.o": "首支 AI 人才團隊已在專業事務所上線；數週實測在案，六層安全驗證架構確立。",
+    "rm.p1.t": "第一階段・實證", "rm.p1.o": "首支 AI 人才團隊已在專業事務所上線；逾半年實測在案，八層安全驗證架構確立。",
     "rm.p2.t": "第二階段・產品化", "rm.p2.o": "可移植導入套件，第二家企業兩週內上線，取得首個付費試點。",
     "rm.p3.t": "第三階段・艦隊擴編", "rm.p3.o": "新職能人才上崗；導入會計、保險、診所、顧問、教育、零售等行業。",
     "rm.p4.t": "第四階段・區域化", "rm.p4.o": "跨語言、跨市場：進入日本與東南亞，在地化整支人才艦隊。",
@@ -214,7 +223,7 @@ const I18N = {
     // 市場規模／資金用途／募資：deck-only（已從公開 bundle 移除）
 
     /* ---- footer ---- */
-    "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-07-16）。標示「示意數字」者為估算或假設，待經稽核資料替換。ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
+    "footer.disclaimer": "本頁數據除標示「預測」者外，均取自全謹代書實測紀錄（資料截至 2026-11-24）。標示「示意數字」者為估算或假設，待經稽核資料替換。ROI 以損益兩平、觸及與把關呈現，不構成財務預測或投資承諾。",
     "footer.tagline": "智能人才 — 讓專業，不再因時間而流失",
     "footer.brand": "© 2026 智能人才 Talent AI",
     "pricing.eyebrow": "方案與費用",
@@ -225,18 +234,20 @@ const I18N = {
     "pricing.allplans": "三個方案均含：LINE 官方帳號串接・反幻覺安全驗證・自動 CRM 建檔・持牌地政士全程把關。",
     "pricing.starter.name": "基礎 Starter", "pricing.starter.tagline": "接得住：24 小時不漏接的前台",
     "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "每月最多 200 筆進線（超量每則 NT$50）", "pricing.starter.seats": "1 席・單人事務所",
-    "pricing.starter.f1": "24/7 接案・9 大選單問卷", "pricing.starter.f2": "層層安全把關・不亂報價", "pricing.starter.f3": "轉真人接管・恢復・結案", "pricing.starter.f4": "客戶紀錄自動建檔",
+    "pricing.starter.f1": "24/7 接案・11 大業務選單問卷", "pricing.starter.f2": "層層安全把關・不亂報價", "pricing.starter.f3": "轉真人接管・恢復・結案", "pricing.starter.f4": "客戶紀錄自動建檔",
     "pricing.pro.name": "專業 Pro", "pricing.pro.badge": "最受歡迎", "pricing.pro.tagline": "追得到＋看得懂：盯緊每一案，看見 ROI",
     "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "每月最多 500 筆進線（超量每則 NT$40）", "pricing.pro.seats": "最多 3 席",
     "pricing.pro.f1": "基礎方案全部功能", "pricing.pro.f2": "完整 CRM＋案件洞察＋案情敘事", "pricing.pro.f3": "智能分流・指派負責同仁", "pricing.pro.f4": "成交結果追蹤", "pricing.pro.f5": "每月 ROI 報告＋逾時盯案",
     "pricing.flagship.name": "旗艦 Flagship", "pricing.flagship.tagline": "管得動：整個團隊的數位作業層",
     "pricing.flagship.price": "NT$25,000", "pricing.flagship.cap": "每月最多 1,000 筆進線（超量每則 NT$35）", "pricing.flagship.seats": "不限席次",
-    "pricing.flagship.f1": "專業方案全部功能", "pricing.flagship.f2": "Plaud 錄音自動轉建案", "pricing.flagship.f3": "自訂業務類別（非 9 大）", "pricing.flagship.f4": "多人團隊委派路由", "pricing.flagship.f5": "優先支援・SLA 4 小時",
+    "pricing.flagship.f1": "專業方案全部功能", "pricing.flagship.f2": "Plaud 錄音自動轉建案", "pricing.flagship.f3": "自訂業務類別（11 大以外）", "pricing.flagship.f4": "多人團隊委派路由", "pricing.flagship.f5": "優先支援・SLA 4 小時",
   },
 
   en: {
     /* ---- chrome / UI ---- */
     "ui.lang": "中",
+    "meta.title": "Talent AI — AI talent for professional-service firms",
+    "meta.desc": "AI talent built for short-staffed professional firms: greets clients around the clock, organises cases and keeps follow-ups on track. Already live in a working practice.",
     "ui.cta_deck": "Request the Deck",
     "ui.cta_case": "See the Case Study ↓",
     "ui.cta_pilot": "Book a Pilot",
@@ -255,7 +266,7 @@ const I18N = {
     /* ---- hero ---- */
     "hero.eyebrow": "AI-native professional services",
     "hero.h1": "Professional services, re-engineered for the AI era.",
-    "hero.sub": "Talent AI fields a fleet of AI talent — greeting, operations, marketing and beyond, staffed on demand. They serve your business, not ask you to learn tools: LINE, Asana, or whatever you already run, the talent plugs in. A first team of AI talents has been on the job at a professional firm for 68 days: 1,490 records auto-built, zero unsafe messages, fully auditable.",
+    "hero.sub": "Talent AI fields a fleet of AI talent — greeting, operations, marketing and beyond, staffed on demand. They serve your business, not ask you to learn tools: LINE, Asana, or whatever you already run, the talent plugs in. A first team of AI talents has been on the job at a professional firm for 200 days: 2,793 clients filed automatically, zero unsafe messages, fully auditable.",
 
     "m.leads": "Leads captured & qualified, 24/7",
     "m.safe": "Client messages sent — 0 unsafe",
@@ -276,6 +287,7 @@ const I18N = {
     "fleet.greeting.c4": "12 service menus — reply with a number to lock the case",
     "fleet.greeting.c5": "Reads plain-language descriptions and sorts type and urgency on its own",
     "fleet.greeting.c6": "Groups images and files into one reply — no message-by-message barrage",
+    "fleet.greeting.c7": "Sends the questionnaire within about a second of a menu tap",
 
     "fleet.ops.t": "Case Manager Agent", "fleet.ops.en": "Case Manager Agent", "fleet.ops.tag": "Tracks it",
     "fleet.ops.b": "Rides every case to the end: tracks progress, alerts the team, files the record.",
@@ -286,6 +298,10 @@ const I18N = {
     "fleet.ops.c5": "Colleagues open 'My Cases' on their phone and close-report directly",
     "fleet.ops.c6": "Set a follow-up cycle and next-reminder date per case",
     "fleet.ops.c7": "One-tap on the assignment card: view, take over, hand back, close",
+    "fleet.ops.c8": "Clients book a consultation online — the team confirms in one tap and it lands on Google Calendar",
+    "fleet.ops.c9": "Move the event on the calendar and the client is told the new time — with a reminder the day before",
+    "fleet.ops.c10": "Change the owner in LINE Official Account Manager and the case is reassigned to match",
+    "fleet.ops.c11": "A closed client who writes again goes straight back onto the team's list",
 
     "fleet.marketing.t": "Growth Analyst Agent", "fleet.marketing.en": "Growth Analyst Agent", "fleet.marketing.tag": "Reads it right",
     "fleet.marketing.b": "Reads which clients are worth the chase: deal tracking, high-value signals.",
@@ -302,9 +318,11 @@ const I18N = {
     "fleet.chief.c3": "Grades its own message quality nightly — tone drift caught before it ships",
     "fleet.chief.c4": "Auto-assign whitelist — only approved case types assign themselves, overreach flagged",
     "fleet.chief.c5": "Reads the clock for staffing — team by day, agent covers after hours",
-    "fleet.chief.c6": "Six pre-send gates — quotes only confirmed prices",
-    "fleet.chief.c7": "About 19 standing monitors watch the system — anomalies alert, nothing else",
+    "fleet.chief.c6": "Eight pre-send gates — quotes only confirmed prices",
+    "fleet.chief.c7": "22 standing monitors watch the system — anomalies alert, nothing else",
     "fleet.chief.c8": "100+ audit trails — every decision traceable and re-checkable",
+    "fleet.chief.c9": "Operations dashboard — every case, owner and overdue item on one page",
+    "fleet.chief.c10": "A weekly results report, on LINE and on the web",
 
     "fleet.ghost.t": "The next hire", "fleet.ghost.b": "Need a role that isn't in the fleet yet? Tell us the gap.",
 
@@ -329,33 +347,33 @@ const I18N = {
 
     /* ---- case study ---- */
     "case.eyebrow": "Flagship Deployment",
-    "case.h": "The first team's employment record: QuanJin Notary",
-    "case.narr": "全謹地政士事務所 hired the first team in May 2026 — 68 days on the job so far. 1,490 cases filed automatically, with no extra headcount; over four in ten clients first write in after hours — that once-silent channel is now caught, sorted and routed to the responsible 地政士 within seconds; 273 hand-offs to a person came with full context attached.",
-    "case.oversight": "Every outbound reply is safety-checked before it sends — 6 unverified fee replies were blocked before they went out, and zero unsafe messages reached a client, sparing the firm any unverified fee or legal claim. Every case is ultimately handled by a licensed 地政士.",
+    "case.h": "The first team's employment record: QuanJin Real Estate & Probate Services",
+    "case.narr": "QuanJin Real Estate & Probate Services (全謹地政士事務所) hired the first team in May 2026 — 200 days on the job so far. 2,793 clients who wrote in were filed automatically, with no extra headcount; over four in ten new clients first make contact after hours — that once-silent channel is now mostly caught, sorted and routed to the responsible practitioner within a minute; 804 high-priority clients were handed to a person with full context attached.",
+    "case.oversight": "Every outbound reply is safety-checked before it sends — 6 unverified fee replies were blocked before they went out, and zero unsafe messages reached a client, sparing the firm any unverified fee or legal claim. Every case is ultimately handled by a licensed practitioner.",
     "case.disclaimer": "Revenue conversion is still being instrumented; figures above are operational measurements, not income projections. ROI is shown as break-even + reach + safety, not as booked revenue.",
 
     /* ---- Across professional services (industries) ---- */
     "industries.eyebrow": "Across professional services",
-    "industries.h": "The notary firm is the first employer — not the market boundary.",
+    "industries.h": "A real estate & probate services firm is the first employer — not the market boundary.",
     "industries.body": "Onboarding = writing the industry's playbook into a knowledge base; two weeks to on-the-job. The same employment infrastructure — permissions, audit, supervision, handoff — serves law, accounting, insurance, clinics, consulting, education, and retail alike.",
 
     /* ---- KPI tiles ---- */
-    "kpi.afterhours.t": "New clients reached even after hours", "kpi.afterhours.note": "519 of 1,251 new clients with a recorded first contact (41.5%) first wrote in outside Mon–Fri 09:00–18:00 【measured】",
-    "kpi.eval.t": "Quality checked before going live", "kpi.eval.note": "Nightly checks on answer quality and tone — 14/14 passing 【measured】",
+    "kpi.afterhours.t": "New clients reached even after hours", "kpi.afterhours.note": "1,036 of 2,483 new clients with a recorded first contact (41.7%) first reached out outside Mon–Fri 09:00–18:00 【measured】",
+    "kpi.eval.t": "Quality checked before going live", "kpi.eval.note": "Nightly checks on answer quality and tone — 17/17 passing 【measured】",
     "kpi.crm.t": "Conversations sorted automatically", "kpi.crm.note": "Almost every lead is auto-sorted by type and priority and turned into a case record — no manual entry 【measured】",
-    "kpi.safety.t": "Outbound replies: passed / stopped", "kpi.safety.note": "All 1,289 replies passed six pre-send checks; 6 unverified fee replies were stopped before they reached a client 【measured】",
-    "kpi.leads.t": "Clients fully received", "kpi.leads.note": "Total clients the system received and handled through first steps 【measured】",
+    "kpi.safety.t": "Outbound replies: passed / stopped", "kpi.safety.note": "2,429 replies passed eight pre-send checks; 22 more were stopped before reaching a client — 6 unverified fee replies, 15 where the team had already taken over the client, 1 malformed 【measured】",
+    "kpi.leads.t": "Clients fully received", "kpi.leads.note": "Clients who actually wrote in and were received and filed by the system, since conversation logging began on 24 May 【measured】",
     "kpi.escalated.t": "Cases passed to a person, with full notes", "kpi.escalated.note": "High-value cases auto-routed to a person, conversation context attached 【measured】",
     "kpi.latency.t": "From message received to questionnaire sent", "kpi.latency.note": "Illustrative: human-confirmed operating constant, not yet instrumented",
 
     /* ---- traction ---- */
     "traction.eyebrow": "Traction",
     "traction.h": "From zero to live proof — the curve is on record",
-    "traction.sub": "Solid lines are measured; dashed lines are run-rate forecast, clearly flagged.",
-    "traction.c1": "Client messages per week (LINE channel)",
-    "traction.c2": "Cumulative leads (qualified clients)",
+    "traction.sub": "Every point on these charts is measured — there are no forecasts.",
+    "traction.c1": "Client messages per month (LINE channel)",
+    "traction.c2": "Cumulative clients who wrote in",
     "traction.c3": "Cumulative high-priority hand-offs",
-    "traction.footnote": "Only the W6 endpoints (1,490 leads / 273 escalations / ~13,800 messages) and the weekly message bars are point-exact measured; W1–W4 cumulative leads are interpolated estimates and W7 is forecast, shown dashed.",
+    "traction.footnote": "All measured: message volume and clients come from conversation logs (from 24 May, through 24 Nov); high-priority hand-offs come from the audit log (from 10 Jun). Endpoints: 2,793 clients / 804 high-priority hand-offs / 62,736 messages.",
 
     /* ---- moats ---- */
     "moats.eyebrow": "Why owners trust it",
@@ -379,7 +397,7 @@ const I18N = {
     /* ---- security ---- */
     "security.eyebrow": "Security & Compliance",
     "security.h": "Your licence stays protected — the system holds the line",
-    "security.framing": "Every outbound message clears six validation gates before delivery — no fabricated fees, no scheduling commitments, no invented legal outcomes. Suspicious injection attempts are logged silently and blocked.",
+    "security.framing": "Every outbound message clears eight validation gates before delivery — no fabricated fees, no scheduling commitments, no invented legal outcomes. Suspicious injection attempts are logged silently and blocked.",
     "security.flow": "Data flow (drawn to the real architecture)",
     "security.residency": "Compute runs on an isolated Azure VM — TLS-encrypted in transit end to end, with a full audit trail.",
     "sec.n.client.t": "LINE user (end client)",
@@ -401,8 +419,8 @@ const I18N = {
     /* ---- ecosystem ---- */
     "ecosystem.eyebrow": "Ecosystem & Partners",
     "ecosystem.h": "Built on mature, reliable infrastructure",
-    "ecosystem.note": "全謹代書 is the live deployment; the platform is built on and integrates with Anthropic Claude, Microsoft Azure, LINE Official Account, ngrok and Airtable. All trademarks are the property of their respective owners.",
-    "ptr.quanjin.t": "全謹 Land-Admin Office",
+    "ecosystem.note": "QuanJin Real Estate & Probate Services is the live deployment; the platform is built on and integrates with Anthropic Claude, Microsoft Azure, LINE Official Account, ngrok and Airtable. All trademarks are the property of their respective owners.",
+    "ptr.quanjin.t": "QuanJin Real Estate & Probate Services",
     "ptr.anthropic.t": "Claude AI",
     "ptr.azure.t": "Azure Cloud",
     "ptr.line.t": "LINE OA",
@@ -418,7 +436,7 @@ const I18N = {
     /* ---- roadmap ---- */
     "roadmap.eyebrow": "Roadmap",
     "roadmap.h": "From one company's proof to AI-talent infrastructure for every industry",
-    "rm.p1.t": "Phase 1 — Proof", "rm.p1.o": "The first team of AI talents live at a professional firm — weeks of measured data, six-layer compliance stack proven in production.",
+    "rm.p1.t": "Phase 1 — Proof", "rm.p1.o": "The first team of AI talents live at a professional firm — over six months of measured data, eight-layer compliance stack proven in production.",
     "rm.p2.t": "Phase 2 — Productize", "rm.p2.o": "Portable onboarding kit — a second business goes live within two weeks; first paid pilot signed.",
     "rm.p3.t": "Phase 3 — Fleet expansion", "rm.p3.o": "New talent roles come on shift; deployments reach accounting, insurance, clinics, consulting, education and retail.",
     "rm.p4.t": "Phase 4 — Regional", "rm.p4.o": "Across languages and markets — Japan and Southeast Asia, with the whole fleet localised.",
@@ -432,7 +450,7 @@ const I18N = {
     // market sizing / use-of-funds / the ask: deck-only (removed from public bundle)
 
     /* ---- footer ---- */
-    "footer.disclaimer": "Figures are from the 全謹代書 live deployment (as of 2026-07-16) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
+    "footer.disclaimer": "Figures are from the QuanJin Real Estate & Probate Services live deployment (as of 2026-11-24) unless marked Forecast. Items marked Illustrative are estimates or assumptions pending verified data. ROI is shown as break-even, reach and safety, and does not constitute a financial projection or investment commitment.",
     "footer.tagline": "Talent AI — professional practice, any hour, no lead lost",
     "footer.brand": "© 2026 Talent AI 智能人才",
     "pricing.eyebrow": "Plans & Pricing",
@@ -440,10 +458,10 @@ const I18N = {
     "pricing.sub": "A full-time admin hire runs NT$33,000+/mo and goes offline nights, weekends and holidays. Three plans, from solo practice to full team, from NT$8,000/mo.",
     "pricing.period": "/mo", "pricing.cta": "Book a call",
     "pricing.foot": "One-time onboarding NT$50,000 (knowledge-base authoring, LINE OA wiring, two-week guided launch); pay annually, get 2 months free.",
-    "pricing.allplans": "Every plan includes: LINE OA integration · anti-hallucination safety · automatic CRM · licensed 地政士 oversight.",
+    "pricing.allplans": "Every plan includes: LINE OA integration · anti-hallucination safety · automatic CRM · licensed practitioner oversight.",
     "pricing.starter.name": "Starter", "pricing.starter.tagline": "Capture: a 24/7 front desk, no lead slips through",
     "pricing.starter.price": "NT$8,000", "pricing.starter.cap": "Up to 200 leads/mo (NT$50 per lead over)", "pricing.starter.seats": "1 seat · solo practice",
-    "pricing.starter.f1": "24/7 intake · all 9 service menus", "pricing.starter.f2": "Layered safety checks on every reply", "pricing.starter.f3": "Human handoff · resume · close-case", "pricing.starter.f4": "Auto CRM record",
+    "pricing.starter.f1": "24/7 intake · all 11 service menus", "pricing.starter.f2": "Layered safety checks on every reply", "pricing.starter.f3": "Human handoff · resume · close-case", "pricing.starter.f4": "Auto CRM record",
     "pricing.pro.name": "Pro", "pricing.pro.badge": "Most popular", "pricing.pro.tagline": "Don't-drop + see-the-numbers: stay on every case, see the ROI",
     "pricing.pro.price": "NT$15,000", "pricing.pro.cap": "Up to 500 leads/mo (NT$40 per lead over)", "pricing.pro.seats": "Up to 3 seats",
     "pricing.pro.f1": "Everything in Starter", "pricing.pro.f2": "Full CRM + case insight + narrative", "pricing.pro.f3": "Smart routing + staff assignment", "pricing.pro.f4": "Deal-outcome tracking", "pricing.pro.f5": "Monthly ROI report + overdue follow-up",
